@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/_Game Assets/Scenes/Level 1-Static 1.unity
     guid: 9fe1e92894aa49846962d0756fd7b27b
   - enabled: 1
-    path: Assets/_Game Assets/Scenes/Level 1-Static 2.unity
-    guid: a3a0c0c3425da0943a3eece9984c21db
-  - enabled: 1
     path: Assets/_Game Assets/Scenes/Level 2.unity
     guid: 6f569356b7f59ee43974ec0820e92cb1
+  - enabled: 1
+    path: Assets/_Game Assets/Scenes/Level 2-Static 1.unity
+    guid: 5c25b38975defa8449c04370f4f75817
   m_configObjects: {}
