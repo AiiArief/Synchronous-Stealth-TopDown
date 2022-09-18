@@ -204,9 +204,10 @@ MonoBehaviour:
     m_physicsModes: ffffffff
   - m_sceneName: Havva's Kingdom - Noble Area
     m_scenes:
-    - Level 1-Gameplay
-    - Level 1-Static
-    m_physicsModes: ffffffff00000000
+    - Level 1
+    - Level 1-Static 1
+    - Level 1-Static 2
+    m_physicsModes: ffffffff0000000000000000
   - m_sceneName: Havva's Kingdom - Observatory
     m_scenes:
     - Level 2
