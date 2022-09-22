@@ -36,13 +36,6 @@ public class CutsceneCamera : MonoBehaviour
 
     private void _EnableRoofs(bool on)
     {
-        //var rp = GameManager.Instance.levelManager.roofsParent;
-
-        //for (int i = 0; i < rp.childCount; i++)
-        //{
-        //    rp.GetChild(i).GetComponent<MeshRenderer>().shadowCastingMode = (on) ? UnityEngine.Rendering.ShadowCastingMode.On : UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
-        //}
-
         if (on)
             _AddLayerToCullingMask(Camera.main, 10);
         else
