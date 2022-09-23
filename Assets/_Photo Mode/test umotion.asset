@@ -18,9 +18,9 @@ MonoBehaviour:
     MainTabIndex:
       valueInternal: 0
     PoseToolPivotMode:
-      valueInternal: 1
+      valueInternal: 0
     PoseToolMode:
-      valueInternal: 2
+      valueInternal: 1
     PoseMirrorMode:
       valueInternal: 0
     ConfigMode:
@@ -40,7 +40,7 @@ MonoBehaviour:
     FramesZoom:
       valueInternal: 0.05623424
     PropertiesScrollPosition:
-      valueInternal: 44
+      valueInternal: 1710
     PropertiesZoom:
       valueInternal: 1
     CurveYScrollPosition:
@@ -2261,7 +2261,7 @@ MonoBehaviour:
             valueInternal: 0.012517427
           newKeyListSerialized: 00000000
     LocalRotationSelected:
-      valueInternal: 1
+      valueInternal: 0
     RotationModePerClip:
     - valueInternal: 0
     - valueInternal: 0
