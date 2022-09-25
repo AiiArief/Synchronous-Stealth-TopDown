@@ -92,7 +92,6 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Lu ga boleh dan ga bisa bunuh mereka, serta lu ga boleh ketauan sama mereka.", m_voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Kalo lu ketauan sama mereka, lu harus time leap.", m_voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Ntar lu balik ke checkpoint terakhir.", m_voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Setiap ganti area itu checkpoint kok.", m_voicePack))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_cutsceneCamera_note3DSphereRobot.ReleaseCamera(); um.NextAction(); });
     }
