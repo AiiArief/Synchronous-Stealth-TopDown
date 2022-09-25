@@ -930,7 +930,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -940,7 +940,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -1334,113 +1334,113 @@ MonoBehaviour:
   - m_Vertices: 1c00000022000000280000002e000000340000003a000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 3, y: -87.5, z: 0}
-  - {x: 3, y: 87.5, z: 0}
-  - {x: 1.4999999, y: -87.5, z: 2.5980763}
-  - {x: 1.4999999, y: 87.5, z: 2.5980763}
-  - {x: 1.4999999, y: -87.5, z: 2.5980763}
-  - {x: 1.4999999, y: 87.5, z: 2.5980763}
-  - {x: -1.5, y: -87.5, z: 2.598076}
-  - {x: -1.5, y: 87.5, z: 2.598076}
-  - {x: -1.5, y: -87.5, z: 2.598076}
-  - {x: -1.5, y: 87.5, z: 2.598076}
-  - {x: -3, y: -87.5, z: -0.00000026226832}
-  - {x: -3, y: 87.5, z: -0.00000026226832}
-  - {x: -3, y: -87.5, z: -0.00000026226832}
-  - {x: -3, y: 87.5, z: -0.00000026226832}
-  - {x: -1.5, y: -87.5, z: -2.5980763}
-  - {x: -1.5, y: 87.5, z: -2.5980763}
-  - {x: -1.5, y: -87.5, z: -2.5980763}
-  - {x: -1.5, y: 87.5, z: -2.5980763}
-  - {x: 1.4999998, y: -87.5, z: -2.5980763}
-  - {x: 1.4999998, y: 87.5, z: -2.5980763}
-  - {x: 1.4999998, y: -87.5, z: -2.5980763}
-  - {x: 1.4999998, y: 87.5, z: -2.5980763}
-  - {x: 3, y: -87.5, z: 0}
-  - {x: 3, y: 87.5, z: 0}
-  - {x: 3, y: -87.5, z: 0}
-  - {x: 0, y: -87.5, z: 0}
-  - {x: 1.4999999, y: -87.5, z: 2.5980763}
-  - {x: 3, y: 87.5, z: 0}
-  - {x: 0, y: 87.5, z: 0}
-  - {x: 1.4999999, y: 87.5, z: 2.5980763}
-  - {x: 1.4999999, y: -87.5, z: 2.5980763}
-  - {x: 0, y: -87.5, z: 0}
-  - {x: -1.5, y: -87.5, z: 2.598076}
-  - {x: 1.4999999, y: 87.5, z: 2.5980763}
-  - {x: 0, y: 87.5, z: 0}
-  - {x: -1.5, y: 87.5, z: 2.598076}
-  - {x: -1.5, y: -87.5, z: 2.598076}
-  - {x: 0, y: -87.5, z: 0}
-  - {x: -3, y: -87.5, z: -0.00000026226832}
-  - {x: -1.5, y: 87.5, z: 2.598076}
-  - {x: 0, y: 87.5, z: 0}
-  - {x: -3, y: 87.5, z: -0.00000026226832}
-  - {x: -3, y: -87.5, z: -0.00000026226832}
-  - {x: 0, y: -87.5, z: 0}
-  - {x: -1.5, y: -87.5, z: -2.5980763}
-  - {x: -3, y: 87.5, z: -0.00000026226832}
-  - {x: 0, y: 87.5, z: 0}
-  - {x: -1.5, y: 87.5, z: -2.5980763}
-  - {x: -1.5, y: -87.5, z: -2.5980763}
-  - {x: 0, y: -87.5, z: 0}
-  - {x: 1.4999998, y: -87.5, z: -2.5980763}
-  - {x: -1.5, y: 87.5, z: -2.5980763}
-  - {x: 0, y: 87.5, z: 0}
-  - {x: 1.4999998, y: 87.5, z: -2.5980763}
-  - {x: 1.4999998, y: -87.5, z: -2.5980763}
-  - {x: 0, y: -87.5, z: 0}
-  - {x: 3, y: -87.5, z: 0}
-  - {x: 1.4999998, y: 87.5, z: -2.5980763}
-  - {x: 0, y: 87.5, z: 0}
-  - {x: 3, y: 87.5, z: 0}
+  - {x: 3, y: -86.5, z: 0}
+  - {x: 3, y: 20, z: 0}
+  - {x: 1.5, y: -86.5, z: 2.5980763}
+  - {x: 1.5, y: 20, z: 2.5980763}
+  - {x: 1.5, y: -86.5, z: 2.5980763}
+  - {x: 1.5, y: 20, z: 2.5980763}
+  - {x: -1.5, y: -86.5, z: 2.598076}
+  - {x: -1.5, y: 20, z: 2.598076}
+  - {x: -1.5, y: -86.5, z: 2.598076}
+  - {x: -1.5, y: 20, z: 2.598076}
+  - {x: -3, y: -86.5, z: -0.00000023841858}
+  - {x: -3, y: 20, z: -0.00000023841858}
+  - {x: -3, y: -86.5, z: -0.00000023841858}
+  - {x: -3, y: 20, z: -0.00000023841858}
+  - {x: -1.5, y: -86.5, z: -2.5980763}
+  - {x: -1.5, y: 20, z: -2.5980763}
+  - {x: -1.5, y: -86.5, z: -2.5980763}
+  - {x: -1.5, y: 20, z: -2.5980763}
+  - {x: 1.4999998, y: -86.5, z: -2.5980763}
+  - {x: 1.4999998, y: 20, z: -2.5980763}
+  - {x: 1.4999998, y: -86.5, z: -2.5980763}
+  - {x: 1.4999998, y: 20, z: -2.5980763}
+  - {x: 3, y: -86.5, z: 0}
+  - {x: 3, y: 20, z: 0}
+  - {x: 3, y: -86.5, z: 0}
+  - {x: 0, y: -86.5, z: 0}
+  - {x: 1.5, y: -86.5, z: 2.5980763}
+  - {x: 3, y: 20, z: 0}
+  - {x: 0, y: 20, z: 0}
+  - {x: 1.5, y: 20, z: 2.5980763}
+  - {x: 1.5, y: -86.5, z: 2.5980763}
+  - {x: 0, y: -86.5, z: 0}
+  - {x: -1.5, y: -86.5, z: 2.598076}
+  - {x: 1.5, y: 20, z: 2.5980763}
+  - {x: 0, y: 20, z: 0}
+  - {x: -1.5, y: 20, z: 2.598076}
+  - {x: -1.5, y: -86.5, z: 2.598076}
+  - {x: 0, y: -86.5, z: 0}
+  - {x: -3, y: -86.5, z: -0.00000023841858}
+  - {x: -1.5, y: 20, z: 2.598076}
+  - {x: 0, y: 20, z: 0}
+  - {x: -3, y: 20, z: -0.00000023841858}
+  - {x: -3, y: -86.5, z: -0.00000023841858}
+  - {x: 0, y: -86.5, z: 0}
+  - {x: -1.5, y: -86.5, z: -2.5980763}
+  - {x: -3, y: 20, z: -0.00000023841858}
+  - {x: 0, y: 20, z: 0}
+  - {x: -1.5, y: 20, z: -2.5980763}
+  - {x: -1.5, y: -86.5, z: -2.5980763}
+  - {x: 0, y: -86.5, z: 0}
+  - {x: 1.4999998, y: -86.5, z: -2.5980763}
+  - {x: -1.5, y: 20, z: -2.5980763}
+  - {x: 0, y: 20, z: 0}
+  - {x: 1.4999998, y: 20, z: -2.5980763}
+  - {x: 1.4999998, y: -86.5, z: -2.5980763}
+  - {x: 0, y: -86.5, z: 0}
+  - {x: 3, y: -86.5, z: 0}
+  - {x: 1.4999998, y: 20, z: -2.5980763}
+  - {x: 0, y: 20, z: 0}
+  - {x: 3, y: 20, z: 0}
   m_Textures0:
-  - {x: -1.5000002, y: -87.5}
-  - {x: -1.5000002, y: 87.5}
-  - {x: 1.5, y: -87.5}
-  - {x: 1.5, y: 87.5}
-  - {x: -1.5000001, y: -87.5}
-  - {x: -1.5000001, y: 87.5}
-  - {x: 1.4999998, y: -87.5}
-  - {x: 1.4999998, y: 87.5}
-  - {x: -1.5, y: -87.5}
-  - {x: -1.5, y: 87.5}
-  - {x: 1.5000002, y: -87.5}
-  - {x: 1.5000002, y: 87.5}
-  - {x: -1.4999998, y: -87.5}
-  - {x: -1.4999998, y: 87.5}
-  - {x: 1.5000001, y: -87.5}
-  - {x: 1.5000001, y: 87.5}
-  - {x: -1.5, y: -87.5}
-  - {x: -1.5, y: 87.5}
-  - {x: 1.4999998, y: -87.5}
-  - {x: 1.4999998, y: 87.5}
-  - {x: -1.5000001, y: -87.5}
-  - {x: -1.5000001, y: 87.5}
-  - {x: 1.5000002, y: -87.5}
-  - {x: 1.5000002, y: 87.5}
+  - {x: -1.5, y: -86.5}
+  - {x: -1.5, y: 20}
+  - {x: 1.5000002, y: -86.5}
+  - {x: 1.5000002, y: 20}
+  - {x: -1.5000002, y: -86.5}
+  - {x: -1.5000002, y: 20}
+  - {x: 1.4999998, y: -86.5}
+  - {x: 1.4999998, y: 20}
+  - {x: -1.5, y: -86.5}
+  - {x: -1.5, y: 20}
+  - {x: 1.5000002, y: -86.5}
+  - {x: 1.5000002, y: 20}
+  - {x: -1.4999998, y: -86.5}
+  - {x: -1.4999998, y: 20}
+  - {x: 1.4999999, y: -86.5}
+  - {x: 1.4999999, y: 20}
+  - {x: -1.5, y: -86.5}
+  - {x: -1.5, y: 20}
+  - {x: 1.4999998, y: -86.5}
+  - {x: 1.4999998, y: 20}
+  - {x: -1.5000001, y: -86.5}
+  - {x: -1.5000001, y: 20}
+  - {x: 1.5000002, y: -86.5}
+  - {x: 1.5000002, y: 20}
   - {x: -3, y: 0}
   - {x: 0, y: 0}
-  - {x: -1.4999999, y: 2.5980763}
+  - {x: -1.5, y: 2.5980763}
   - {x: 3, y: 0}
   - {x: 0, y: 0}
-  - {x: 1.4999999, y: 2.5980763}
-  - {x: -1.4999999, y: 2.5980763}
+  - {x: 1.5, y: 2.5980763}
+  - {x: -1.5, y: 2.5980763}
   - {x: 0, y: 0}
   - {x: 1.5, y: 2.598076}
-  - {x: 1.4999999, y: 2.5980763}
+  - {x: 1.5, y: 2.5980763}
   - {x: 0, y: 0}
   - {x: -1.5, y: 2.598076}
   - {x: 1.5, y: 2.598076}
   - {x: 0, y: 0}
-  - {x: 3, y: -0.00000026226832}
+  - {x: 3, y: -0.00000023841858}
   - {x: -1.5, y: 2.598076}
   - {x: 0, y: 0}
-  - {x: -3, y: -0.00000026226832}
-  - {x: 3, y: -0.00000026226832}
+  - {x: -3, y: -0.00000023841858}
+  - {x: 3, y: -0.00000023841858}
   - {x: 0, y: 0}
   - {x: 1.5, y: -2.5980763}
-  - {x: -3, y: -0.00000026226832}
+  - {x: -3, y: -0.00000023841858}
   - {x: 0, y: 0}
   - {x: -1.5, y: -2.5980763}
   - {x: 1.5, y: -2.5980763}
@@ -1458,8 +1458,8 @@ MonoBehaviour:
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
-  - {x: 0, y: 0, z: 1, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0.000000034412757, y: 0, z: 1, w: -1}
+  - {x: 0.000000034412757, y: 0, z: 1, w: -1}
   - {x: -0.86602545, y: 0, z: 0.49999997, w: -1}
   - {x: -0.86602545, y: 0, z: 0.49999997, w: -1}
   - {x: -0.86602545, y: 0, z: 0.5, w: -1}
@@ -1472,16 +1472,16 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
-  - {x: 0.86602545, y: 0, z: -0.49999997, w: -1}
-  - {x: 0.86602545, y: 0, z: -0.49999997, w: -1}
-  - {x: 0.86602545, y: 0, z: -0.50000006, w: -1}
-  - {x: 0.86602545, y: 0, z: -0.50000006, w: -1}
+  - {x: 0.86602545, y: 0, z: -0.49999994, w: -1}
+  - {x: 0.86602545, y: 0, z: -0.49999994, w: -1}
+  - {x: 0.86602545, y: 0, z: -0.5, w: -1}
+  - {x: 0.86602545, y: 0, z: -0.5, w: -1}
   - {x: 0.86602545, y: 0, z: 0.50000006, w: -1}
   - {x: 0.86602545, y: 0, z: 0.50000006, w: -1}
   - {x: 0.8660255, y: 0, z: 0.49999994, w: -1}
   - {x: 0.8660255, y: 0, z: 0.49999994, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0.00000003441276, y: 0, z: 1, w: -1}
+  - {x: 0.00000003441276, y: 0, z: 1, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
@@ -1544,7 +1544,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -1554,7 +1554,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -2158,7 +2158,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -2168,7 +2168,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -2246,7 +2246,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -2258,7 +2258,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -15513,7 +15513,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -15523,7 +15523,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -15809,7 +15809,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -15819,7 +15819,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -16773,7 +16773,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -16783,7 +16783,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -16835,7 +16835,7 @@ Transform:
   m_GameObject: {fileID: 5577540841285867489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 175, y: 175, z: 175}
+  m_LocalScale: {x: 174, y: 174, z: 174}
   m_Children: []
   m_Father: {fileID: 8282523412447832806}
   m_RootOrder: 0
@@ -16861,7 +16861,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -16872,7 +16872,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -28932,7 +28932,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -28942,7 +28942,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -30192,7 +30192,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -30202,7 +30202,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -30488,7 +30488,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -30498,7 +30498,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -38290,7 +38290,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -38300,7 +38300,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -38324,6 +38324,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7447018677518818757}
   m_Mesh: {fileID: 0}
+--- !u!1 &7851782731452376169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8234889746874648970}
+  - component: {fileID: 8920742339740337240}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8234889746874648970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851782731452376169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -175, y: 116.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8282523412447832806}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &8920742339740337240
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851782731452376169}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 10, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 0
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 0
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1 &8222800602995901682
 GameObject:
   m_ObjectHideFlags: 0
@@ -38377,7 +38441,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -38387,7 +38451,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -46965,7 +47029,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -46975,7 +47039,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -49665,7 +49729,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -49675,7 +49739,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -50279,7 +50343,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -50289,7 +50353,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 8234889746874648970}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -50356,6 +50420,7 @@ Transform:
   - {fileID: 1244057629905594189}
   - {fileID: 2271434254687572772}
   - {fileID: 3883129791636257774}
+  - {fileID: 8234889746874648970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
