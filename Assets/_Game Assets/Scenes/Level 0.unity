@@ -158,7 +158,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1592142288}
+      objectReference: {fileID: 368405181}
     - target: {fileID: 3830602794451444936, guid: 0a507aee03dd53a40a4a80591cf0ef3a,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2207,7 +2207,7 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1592142288}
+      - m_Target: {fileID: 368405181}
         m_MethodName: RunTutorialEvent
         m_Mode: 1
         m_Arguments:
@@ -3839,6 +3839,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 332812463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &368405179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368405180}
+  - component: {fileID: 368405181}
+  m_Layer: 0
+  m_Name: Level 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &368405180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368405179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1592142287}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &368405181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368405179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ed64475b01cfa49b522596d84bde8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cutsceneCamera1: {fileID: 1099262007}
+  m_cutsceneCamera_note3DSphereRobot: {fileID: 1081652507}
+  m_cutsceneCamera_noteHavvaKingdom: {fileID: 2107137047}
+  m_cutsceneCamera_note3DHumanoid: {fileID: 2116042488}
+  m_cutsceneCamera_note2DHumanoid: {fileID: 1528544022}
 --- !u!1 &385253126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4877,7 +4925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1592142288}
+      objectReference: {fileID: 368405181}
     - target: {fileID: 3830602794451444936, guid: ef5e4ef5d3c967b4ea7c35258cba3d27,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -6045,7 +6093,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1592142288}
+      objectReference: {fileID: 368405181}
     - target: {fileID: 3830602794451444936, guid: ef5e4ef5d3c967b4ea7c35258cba3d27,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -6674,7 +6722,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1592142288}
+      objectReference: {fileID: 368405181}
     - target: {fileID: 3830602794451444936, guid: ef5e4ef5d3c967b4ea7c35258cba3d27,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -9454,7 +9502,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_levelEvent
       value: 
-      objectReference: {fileID: 1592142288}
+      objectReference: {fileID: 0}
     - target: {fileID: 3211682858303484145, guid: 461ac25975a919743a81e862cbd9d663,
         type: 3}
       propertyPath: m_onLoadLevelEvent
@@ -9774,42 +9822,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce30bf2176a2194fbd00bd7ae3ae7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1592142287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5333624108683830841, guid: 461ac25975a919743a81e862cbd9d663,
+--- !u!4 &1592142287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5024685548789080539, guid: 461ac25975a919743a81e862cbd9d663,
     type: 3}
   m_PrefabInstance: {fileID: 1592142280}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1592142288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592142287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ed64475b01cfa49b522596d84bde8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_voicePack: {fileID: 1592142289}
-  m_cutsceneCamera1: {fileID: 1099262007}
-  m_cutsceneCamera_note3DSphereRobot: {fileID: 1081652507}
-  m_cutsceneCamera_noteHavvaKingdom: {fileID: 0}
-  m_cutsceneCamera_note3DHumanoid: {fileID: 2116042488}
-  m_cutsceneCamera_note2DHumanoid: {fileID: 1528544022}
---- !u!114 &1592142289 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2304783284248512752, guid: 461ac25975a919743a81e862cbd9d663,
-    type: 3}
-  m_PrefabInstance: {fileID: 1592142280}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16dd53b36f3c5d940b9c38540b08940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1592142290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3734907620367366355, guid: 461ac25975a919743a81e862cbd9d663,
@@ -10970,7 +10988,7 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1592142288}
+      - m_Target: {fileID: 368405181}
         m_MethodName: InteractTutorialEvent
         m_Mode: 1
         m_Arguments:
@@ -11224,7 +11242,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1592142288}
+      objectReference: {fileID: 368405181}
     - target: {fileID: 3830602794451444936, guid: ef5e4ef5d3c967b4ea7c35258cba3d27,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -11233,7 +11251,7 @@ PrefabInstance:
     - target: {fileID: 3830602794451444936, guid: ef5e4ef5d3c967b4ea7c35258cba3d27,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DetailEvent_BoardDirector
+      value: DetailEvent_HavvaKingdom
       objectReference: {fileID: 0}
     - target: {fileID: 3830602794451444936, guid: ef5e4ef5d3c967b4ea7c35258cba3d27,
         type: 3}

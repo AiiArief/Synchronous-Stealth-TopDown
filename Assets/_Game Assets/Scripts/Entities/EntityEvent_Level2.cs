@@ -26,7 +26,7 @@ public class EntityEvent_Level2 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Hello); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Halo! Selamat datang di observatorium!", doorSwitch.voicePack))));
-        ElefataaEvent_Generic(doorSwitch, passwordChoice, m_elevatorEvent_Camera);
+        em.genericEvent.ElefataaEvent_Generic(doorSwitch, passwordChoice, m_elevatorEvent_Camera);
     }
 
     [SerializeField] CutsceneCamera m_talkEvent_Camera;

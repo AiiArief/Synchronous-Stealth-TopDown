@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class EntityManagerEvent : EntityManager
 {
-    [SerializeField] EntityEvent m_levelEvent;
-    public EntityEvent levelEvent { get { return m_levelEvent; } }
+    [SerializeField] EntityEvent_Generic m_genericEvent;
+    public EntityEvent_Generic genericEvent { get { return m_genericEvent; } }
 
     [SerializeField] Transform m_triggerEventParent;
     public TriggerEvent[] memoryTriggerEvents { get; private set; }
@@ -30,7 +30,7 @@ public class EntityManagerEvent : EntityManager
         _RefreshAllEventTriggers();
         _RefreshAllCheckpoints();
 
-        m_levelEvent.EventOnLoadLevel();
+        m_genericEvent.EventOnLoadLevel();
         _ExecuteFirstAction();
 
         m_levelFX.FXOnLoadLevel();
@@ -51,7 +51,7 @@ public class EntityManagerEvent : EntityManager
         PlayerPrefs.SetInt(ProfileManager.PLAYERPREFS_CURRENTSCENECHECKPOINT, checkpoint);
         _RefreshAllCheckpoints();
 
-        m_levelEvent.CheckpointEvent();
+        m_genericEvent.CheckpointEvent();
 
         return true;
     }

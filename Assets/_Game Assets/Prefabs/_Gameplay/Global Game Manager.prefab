@@ -206,12 +206,14 @@ MonoBehaviour:
     m_scenes:
     - Level 1
     - Level 1-Static 1
-    m_physicsModes: ffffffff00000000
+    - Havva Kingdom
+    m_physicsModes: ffffffff0000000000000000
   - m_sceneName: Havva's Kingdom - Observatory
     m_scenes:
     - Level 2
     - Level 2-Static 1
-    m_physicsModes: ffffffff00000000
+    - Havva Kingdom
+    m_physicsModes: ffffffff0000000000000000
 --- !u!1 &3470207479386773933
 GameObject:
   m_ObjectHideFlags: 0

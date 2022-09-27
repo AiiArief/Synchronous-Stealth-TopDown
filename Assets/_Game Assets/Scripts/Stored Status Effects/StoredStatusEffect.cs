@@ -95,7 +95,7 @@ public class StoredStatusEffectCaptured : StoredStatusEffectDisableMoveInput
     public StoredStatusEffectCaptured(EntityCharacterPlayer player, EntityCharacter byWhom) : base(player)
     {
         player.animator.SetBool("isCaptured", true);
-        GameManager.Instance.eventManager.levelEvent.PlayerIsCapturedEvent(byWhom as EntityCharacterNPC);
+        GameManager.Instance.eventManager.genericEvent.PlayerIsCapturedEvent(byWhom as EntityCharacterNPC);
         effectAction = () =>
         {
         };

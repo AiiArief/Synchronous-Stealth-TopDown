@@ -49,7 +49,7 @@ public class EntityCharacterPlayer : EntityCharacter
         if (pause)
         {
             StoredActionSkipTurn();
-            storedActions.Add(new StoredActionCustom(() => GameManager.Instance.eventManager.levelEvent.PlayerPause()));
+            storedActions.Add(new StoredActionCustom(() => GameManager.Instance.eventManager.genericEvent.PlayerPause()));
         }
     }
 
