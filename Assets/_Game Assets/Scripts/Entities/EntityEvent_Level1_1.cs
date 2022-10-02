@@ -12,6 +12,11 @@ public class EntityEvent_Level1_1 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_DOORNOSWITCH))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        // puter player ngadep garis
+        // ganti kamera
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Mungkin bisa ketemu penghuninya kalau ikuti garis ini!")));
+        // release kamera
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
@@ -22,26 +27,28 @@ public class EntityEvent_Level1_1 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Hello); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Halo dan hi!", door.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Selamat datang di perushaan Ubivision!", door.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Saat ini lagi mati lampu sih, makanya cuma sedikit yang kerja.", door.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Biasanya jam segini masih pada kerja lembur, hebat deh karyawan disini!", door.voicePack))));
+        // ekspresi zzz
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz...", door.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Selamat datang di... Havvatopia...", door.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Sekarang jam 2 pagi dan saat ini di Havvatopia sedang tidak ada internet dan mati lampu...", door.voicePack))));        
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "...", door.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Kenapa?", door.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Anda mau menyingkirkan saya dan lewat sini?", door.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz... Adakah... yang bisa dibantu...", door.voicePack),
                 new DialogueChoice[2] {
-                    new DialogueChoice("Iya.", () => {
-                        um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Cry); um.NextAction(); });
-                        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "Ya-Yaudah deh!", door.voicePack))));
+                    new DialogueChoice("Boleh lewat ga? Dan Havva sedang dimana ya?", () => {
+                        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz...", door.voicePack))));
+                        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Sebelum mati lampu Havva berada di Observatory, lantai paling atas...", door.voicePack))));
+                        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Silahkan pergi bersama Elefataa ke sana...", door.voicePack))));
+                        // ganti kamera ke elevataa
+                        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Elefataa... selalu ada di tengah lantai kok...", door.voicePack))));
+                        // release kamera
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Oiya ini... silahkan lewat...", door.voicePack))));
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
                         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
-                    new DialogueChoice("Enggak.", () => {
+                    new DialogueChoice("Enggak jadi.", () => {
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
