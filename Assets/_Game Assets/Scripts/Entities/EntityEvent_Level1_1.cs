@@ -17,9 +17,9 @@ public class EntityEvent_Level1_1 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         // puter player ngadep garis
         um.AddUIAction(() => { m_openDoorEvent_1_Camera.UseCamera(1); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "...")));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Mungkin bisa ketemu penghuninya kalau ikuti garis ini!")));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Mungkin bisa ketemu penghuninya kalau ikuti garis ini!"))));
         um.AddUIAction(() => { m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
@@ -112,8 +112,8 @@ public class EntityEvent_Level1_1 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Angry); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SWITCH, "STOPPPPPP!!", doorSwitch.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SWITCH, "SAYA PENJAGA PINTU INI DAN ANDA TIDAK BOLEH LEWAT SINI!!", doorSwitch.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SWITCH, "STOPPPPPP!!", door.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SWITCH, "SAYA PENJAGA PINTU INI DAN ANDA TIDAK BOLEH LEWAT SINI!!", door.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "KECUALI ANDA MEMPUNYAI PASSWORD!!!!!!!!!!", door.voicePack),
                 new DialogueChoice[3] {
                     new DialogueChoice(passwordChoice, () => {
