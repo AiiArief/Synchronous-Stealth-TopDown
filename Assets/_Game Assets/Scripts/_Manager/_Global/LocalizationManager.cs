@@ -29,7 +29,7 @@ public class LocalizationManager : MonoBehaviour
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
     public static readonly LocalizationString TUTORIAL_INTERACT = new LocalizationString("Hit any object to interact", "Tabrak objek apapun untuk berinteraksi");
     public static readonly LocalizationString TUTORIAL_RUN = new LocalizationString("Hold + move to run", "Tahan + gerak untuk lari");
-    public static readonly LocalizationString TUTORIAL_SKIP = new LocalizationString("Double tap to skip turn", "Tekan dua kali untuk lewati giliran");
+    public static readonly LocalizationString TUTORIAL_SKIP = new LocalizationString("Rapidly tap to skip turn", "Tekan berkali-kali untuk lewati giliran");
     public static readonly LocalizationString TUTORIAL_NEXT = new LocalizationString("Next", "Lanjut");
     public static readonly LocalizationString TUTORIAL_SELECT = new LocalizationString("Select", "Pilih");
     public static readonly LocalizationString TUTORIAL_CHECKPOINT = new LocalizationString("Checkpoint!", "Checkpoint!");
