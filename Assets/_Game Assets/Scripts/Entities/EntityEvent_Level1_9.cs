@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class EntityEvent_Level1_9 : EntityEvent
 {
-    public void PasswordTriggerEvent_3()
+    public void PasswordTriggerEvent_2()
     {
-        int eventId = 3;
+        int eventId = 2;
         string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
 
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));

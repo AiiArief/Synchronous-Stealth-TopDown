@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class EntityEvent_Level1_6 : EntityEvent
 {
-    [SerializeField] CutsceneCamera m_passwordTriggerEvent_2_Camera;
-    public void PasswordTriggerEvent_2(EntityCharacterNPC2D1BitSwitch doorSwitch)
+    [SerializeField] CutsceneCamera m_passwordTriggerEvent_3_Camera;
+    public void PasswordTriggerEvent_3(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
-        int eventId = 2;
+        int eventId = 3;
         string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
 
-        m_passwordTriggerEvent_2_Camera.UseCamera();
+        m_passwordTriggerEvent_3_Camera.UseCamera();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); player.animator.SetInteger("expression", 2); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
@@ -53,17 +53,17 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
         um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
-        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_passwordTriggerEvent_2_Camera.ReleaseCamera(); um.NextAction(); });
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_passwordTriggerEvent_3_Camera.ReleaseCamera(); um.NextAction(); });
     }
 
-    [SerializeField] CutsceneCamera m_openDoorEvent_password_3_Camera;
-    public void OpenDoorEvent_Password_3(EntityCharacterNPC2D1BitDoor door)
+    [SerializeField] CutsceneCamera m_openDoorEvent_password_2_Camera;
+    public void OpenDoorEvent_Password_2(EntityCharacterNPC2D1BitDoor door)
     {
-        string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_3";
+        string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_2";
         bool haveKey = door.CheckPasswordWithKey(key);
         LocalizationString passwordChoice = haveKey ? LocalizationManager.GENERIC_PASSWORD_CHOICES[1] : LocalizationManager.GENERIC_PASSWORD_CHOICES[0];
 
-        m_openDoorEvent_password_3_Camera.UseCamera();
+        m_openDoorEvent_password_2_Camera.UseCamera();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
@@ -87,25 +87,25 @@ public class EntityEvent_Level1_6 : EntityEvent
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
                             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
-                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
+                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_2_Camera.ReleaseCamera(); um.NextAction(); });
                         },
                         () => {
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Tidak akan ada yang bisa melewati kami!", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
-                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
+                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_2_Camera.ReleaseCamera(); um.NextAction(); });
                         });
                     }),
                     new DialogueChoice(LocalizationManager.GENERIC_PASSWORD_CHOICES[2], () => {
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
-                        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
+                        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_2_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                 })));
     }
 
-    [SerializeField] CutsceneCamera m_openDoorEvent_password_4_Camera;
-    public void OpenDoorEvent_Password_4(EntityCharacterNPC2D1BitDoor door)
+    [SerializeField] CutsceneCamera m_openDoorEvent_password_3_Camera;
+    public void OpenDoorEvent_Password_3(EntityCharacterNPC2D1BitDoor door)
     {
-        m_openDoorEvent_password_4_Camera.UseCamera();
+        m_openDoorEvent_password_3_Camera.UseCamera();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
@@ -130,7 +130,7 @@ public class EntityEvent_Level1_6 : EntityEvent
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
                             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
-                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_4_Camera.ReleaseCamera(); um.NextAction(); });
+                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
                         },
                         () => {
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
@@ -138,12 +138,12 @@ public class EntityEvent_Level1_6 : EntityEvent
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Ini jalan cuma buat hardcore gammerrzzz.", door.voicePack))));
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Cari jalan lain gih, ini jalan cuma shortcut.", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
-                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_4_Camera.ReleaseCamera(); um.NextAction(); });
+                            um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
                         });
                     }),
                     new DialogueChoice(LocalizationManager.GENERIC_PASSWORD_CHOICES[2], () => {
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
-                        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_4_Camera.ReleaseCamera(); um.NextAction(); });
+                        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                 })));
     }

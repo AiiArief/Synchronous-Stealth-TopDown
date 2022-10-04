@@ -68,6 +68,8 @@ public class EntityEvent_Generic : EntityEvent
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
+    // tambah observatory, kasih password.
+    // cek dulu lagi di area apa
     public void ElefataaEvent_Generic(EntityCharacterNPC2D1BitSwitch doorSwitch, LocalizationString passwordChoice, CutsceneCamera m_elevatorEvent_Camera)
     {
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Mau naikki aku ke mana?", doorSwitch.voicePack),
