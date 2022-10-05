@@ -14134,14 +14134,14 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 20, y: 17}
     m_realWorldPos: {x: -30, y: 30, z: -33}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
     fCost: 0
   - m_gridPos: {x: 20, y: 18}
     m_realWorldPos: {x: -30, y: 30, z: -32}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
