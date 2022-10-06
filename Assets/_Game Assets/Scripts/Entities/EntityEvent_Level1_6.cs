@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class EntityEvent_Level1_6 : EntityEvent
 {
+    // ceritanya dikasih challenge melewati labirin kebakaran
+    // butuh fungsi abis trigger trap
+    // kalo berhasil melewati labirin bakalan dikasih password buat naik ke observatory
     [SerializeField] CutsceneCamera m_passwordTriggerEvent_3_Camera;
     public void PasswordTriggerEvent_3(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
@@ -68,8 +71,8 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Angry); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Saya akan melindungi Elefataa dengan segala hal!!!", door.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Anda tidak akan pernah menemukan passwordnya dan anda tidak akan pernah melewati jalan ini!", door.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "SAYA AKAN MELINDUNGI ELEFATAA DENGAN SEGALA HAL!!!", door.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "ANDA TIDAK AKAN PERNAH MENEMUKAN PASSWORDNYA DAN ANDA TIDAK AKAN PERNAH MELEWATI JALAN INI!!!!", door.voicePack),
                 new DialogueChoice[2] {
                     new DialogueChoice(passwordChoice, () => {
                         door.EnterPassword(new PasswordChoice[] {
@@ -80,17 +83,20 @@ public class EntityEvent_Level1_6 : EntityEvent
                         () => {
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Hello); um.NextAction(); });
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Oh, ternyata tidak apa-apa.", door.voicePack))));
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Anda terbukti bukan spy kok.", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Anda terbukti bukan bahaya kok.", door.voicePack))));
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Silahkan lewat!", door.voicePack))));
-                            um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Angry); um.NextAction(); });
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Asal jangan ke lantai paling atas ya, karena itu lantainya pemimpin kami yang maha hebat.", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "...", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Oiya, yang setel password ini nitip pesan ke saya untuk siapapun yang berhasil lewat sini.", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Jangan ke lantai Observatory ya, karena itu tempat Havva ditawan.", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
                             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
                             um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_2_Camera.ReleaseCamera(); um.NextAction(); });
                         },
                         () => {
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Tidak akan ada yang bisa melewati kami!", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "TIDAK AKAN ADA YANG BISA MELEWATI SAYA!!!!", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_2_Camera.ReleaseCamera(); um.NextAction(); });
                         });
@@ -110,7 +116,9 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Hello); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Enggak mungkin lu bisa lewatin gua, kecuali lu cari guide di internet atau baca readme.pdf haha!", door.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Jangan lewat sini, karena ini jalan hanya untuk Hardcore Gamerzzzz.", door.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Silahkan cari jalan lain, karena jalan ini hanya shortcut ke Havva.", door.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Dan Anda hanya bisa menemukan passwordnya di internet.", door.voicePack),
                 new DialogueChoice[2] {
                     new DialogueChoice(LocalizationManager.GENERIC_PASSWORD_CHOICES[0], () => {
                         door.EnterPassword(new PasswordChoice[] {
@@ -126,7 +134,9 @@ public class EntityEvent_Level1_6 : EntityEvent
                         },
                         () => {
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "GGWP!", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "GGWP Gamers!", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Namun, ini belum selesai!", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Semoga saja Anda bisa melewati challenge selanjutnya!", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
                             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
@@ -134,9 +144,8 @@ public class EntityEvent_Level1_6 : EntityEvent
                         },
                         () => {
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Tuhkan, ga mungkin lewatin gua.", door.voicePack))));
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Ini jalan cuma buat hardcore gammerrzzz.", door.voicePack))));
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Cari jalan lain gih, ini jalan cuma shortcut.", door.voicePack))));
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Tuhkan, tidak mungkin lewat sini.", door.voicePack))));\
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Silahkan cari jalan lain.", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });
                         });
@@ -176,9 +185,8 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Lu lagi berada di shortcut khusus untuk gamerz yang hardcore.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Gua ucapkan selamat bisa nembus disini.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Dasar no life, antara lu searching di internet, baca readme.pdf atau ga nyoba entah berapa banyak kemungkinannya.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Anyway, bener jawabannya; robotnya dipancing dulu baru nanti nyelip.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Gua ucapkan selamat bisa sampai disini.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Bener jawabannya; robotnya dipancing dulu baru nanti nyelip.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERLOGDIARY, "Tadinya mau pake mekanik kayak gitu di awal game, tapi pada kesusahan wkwk.", em.genericEvent.voicePack))));
 
         um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); um.NextAction(); });
