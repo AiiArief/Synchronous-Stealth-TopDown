@@ -9,13 +9,27 @@ public class EntityEvent_Level1_6 : EntityEvent
     // ceritanya dikasih challenge melewati labirin kebakaran
     // butuh fungsi abis trigger trap
     // kalo berhasil melewati labirin bakalan dikasih password buat naik ke observatory
-    [SerializeField] CutsceneCamera m_passwordTriggerEvent_3_Camera;
-    public void PasswordTriggerEvent_3(EntityCharacterNPC2D1BitSwitch doorSwitch)
+    public void TrappedEvent()
+    {
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
+        um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Selamat, anda kejebak.\""))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Goodluck kabur dari sini.\""))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
+    }
+
+
+    [SerializeField] CutsceneCamera m_trappedEvent_win_Camera;
+    public void TrappedEvent_Win(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
         int eventId = 3;
         string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
 
-        m_passwordTriggerEvent_3_Camera.UseCamera();
+        m_trappedEvent_win_Camera.UseCamera();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); player.animator.SetInteger("expression", 2); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
@@ -56,7 +70,7 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
         um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
-        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_passwordTriggerEvent_3_Camera.ReleaseCamera(); um.NextAction(); });
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_trappedEvent_win_Camera.ReleaseCamera(); um.NextAction(); });
     }
 
     [SerializeField] CutsceneCamera m_openDoorEvent_password_2_Camera;
@@ -144,7 +158,7 @@ public class EntityEvent_Level1_6 : EntityEvent
                         },
                         () => {
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
-                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Tuhkan, tidak mungkin lewat sini.", door.voicePack))));\
+                            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Tuhkan, tidak mungkin lewat sini.", door.voicePack))));
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_RGBGAMINGDOOR, "Silahkan cari jalan lain.", door.voicePack))));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                             um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_3_Camera.ReleaseCamera(); um.NextAction(); });

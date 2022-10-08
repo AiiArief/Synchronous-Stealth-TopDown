@@ -17,6 +17,8 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
     private IEnumerator _ReflectionAPIHandler()
     {
+        m_probe.RenderProbe();
+
         while (true)
         {
             yield return new WaitForEndOfFrame();
@@ -31,7 +33,7 @@ public class ReflectionProbeOptimizer : MonoBehaviour
                 int playerCloseEnough = _CheckPlayerIsCloseEnough();
 
                 bool isClose = qualityLevel == 3 && playerCloseEnough == 2;
-                m_probe.timeSlicingMode = (isClose) ? ReflectionProbeTimeSlicingMode.NoTimeSlicing : ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
+                //m_probe.timeSlicingMode = (isClose) ? ReflectionProbeTimeSlicingMode.NoTimeSlicing : ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
 
                 if (playerCloseEnough > 0)
                     m_probe.RenderProbe();

@@ -202,17 +202,17 @@ MonoBehaviour:
     m_scenes:
     - Level 0
     m_physicsModes: ffffffff
-  - m_sceneName: Havva's Kingdom - Noble Area
+  - m_sceneName: Havvatopia - Uptown
     m_scenes:
     - Level 1
     - Level 1-Static 1
-    - Havva Kingdom
+    - Havvatopia
     m_physicsModes: ffffffff0000000000000000
-  - m_sceneName: Havva's Kingdom - Observatory
+  - m_sceneName: Havvatopia - Observatory
     m_scenes:
     - Level 2
     - Level 2-Static 1
-    - Havva Kingdom
+    - Havvatopia
     m_physicsModes: ffffffff0000000000000000
 --- !u!1 &3470207479386773933
 GameObject:

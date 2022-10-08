@@ -113,6 +113,23 @@ public class EntityManager : MonoBehaviour
         return true;
     }
 
+    public void DebugProcessInputCheckEntitiesHasDone()
+    {
+        for (int i = 0; i < entities.Count; i++)
+        {
+            if (entities[i].isUpdateAble && !entities[i].CheckAllActionHasDone())
+            {
+                for (int j = 0; j < entities[i].storedActions.Count; j++)
+                {
+                    if (!entities[i].storedActions[j].actionHasDone)
+                    {
+                        Debug.LogError("Entity has done : " + entities[i] + " - " + entities[i].storedActions[j]);
+                    }
+                }
+            }
+        }
+    }
+
     protected virtual void _AssignEntities()
     {
         foreach (Transform child in transform)

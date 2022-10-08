@@ -2756,7 +2756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3830602794451444936, guid: c89485593e0e45c48b521bee5db9ba38,
         type: 3}
-      propertyPath: m_interactDirection.m_left
+      propertyPath: m_interactDirection.m_right
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3830602794451444936, guid: c89485593e0e45c48b521bee5db9ba38,
@@ -2787,7 +2787,7 @@ PrefabInstance:
     - target: {fileID: 3830602794451444936, guid: c89485593e0e45c48b521bee5db9ba38,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3830602794451444936, guid: c89485593e0e45c48b521bee5db9ba38,
         type: 3}

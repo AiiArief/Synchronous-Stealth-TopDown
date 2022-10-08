@@ -69,19 +69,26 @@ public class EntityEvent_Generic : EntityEvent
     }
 
     // tambah observatory, kasih password.
-    // cek dulu lagi di area apa
+    // cek lagi dimana, kalo di tempat itu ganti dialog
     public void ElefataaEvent_Generic(EntityCharacterNPC2D1BitSwitch doorSwitch, LocalizationString passwordChoice, CutsceneCamera m_elevatorEvent_Camera)
     {
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Mau naikki aku ke mana?", doorSwitch.voicePack),
-            new DialogueChoice[3] {
-                new DialogueChoice("Lantai 2 - Area Bangsawan.", () => {
+            new DialogueChoice[5] {
+                new DialogueChoice("Havvatopia - Observatory", () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
                     um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
                     um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[3], true));
                 }),
-                new DialogueChoice("Lantai 1 - Area Utama & Pasar.", () => {
+                new DialogueChoice("Havvatopia - Uptown", () => {
+                    um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
+                    um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                    um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
+                    um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[2], true));
+                }),
+                new DialogueChoice("Havvatopia - Downtown", () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Cry); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "T-tapi buat kesana kamu butuh password...", doorSwitch.voicePack),
                     new DialogueChoice[2] {
@@ -114,7 +121,13 @@ public class EntityEvent_Generic : EntityEvent
                         }),
                     })));
                 }),
-                new DialogueChoice("Gajadi.", () => {
+                new DialogueChoice("Havvatopia - Engine Room / Underground", () => {
+                    um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Cry); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "M-Maaf, ada kesalahan teknis jadi tidak bisa kesana...", doorSwitch.voicePack))));
+                    um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
+                    um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_elevatorEvent_Camera.ReleaseCamera(); um.NextAction(); });
+                }),
+                new DialogueChoice("Gajadi", () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_elevatorEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),

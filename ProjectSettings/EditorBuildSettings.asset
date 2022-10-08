@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/_Game Assets/Scenes/Level 0.unity
     guid: b9fc228b58b62274eac1d8a9f02b3a38
   - enabled: 1
+    path: Assets/_Game Assets/Scenes/Havvatopia.unity
+    guid: eb44729c4e816a442a0505ca6b201586
+  - enabled: 1
     path: Assets/_Game Assets/Scenes/Level 1.unity
     guid: e951864649556554494fa5d2589a70a1
   - enabled: 1

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PhaseProcessInput : MonoBehaviour
 {
+    [SerializeField] bool m_debugMode = false;
+
     [SerializeField] float m_minimumTimeBeforeNextPhase = 0.25f;
     public float minimumTimeBeforeNextPhase { get { return m_minimumTimeBeforeNextPhase; } }
     public float currentTimeBeforeNextPhase { get; private set; } = 0.0f;
@@ -26,6 +28,13 @@ public class PhaseProcessInput : MonoBehaviour
 
         currentTimeBeforeNextPhase += Time.deltaTime;
         bool timeHasPassed = currentTimeBeforeNextPhase >= m_minimumTimeBeforeNextPhase;
+
+        if(m_debugMode && timeHasPassed)
+        {
+            GameManager.Instance.playerManager.DebugProcessInputCheckEntitiesHasDone();
+            GameManager.Instance.npcManager.DebugProcessInputCheckEntitiesHasDone();
+            GameManager.Instance.eventManager.DebugProcessInputCheckEntitiesHasDone();
+        }
 
         if (timeHasPassed && playerManagerHasDoneProcess && enemyManagerHasDoneProcess && eventManagerHasDoneProcess)
         {

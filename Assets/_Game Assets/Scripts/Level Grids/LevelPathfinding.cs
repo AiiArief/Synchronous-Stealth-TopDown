@@ -52,7 +52,7 @@ public class LevelPathfinding
     public LevelGridNode SimpleFindPath()
     {
         Vector3 dir = (endNode.realWorldPos - startNode.realWorldPos).normalized;
-        Vector3 nextPos = new Vector3(Mathf.Round(dir.x), 0.0f, Mathf.Round(dir.z));
+        Vector3 nextPos = new Vector3(Mathf.Round(dir.x), 0.0f, (Mathf.Round(dir.x) != 0) ? 0.0f : Mathf.Round(dir.z) );
         return grid.ConvertPosToNode(startNode.realWorldPos + nextPos);
     }
 

@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class EntityEvent_Level1_9 : EntityEvent
 {
-    // ceritanya denger suara dari masa lalu
-    // ada 3d sphere robot yang disuruh buat setel password 
-    // kejadian tepat setelah havvatopia diambil alih
-    // 2d humanoid pada kebingungan, wifi mati, havvatopia tiba-tiba gerak
-    // 3d sphere robotnya kayak diambil alih oleh sesuatu
     public void PasswordTriggerEvent_2()
     {
         int eventId = 2;

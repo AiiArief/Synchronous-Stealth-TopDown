@@ -39614,7 +39614,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 56, y: 57}
     m_realWorldPos: {x: 6, y: 30, z: 7}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -39642,7 +39642,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 56, y: 61}
     m_realWorldPos: {x: 6, y: 30, z: 11}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -40300,7 +40300,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 57, y: 55}
     m_realWorldPos: {x: 7, y: 30, z: 5}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -40328,7 +40328,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 57, y: 59}
     m_realWorldPos: {x: 7, y: 30, z: 9}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -40342,7 +40342,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 57, y: 61}
     m_realWorldPos: {x: 7, y: 30, z: 11}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -41000,7 +41000,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 58, y: 55}
     m_realWorldPos: {x: 8, y: 30, z: 5}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -41042,7 +41042,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 58, y: 61}
     m_realWorldPos: {x: 8, y: 30, z: 11}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -41700,7 +41700,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 59, y: 55}
     m_realWorldPos: {x: 9, y: 30, z: 5}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -41742,7 +41742,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 59, y: 61}
     m_realWorldPos: {x: 9, y: 30, z: 11}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -42400,7 +42400,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 60, y: 55}
     m_realWorldPos: {x: 10, y: 30, z: 5}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -42435,14 +42435,14 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 60, y: 60}
     m_realWorldPos: {x: 10, y: 30, z: 10}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
     fCost: 0
   - m_gridPos: {x: 60, y: 61}
     m_realWorldPos: {x: 10, y: 30, z: 11}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -43093,14 +43093,14 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 61, y: 54}
     m_realWorldPos: {x: 11, y: 30, z: 4}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
     fCost: 0
   - m_gridPos: {x: 61, y: 55}
     m_realWorldPos: {x: 11, y: 30, z: 5}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -43128,7 +43128,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 61, y: 59}
     m_realWorldPos: {x: 11, y: 30, z: 9}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -43142,7 +43142,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 61, y: 61}
     m_realWorldPos: {x: 11, y: 30, z: 11}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -43814,7 +43814,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 62, y: 57}
     m_realWorldPos: {x: 12, y: 30, z: 7}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
