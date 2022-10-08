@@ -41,13 +41,13 @@ public class EntityEvent_Level1_1 : EntityEvent
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz...", door.voicePack))));
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Selamat datang di... Havvatopia...", door.voicePack))));
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Sekarang jam 2 pagi dan saat ini di Havvatopia sedang tidak ada internet dan mati lampu...", door.voicePack)))); 
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Katanya sih Havvatopia lagi dibajak... tapi... aku cuma mau tidur... zzz...", door.voicePack))));       
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Katanya sih Havvatopia lagi keadaan darurat... tapi... aku cuma mau tidur... zzz...", door.voicePack))));       
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         }
 
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz... Adakah... yang bisa dibantu...", door.voicePack),
-                new DialogueChoice[2] {
-                    new DialogueChoice("Boleh lewat ga? Dan Havva sedang dimana ya?", () => {
+                new DialogueChoice[3] {
+                    new DialogueChoice("Havva sedang dimana ya?", () => {
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz...", door.voicePack))));
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Sebelum mati lampu Havva berada di Observatory, lantai paling atas...", door.voicePack))));
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Silahkan pergi bersama Elefataa ke sana...", door.voicePack))));
@@ -58,6 +58,9 @@ public class EntityEvent_Level1_1 : EntityEvent
                         um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
                         um.AddUIAction(() => { m_openDoorEvent_1_Camera.UseCamera(0); um.NextAction(); });
                         um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
+                        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
+                    }),
+                    new DialogueChoice("Boleh lewat ga?", () => {
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Oiya ini... silahkan lewat...", door.voicePack))));
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });

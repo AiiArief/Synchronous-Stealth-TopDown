@@ -95,14 +95,9 @@ public class LocalizationManager : MonoBehaviour
         "(2D 1 Bit) Elefataa"
     );
 
-    public static readonly LocalizationString CHARACTER_BOBAKOTAK = new LocalizationString(
-        "(2D Humanoid) Boba Kotak",
-        "(2D Humanoid) Boba Kotak"
-    );
-
-    public static readonly LocalizationString CHARACTER_BOARDDIRECTORS = new LocalizationString(
-        "Board Directors",
-        "Dewan Direksi"
+    public static readonly LocalizationString CHARACTER_2D1BIT_PASSWORDPROTECTOR = new LocalizationString(
+        "(2D 1 Bit) Password Protector",
+        "(2D 1 Bit) Penjaga Password"
     );
 
     #endregion

@@ -6,70 +6,76 @@ using UnityEngine.SceneManagement;
 
 public class EntityEvent_Level1_6 : EntityEvent
 {
-    // ceritanya dikasih challenge melewati labirin kebakaran
-    // butuh fungsi abis trigger trap
-    // kalo berhasil melewati labirin bakalan dikasih password buat naik ke observatory
-    public void TrappedEvent()
+    [SerializeField] CutsceneCamera m_trappedEvent_Camera;
+    public void TrappedEvent(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Selamat, anda kejebak.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Goodluck kabur dari sini.\""))));
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
+        um.AddUIAction(() => { player.storedActions.Add(new StoredActionTurn(player, 90, false)); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
+        // nyalain api disini
+        um.AddUIAction(() => { m_trappedEvent_Camera.UseCamera(); um.NextAction(); }); 
+        um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Angry); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "HAHAHAHAHAHA!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SELAMAT DATANG DI PERANGKAP API YANG SAYA BUAT!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "UNTUK KABUR DARI PERANGKAP INI, ANDA HARUS MEMECAHKAN TEKA-TEKI LABIRIN DI RUANGAN INI!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "JIKA ANDA BERHASIL KABUR DARI PERANGKAP INI, ANDA AKAN SAYA BERI HADIAH!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "ENTAH KENAPA HADIAHNYA YAITU BERUPA PASSWORD UNTUK KE OBSERVATORY!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "NAMUN JIKA ANDA GAGAL, ANDA AKAN TERBAKAR DISINI!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "HAHAHAHAHAHA, SELAMAT MENCOBA!"))));        
+        um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Apinya ga ada panas-panasnya..."))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_trappedEvent_Camera.ReleaseCamera(); um.NextAction(); });
     }
 
-    [SerializeField] CutsceneCamera m_trappedEvent_win_Camera;
+    // selamat bisa lewat
+    // kasih password
+    // aneh, kenapa butuh captcha spy, spy kan cuma mitos
+    // kasih tau yang ngasih password 3d headphone sphere robot kesurupan gitu
     public void TrappedEvent_Win(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
         int eventId = 3;
         string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
 
-        m_trappedEvent_win_Camera.UseCamera();
+        m_trappedEvent_Camera.UseCamera();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
-        um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); player.animator.SetInteger("expression", 2); um.NextAction(); });
+        um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_TRIGGERED))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Sayang~ Aku hamil.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Bodo.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"...\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Ya abis gimana, disini kan ga ada cuti buat cewek hamil.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Untung ga kena phk kayak cewek dari departement sebelah gegara hamil.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Mentang-mentang Boba Kotak kelasnya 2D Humanoid yang ga bisa hamil, tapi ya ga gini juga sih...\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"OEEEEE... OEEEEEE....\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Permisi atasan, bayi saya nangis dan butuh susu.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Saya izin untuk menyusui bayi saya sebentar ya?\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"ALERT ALERT!\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"PEKERJA TIDAK BOLEH MENINGGALKAN KERJAANNYA!\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"PERSENTASE PRIA WANITA DAN NEUTRAL DI PERUSAHAAN UBIVISION YAITU 60%, 10%, DAN 30%.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"ITULAH SEBABNYA WANITA TIDAK BERHAK ISTIRAHAT UNTUK MENYUSUI KETIKA KERJA.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"...\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Ya-yaudah menyusui disini deh...\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Eh, tinggi dan beratnya Boba Kotak berapaan sih?\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Lu nanya gituan buat apaan?\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Oh buat referensi gambar ya.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Kadang gua lupa kalo kita kerja di departement Artist wkwk.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Tinggi Pak Boba Kotak 169Cm beratnya 69kg.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Tapi anjirlah Pak Boba Kotak.\""))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"Masa artist di perusahaan ini engga di cantumin namanya di game, ckck.\""))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-
-        um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); player.animator.SetInteger("expression", 0); um.NextAction(); });
-        //um.AddUIAction(() => { em.memoryTriggerEvents[eventId - 1].SetIsAvailable(false); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
         um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
+        // matiin api disini
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
+        um.AddUIAction(() => { player.storedActions.Add(new StoredActionTurn(player, 90, false)); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
+        um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SELAMAT, ANDA BERHASIL MELEWATI RINTANGAN INI!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SESUAI JANJI, SAYA AKAN MEMBERIKAN PASSWORD UNTUK KE OBSERVATORY!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "PASSWORDNYA ADALAH 3 3 3!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SERTA, ISI \"SAYA BUKAN SPY\" UNTUK CAPTCHANYA AGAR DIIZINKAN LEWAT OLEH ELEFATAA!"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Tapi aneh dah.")))); 
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Spy kan cuma mitos, kenapa repot-repot pakai captcha ya.")))); 
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Yang nitip password disini juga aneh banget, dia kayak kesurupan gitu.")))); 
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Tadinya mau Saya tanya kenapa, tapi sayangnya dia 3D Headphone Sphere Robot, ga bisa diajak ngobrol kan tuh kelas.")))); 
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Jadi ya yaudahlah, saya hanya melakukan kerjaan sebaik mungkin.")))); 
+        um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
+
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
-        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_trappedEvent_win_Camera.ReleaseCamera(); um.NextAction(); });
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_trappedEvent_Camera.ReleaseCamera(); um.NextAction(); });
     }
 
     [SerializeField] CutsceneCamera m_openDoorEvent_password_2_Camera;
