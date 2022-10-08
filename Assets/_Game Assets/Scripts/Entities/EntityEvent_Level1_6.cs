@@ -22,7 +22,6 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
-
     [SerializeField] CutsceneCamera m_trappedEvent_win_Camera;
     public void TrappedEvent_Win(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
@@ -65,7 +64,7 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
 
         um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); player.animator.SetInteger("expression", 0); um.NextAction(); });
-        um.AddUIAction(() => { em.memoryTriggerEvents[eventId - 1].SetIsAvailable(false); um.NextAction(); });
+        //um.AddUIAction(() => { em.memoryTriggerEvents[eventId - 1].SetIsAvailable(false); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
         um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
