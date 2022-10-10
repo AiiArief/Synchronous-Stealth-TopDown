@@ -192,7 +192,6 @@ public class EntityEvent_Level1_6 : EntityEvent
         em.genericEvent.ElefataaEvent_Generic(doorSwitch, passwordChoice, m_elevatorEvent_Camera);
     }
     
-
     public void DevlogDiaryTriggerEvent_6()
     {
         int eventId = 6;
