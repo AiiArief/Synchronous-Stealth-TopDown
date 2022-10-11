@@ -190,6 +190,8 @@ MonoBehaviour:
   m_music_teddyBearWaltz: {fileID: 8300000, guid: 850f7ac3b6a07654fb799e71cf52dd4e,
     type: 3}
   m_music_spyGlass: {fileID: 8300000, guid: a0adf027fcde4844b9b780ed691f6fb3, type: 3}
+  m_music_fireBrand: {fileID: 8300000, guid: 163bac4e48cf02946b3a6e1e5be9f792, type: 3}
+  m_music_spyGlass_havva: {fileID: 0}
   m_passwordTrue: {fileID: 8300000, guid: b83c8300bd3913840920682199e3cc90, type: 3}
   m_passwordWrong: {fileID: 8300000, guid: 239273adb3276e54989fde066c7fc063, type: 3}
   m_tikTok: {fileID: 8300000, guid: d64ee65b85a762a44bdf47a4fd2b3fe0, type: 3}

@@ -29,6 +29,12 @@ public class DatabaseManager : MonoBehaviour
     [SerializeField] AudioClip m_music_spyGlass;
     public AudioClip music_spyGlass { get { return m_music_spyGlass; } }
 
+    [SerializeField] AudioClip m_music_fireBrand;
+    public AudioClip music_fireBrand { get { return m_music_fireBrand; } }
+
+    [SerializeField] AudioClip m_music_spyGlass_havva;
+    public AudioClip music_spyGlass_havva { get { return m_music_spyGlass_havva; } }
+
     [SerializeField] AudioClip m_passwordTrue;
     public AudioClip passwordTrue { get { return m_passwordTrue; } }
 

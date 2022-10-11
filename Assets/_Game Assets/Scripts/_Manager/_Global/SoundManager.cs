@@ -20,14 +20,19 @@ public class SoundManager : MonoBehaviour
         audioMixer.SetFloat("vol", (isOn) ? -80.0f : 0.0f);
     }
 
-    public void PlayMusic(int music)
+    public void PlayMusic(int music, bool stopSamePlayedMusic = true)
     {
         var library = new Dictionary<int, AudioClip>()
         {
             [0] = GlobalGameManager.Instance.databaseManager.music_FrostWaltz,
             [1] = GlobalGameManager.Instance.databaseManager.music_teddyBearWaltz,
             [2] = GlobalGameManager.Instance.databaseManager.music_spyGlass,
-        };
+            [3] = GlobalGameManager.Instance.databaseManager.music_fireBrand,
+            [4] = GlobalGameManager.Instance.databaseManager.music_spyGlass_havva,
+        }; 
+        
+        if (musicSource.isPlaying && musicSource.clip == library[music] && !stopSamePlayedMusic)
+            return;
 
         musicSource.clip = library[music];
         musicSource.Play();

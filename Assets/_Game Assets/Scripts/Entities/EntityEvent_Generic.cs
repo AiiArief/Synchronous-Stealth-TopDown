@@ -83,7 +83,7 @@ public class EntityEvent_Generic : EntityEvent
                                 new PasswordChoice(2, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[0], doorSwitch.voicePack)),
                                 new PasswordChoice(2, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[1], doorSwitch.voicePack)),
                                 new PasswordChoice(2, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[2], doorSwitch.voicePack)),
-                                new PasswordChoice(2, { 
+                                new PasswordChoice(2, new LocalizationString[3] {
                                     new LocalizationString("I'm not a employee.", "Saya bukan karyawan."),
                                     new LocalizationString("I'm not a robot.", "Saya bukan robot."),
                                     new LocalizationString("I'm not a spy.", "Saya bukan spy.") } , 

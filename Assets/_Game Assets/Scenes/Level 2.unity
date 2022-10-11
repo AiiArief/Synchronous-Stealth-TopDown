@@ -189,11 +189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1583384307}
+      objectReference: {fileID: 57876814}
     - target: {fileID: 3830602794451444936, guid: 0318e0d6367670748be1e9c5e9cd8be4,
         type: 3}
       propertyPath: m_interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: EntityCharacterNPC2DHumanoidBobaKotakLaptop, Assembly-CSharp
+      value: EntityCharacterNPC2DHumanoidLaptop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5067170563909855552, guid: 0318e0d6367670748be1e9c5e9cd8be4,
         type: 3}
@@ -258,7 +258,7 @@ PrefabInstance:
     - target: {fileID: 6038730667185261670, guid: 0318e0d6367670748be1e9c5e9cd8be4,
         type: 3}
       propertyPath: m_Name
-      value: NPC Havva Laptop
+      value: NPC Laptop - Havva
       objectReference: {fileID: 0}
     - target: {fileID: 7063263752133546725, guid: 0318e0d6367670748be1e9c5e9cd8be4,
         type: 3}
@@ -272,6 +272,18 @@ PrefabInstance:
       objectReference: {fileID: 333357847}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0318e0d6367670748be1e9c5e9cd8be4, type: 3}
+--- !u!114 &57876814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8843744175362299804, guid: 0318e0d6367670748be1e9c5e9cd8be4,
+    type: 3}
+  m_PrefabInstance: {fileID: 57876813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff0eeafe654dcf48928536900ec23e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &88340556
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +775,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1270
+  m_Name: pb_Mesh-75296
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2311,7 +2323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1252
+  m_Name: pb_Mesh-75272
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2889,7 +2901,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-105794
+  m_Name: pb_Mesh-76970
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3234,18 +3246,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1ad3147df3a63545896ce8f3cc59959, type: 3}
---- !u!114 &1583384307 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1251831118860541804, guid: 0318e0d6367670748be1e9c5e9cd8be4,
-    type: 3}
-  m_PrefabInstance: {fileID: 57876813}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db46c2cd0ec7194285e9333bcef1368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1592142280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3871,7 +3871,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1446
+  m_Name: pb_Mesh-75476
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

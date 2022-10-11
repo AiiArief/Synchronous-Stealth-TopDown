@@ -90,12 +90,12 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
+  - {x: -0.1, y: 0, z: 0.01}
   - {x: -0.1, y: 0.15, z: 0.01}
   - {x: 0.1, y: 0.15, z: 0.01}
   - {x: 0.1, y: -0.15, z: 0.01}
-  - {x: -0.1, y: -0.15, z: 0.01}
-  - {x: -0.1, y: 0.175, z: 0.01}
-  - {x: -0.1, y: 0, z: 0.01}
+  - {x: -0.105, y: -0.16, z: 0.01}
+  - {x: -0.107, y: 0, z: 0.01}
   - {x: -0.79, y: 0, z: 0.01}
   m_Parameters:
     serializedVersion: 3
@@ -675,6 +675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846764696743125782, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
         type: 3}

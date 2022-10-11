@@ -7,22 +7,23 @@ using UnityEngine.SceneManagement;
 public class EntityEvent_Level1_6 : EntityEvent
 {
     [SerializeField] CutsceneCamera m_trappedEvent_Camera;
-    [SerializeField] EntityCharacterNPC2D1BitSwitch trap_doorSwitch;
-    // tambah fireplace kah disini?
+    [SerializeField] EntityCharacterNPC2D1BitSwitch m_trap_doorSwitch;
     public void TrappedEvent(EntityCharacterNPC2D1BitSwitch doorSwitch)
     {
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
+        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(3); um.NextAction(); });
+        um.AddUIAction(() => { m_trappedEvent_Camera.UseCamera(); um.NextAction(); });
+        um.AddUIAction(() => { m_trap_doorSwitch.SetCurrentIsOn(true); m_trap_doorSwitch.SetExpression(Expression_2D1Bit.Angry); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { player.storedActions.Add(new StoredActionTurn(player, 90, false)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
-        // nyalain api disini
-        um.AddUIAction(() => { m_trappedEvent_Camera.UseCamera(); um.NextAction(); }); 
-        um.AddUIAction(() => { trap_doorSwitch.SetExpression(Expression_2D1Bit.Angry); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "HAHAHAHAHAHA!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SELAMAT DATANG DI PERANGKAP API YANG SAYA BUAT!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "UNTUK KABUR DARI PERANGKAP INI, ANDA HARUS MEMECAHKAN TEKA-TEKI LABIRIN DI RUANGAN INI!"))));
@@ -30,7 +31,7 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "ENTAH KENAPA HADIAHNYA YAITU BERUPA PASSWORD UNTUK KE OBSERVATORY!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "NAMUN JIKA ANDA GAGAL, ANDA AKAN TERBAKAR DISINI!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "HAHAHAHAHAHA, SELAMAT MENCOBA!"))));        
-        um.AddUIAction(() => { trap_doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
+        um.AddUIAction(() => { m_trap_doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Apinya ga ada panas-panasnya..."))));
@@ -50,11 +51,11 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
-        // matiin api disini
+        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { player.storedActions.Add(new StoredActionTurn(player, 90, false)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
-        um.AddUIAction(() => { trap_doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
+        um.AddUIAction(() => { m_trap_doorSwitch.SetCurrentIsOn(false); m_trap_doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SELAMAT, ANDA BERHASIL MELEWATI RINTANGAN INI!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "SESUAI JANJI, SAYA AKAN MEMBERIKAN PASSWORD UNTUK KE OBSERVATORY!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "PASSWORDNYA ADALAH 3 3 3!"))));
@@ -66,15 +67,16 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => { trap_doorSwitch.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
+        um.AddUIAction(() => { m_trap_doorSwitch.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Tapi aneh dah.")))); 
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Spy kan cuma mitos, kenapa repot-repot pakai captcha ya.")))); 
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Yang nitip password disini juga aneh banget, dia kayak kesurupan gitu.")))); 
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Tadinya mau Saya tanya kenapa, tapi sayangnya dia 3D Headphone Sphere Robot, ga bisa diajak ngobrol kan tuh kelas.")))); 
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "Jadi ya yaudahlah, saya hanya melakukan kerjaan sebaik mungkin.")))); 
-        um.AddUIAction(() => { trap_doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
+        um.AddUIAction(() => { m_trap_doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
 
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
+        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(2); um.NextAction(); });
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_trappedEvent_Camera.ReleaseCamera(); um.NextAction(); });
     }
 

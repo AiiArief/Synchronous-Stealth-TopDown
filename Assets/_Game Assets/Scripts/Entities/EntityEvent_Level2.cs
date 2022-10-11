@@ -31,19 +31,19 @@ public class EntityEvent_Level2 : EntityEvent
     }
 
     [SerializeField] CutsceneCamera m_talkEvent_Camera;
-    public void TalkEvent()//EntityCharacterNPC2DHumanoidBobaKotakLaptop bobaKotak) ganti ke havva laptop
+    public void TalkEvent(EntityCharacterNPC2DHumanoidLaptop havva)
     {
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); })); // ganti kameranya fade biasa bisa ga?        
+        um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); }); // ganti kameranya fade biasa bisa ga?        
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         // ganti ekspresi ke kaget
-        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); })
+        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
@@ -53,8 +53,8 @@ public class EntityEvent_Level2 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         // bsod
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-        um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); }));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue("", "...", em.genericEvent.voicePack), 
+        um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "...", em.genericEvent.voicePack), 
             new DialogueChoice[4]
             {
                 new DialogueChoice("(Annoyed)", () => player.animator.SetInteger("expression", 1)),
