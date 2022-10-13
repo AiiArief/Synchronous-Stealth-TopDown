@@ -111,6 +111,12 @@ public class EntityEvent_Level2 : EntityEvent
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Membuka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\"..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
 
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 4); um.NextAction(); }); // pesan 1
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 5); um.NextAction(); }); // pesan 2
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 6); um.NextAction(); }); // pesan 3
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 7); um.NextAction(); }); // pesan 4
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 8); um.NextAction(); }); // pesan 5
+
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
