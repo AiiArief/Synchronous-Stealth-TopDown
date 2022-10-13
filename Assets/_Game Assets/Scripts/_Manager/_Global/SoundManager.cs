@@ -28,7 +28,7 @@ public class SoundManager : MonoBehaviour
             [1] = GlobalGameManager.Instance.databaseManager.music_teddyBearWaltz,
             [2] = GlobalGameManager.Instance.databaseManager.music_spyGlass,
             [3] = GlobalGameManager.Instance.databaseManager.music_fireBrand,
-            [4] = GlobalGameManager.Instance.databaseManager.music_spyGlass_havva,
+            [4] = GlobalGameManager.Instance.databaseManager.music_waltz_havva,
         }; 
         
         if (musicSource.isPlaying && musicSource.clip == library[music] && !stopSamePlayedMusic)

@@ -80,6 +80,7 @@ public class EntityEvent_Generic : EntityEvent
     {
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
         um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
+        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
         um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[2], true, 11));
@@ -102,6 +103,7 @@ public class EntityEvent_Generic : EntityEvent
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Passwordnya benar!", doorSwitch.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Ayo kita ke bawah!", doorSwitch.voicePack))));
                     um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
+                    um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
                     //um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[4));                                    
@@ -143,6 +145,7 @@ public class EntityEvent_Generic : EntityEvent
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Passwordnya benar!", doorSwitch.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Ayo kita ke Observatory!", doorSwitch.voicePack))));
                     um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
+                    um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
                     um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[3], true));

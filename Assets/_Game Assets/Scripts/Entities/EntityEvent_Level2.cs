@@ -12,6 +12,7 @@ public class EntityEvent_Level2 : EntityEvent
 
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVASKINGDOM_OBSERVATORY), 5.0f); um.NextAction(); });
+        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(4); um.NextAction(); });
     }
 
     [SerializeField] CutsceneCamera m_elevatorEvent_Camera;
@@ -49,71 +50,103 @@ public class EntityEvent_Level2 : EntityEvent
     }
 
     [SerializeField] CutsceneCamera m_talkEvent_Camera;
+    bool m_firstTime = true;
     public void TalkEvent(EntityCharacterNPC2DHumanoidLaptop havva)
     {
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); }); // ganti kameranya fade biasa bisa ga?        
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        // ganti ekspresi ke kaget
-        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        // ganti ekspresi ke nangis
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        // bsod
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-        um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "...", em.genericEvent.voicePack), 
-            new DialogueChoice[4]
-            {
+        
+        if(m_firstTime)
+        {
+            m_firstTime = false;
+            um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => { havva.animator.SetInteger("cg", 1); um.NextAction(); });
+            um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => { havva.animator.SetInteger("cg", 2); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => { havva.animator.SetInteger("cg", 3); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."),
+                new DialogueChoice[4]
+                {
                 new DialogueChoice("(Annoyed)", () => player.animator.SetInteger("expression", 1)),
                 new DialogueChoice("(Smirk)", () => player.animator.SetInteger("expression", 3)),
                 new DialogueChoice("(Surprised)", () => player.animator.SetInteger("expression", 4)),
                 new DialogueChoice("...", () => player.animator.SetInteger("expression", 0)),
-            }
-            )));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "...", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => { player.animator.SetInteger("expression", 0); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Test test...", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Halo halo.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Err... Pesan dari The Developer :", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Pesan ini muncul jika terjadi error di program interface 2D Humanoid-nya Havva.\"", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Karena Havva berhalangan untuk menjelaskan apa yang terjadi, maka spy akan dipandu oleh pesan ini.\"", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Silahkan buka file bernama \"presentasi untuk spy FINAL FIX TOLONG TOLONG BENERAN DATENG DONG.potx\".\"", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Kalau mau mencoba jalankan ulang program interface 2D Humanoid silahkan saja, tapi palingan error lagi.\"", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Asalkan jangan buka folder homework.\"", em.genericEvent.voicePack))));
+                }
+                )));
+            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+            um.AddUIAction(() => { player.animator.SetInteger("expression", 0); um.NextAction(); });
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Test test...", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Halo halo.", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Err... Ini ada pesan dari The Developer :", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Pesan ini muncul jika terjadi error di program interface 2D Humanoid-nya Havva.\"", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Karena Havva berhalangan untuk menjelaskan apa yang terjadi, maka spy akan dipandu oleh pesan ini.\"", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Silahkan buka file bernama \"presentasi untuk spy FINAL FIX TOLONG TOLONG BENERAN DATENG DONG.potx\".\"", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Kalau mau mencoba jalankan ulang program interface 2D Humanoid silahkan saja, tapi palingan error lagi.\"", em.genericEvent.voicePack))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Asalkan jangan buka folder homework.\"", em.genericEvent.voicePack))));
+        }
+        
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."),
             new DialogueChoice[3] {
-                new DialogueChoice("Buka file \"presentasi untuk spy FINAL FIX TOLONG TOLONG BENERAN DATENG DONG.potx\"", () => {
-                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); });
+                new DialogueChoice("Buka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\"", () => {
+                    int eventId = 1;
+                    string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
+
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Membuka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\"..."))));
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                    um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_talkEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),
                 new DialogueChoice("Jalankan ulang program interface 2D Humanoid", () => {
-                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); });
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Menjalankan program interface 2D Humanoid..."))));
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 3); um.NextAction(); });
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_talkEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),
-                new DialogueChoice("Buka folder homework berukuran 120Gb", () => {
-                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); });
-                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
-                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+                new DialogueChoice("Buka folder \"Homework\" berukuran 120Gb", () => {
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Membuka folder \"Homework\"..."))));
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."),
+                        new DialogueChoice[4]
+                        {
+                            new DialogueChoice("(Annoyed)", () => player.animator.SetInteger("expression", 1)),
+                            new DialogueChoice("(Smirk)", () => player.animator.SetInteger("expression", 3)),
+                            new DialogueChoice("(Surprised)", () => player.animator.SetInteger("expression", 4)),
+                            new DialogueChoice("...", () => player.animator.SetInteger("expression", 0)),
+                        }
+                        )));
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+                    um.AddUIAction(() => { player.animator.SetInteger("expression", 0); um.NextAction(); });
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_talkEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),
-    })));
+        })));
     }
-
 }
