@@ -30,7 +30,7 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "JIKA ANDA BERHASIL KABUR DARI PERANGKAP INI, ANDA AKAN SAYA BERI HADIAH!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "ENTAH KENAPA HADIAHNYA YAITU BERUPA PASSWORD UNTUK KE OBSERVATORY!"))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "NAMUN JIKA ANDA GAGAL, ANDA AKAN TERBAKAR DISINI!"))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "HAHAHAHAHAHA, SELAMAT MENCOBA!"))));        
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR, "HAHAHAHAHAHA, SELAMAT MENCOBA!"))));
         um.AddUIAction(() => { m_trap_doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));

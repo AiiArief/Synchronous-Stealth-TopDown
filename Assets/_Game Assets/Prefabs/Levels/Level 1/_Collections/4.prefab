@@ -530,9 +530,17 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 1
+  - a: 1
+    b: 2
+  - a: 2
+    b: 3
+  - a: 3
+    b: 0
+  m_SelectedVertices: 00000000010000000200000003000000
 --- !u!1 &2675595307117693745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,15 +1475,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 9}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -1500,6 +1508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595307487224084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,9 +1802,17 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 1
+  - a: 1
+    b: 2
+  - a: 2
+    b: 3
+  - a: 3
+    b: 0
+  m_SelectedVertices: 00000000010000000200000003000000
 --- !u!1 &2675595307599573995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,15 +2449,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2465,6 +2482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595307631752414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,15 +2527,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2542,6 +2560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595307661426037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,14 +2604,14 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 0
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 35, z: 13}
   m_BoxOffset: {x: 0, y: -17, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
+  m_FarClip: 20
+  m_ShadowDistance: 10
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
@@ -2947,15 +2966,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 9}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2980,6 +2999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308046743502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,15 +3341,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -3354,6 +3374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308254535699
 GameObject:
   m_ObjectHideFlags: 0
@@ -3398,15 +3419,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -3431,6 +3452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308254581317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,15 +3497,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 9}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -3508,6 +3530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308321006796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,55 +4083,55 @@ MonoBehaviour:
   - m_Vertices: 0a0000000f00000013000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -30, y: -1, z: -6.5}
-  - {x: -30, y: 0, z: -6.5}
-  - {x: -30.5, y: 0, z: -6.5}
-  - {x: -30.5, y: -1, z: -6.5}
-  - {x: -30, y: 0, z: -6.5}
+  - {x: -30, y: -1, z: -7}
+  - {x: -30, y: 0, z: -7}
+  - {x: -30.5, y: 0, z: -7}
+  - {x: -30.5, y: -1, z: -7}
+  - {x: -30, y: 0, z: -7}
   - {x: -30, y: 0, z: -19.5}
   - {x: -30.5, y: 0, z: -19.5}
-  - {x: -30.5, y: 0, z: -6.5}
+  - {x: -30.5, y: 0, z: -7}
   - {x: -30, y: 0, z: -19.5}
   - {x: -30, y: -1, z: -19.5}
   - {x: -30.5, y: -1, z: -19.5}
   - {x: -30.5, y: 0, z: -19.5}
   - {x: -30, y: -1, z: -19.5}
-  - {x: -30, y: -1, z: -6.5}
-  - {x: -30.5, y: -1, z: -6.5}
+  - {x: -30, y: -1, z: -7}
+  - {x: -30.5, y: -1, z: -7}
   - {x: -30.5, y: -1, z: -19.5}
-  - {x: -30.5, y: -1, z: -6.5}
-  - {x: -30.5, y: 0, z: -6.5}
+  - {x: -30.5, y: -1, z: -7}
+  - {x: -30.5, y: 0, z: -7}
   - {x: -30.5, y: 0, z: -19.5}
   - {x: -30.5, y: -1, z: -19.5}
   - {x: -30, y: -1, z: -19.5}
   - {x: -30, y: 0, z: -19.5}
-  - {x: -30, y: 0, z: -6.5}
-  - {x: -30, y: -1, z: -6.5}
+  - {x: -30, y: 0, z: -7}
+  - {x: -30, y: -1, z: -7}
   m_Textures0:
   - {x: 0, y: 0}
   - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
-  - {x: 0.5, y: 4.5}
+  - {x: 0.5, y: 4}
   - {x: 0.5, y: -8.5}
   - {x: 0, y: -8.5}
-  - {x: 0, y: 4.5}
+  - {x: 0, y: 4}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 1}
   - {x: 0, y: -8.5}
-  - {x: 0, y: 4.5}
-  - {x: 0.5, y: 4.5}
+  - {x: 0, y: 4}
+  - {x: 0.5, y: 4}
   - {x: 0.5, y: -8.5}
-  - {x: 5.5, y: 0}
-  - {x: 5.5, y: 1}
+  - {x: 6, y: 0}
+  - {x: 6, y: 1}
   - {x: 18.5, y: 1}
   - {x: 18.5, y: 0}
   - {x: -8.5, y: 0}
   - {x: -8.5, y: 1}
-  - {x: 4.5, y: 1}
-  - {x: 4.5, y: 0}
+  - {x: 4, y: 1}
+  - {x: 4, y: 0}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -4146,9 +4169,17 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 1
+  - a: 1
+    b: 2
+  - a: 2
+    b: 3
+  - a: 3
+    b: 0
+  m_SelectedVertices: 00000000010000000200000003000000
 --- !u!1 &2675595308534887803
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,15 +5043,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -5045,6 +5076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308905469225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5385,15 +5417,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -5418,6 +5450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308950598784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5462,15 +5495,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -5495,6 +5528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595308952818783
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,9 +5822,17 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 1
+  - a: 1
+    b: 2
+  - a: 2
+    b: 3
+  - a: 3
+    b: 0
+  m_SelectedVertices: 00000000010000000200000003000000
 --- !u!1 &2675595309027346227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5870,15 +5912,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -5903,6 +5945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &2675595309039516401
 GameObject:
   m_ObjectHideFlags: 0

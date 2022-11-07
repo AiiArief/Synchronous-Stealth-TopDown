@@ -110,23 +110,27 @@ public class EntityEvent_Level2 : EntityEvent
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Membuka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\"..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
 
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 4); um.NextAction(); }); 
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 4); um.NextAction(); });
+                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Perkenalkan, yang barusan kena error adalah Havva, walikota dari Havvatopia.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Havva tidak mengira kalau rumor memainkan lagu yang dia mainkan barusan beneran bisa memanggil Spy.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Baterai laptopnya Havva sudah sekarat dan sebentar lagi Havva berubah jadi objek statis.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Oleh karena itu, Havva sangat berterima kasih kepada Agent Violet karena sudah datang tepat pada waktunya.\"", em.genericEvent.voicePack))));
                     
                     um.AddUIAction(() => { havva.animator.SetInteger("cg", 5); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Havva awalnya lagi bermain piano dan mengatur Havvatopia di observatory seperti biasa.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Tiba-tiba, 3D Titan Sphere Robot yang ditinggali oleh penduduk Havvatopia sejak lama ini, hidup lagi dan bergerak.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Dan juga, seluruh wifi di Havvatopia mati dan saat ini Havvatopia sedang menggunakan listrik darurat.\"", em.genericEvent.voicePack))));
                     
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 6); um.NextAction(); }); 
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 6); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Nah, Havva butuh bantuan Agent Violet nih.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Bantuannya yaitu investigasi apa yang terjadi di Havvatopia dan cari tahu Havvatopia sedang bergerak menuju kearah mana.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Lalu juga Havva membutuhkan bantuan Violet untuk menyalakan kembali listrik dan wifi di Havvatopia agar bisa mengontrol kembali 3D Titan Sphere ini.\"", em.genericEvent.voicePack))));
 
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 7); um.NextAction(); }); 
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 7); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Ini adalah foto kerangka Havvatopia.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Untuk menyalakan listrik dan wifi di Havvatopia, Agent Violet harus ke engine room.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Namun, saat ini Agent Violet tidak bisa mengakses ke engine room menggunakan Elefataa karena ada kerusakan antara Downtown dan Engine Room.\"", em.genericEvent.voicePack))));
@@ -135,7 +139,8 @@ public class EntityEvent_Level2 : EntityEvent
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Dari Underground, Agent Violet bisa ke engine room menggunakan tangga darurat Elefataa.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Ada 1000 anak tangga di tangga darurat tersebut, Havva berharap semoga Agent Violet tidak capek.\"", em.genericEvent.voicePack))));
 
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 8); um.NextAction(); }); 
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 8); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Sekian presentasinya Havva.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Untuk pergi ke Downtown, passwordnya sudah tertera disini.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Sekali lagi, Havva berterima kasih karena Agent Violet sudah datang.\"", em.genericEvent.voicePack))));

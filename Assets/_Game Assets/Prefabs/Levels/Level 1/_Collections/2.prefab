@@ -2154,15 +2154,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2187,6 +2187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399044956017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,13 +2823,13 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 0
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 35, z: 13}
   m_BoxOffset: {x: 0, y: -17, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
@@ -3779,15 +3780,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -3812,6 +3813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399519119623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,15 +4155,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -4186,6 +4188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399676509147
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,15 +4529,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -4559,6 +4562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399738236376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4603,15 +4607,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 9}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -4636,6 +4640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399753453732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,15 +5278,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 9}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -5306,6 +5311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399841112257
 GameObject:
   m_ObjectHideFlags: 0
@@ -6076,15 +6082,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6109,6 +6115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273400113465440
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,15 +6160,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6186,6 +6193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273400118151895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6230,15 +6238,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 9}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6263,6 +6271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273400176843640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6656,15 +6665,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6689,6 +6698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273400273502160
 GameObject:
   m_ObjectHideFlags: 0
@@ -7030,15 +7040,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 20
   m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -7063,6 +7073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273400322624935
 GameObject:
   m_ObjectHideFlags: 0

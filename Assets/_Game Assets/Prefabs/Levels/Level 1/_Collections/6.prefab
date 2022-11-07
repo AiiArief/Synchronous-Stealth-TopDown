@@ -713,15 +713,15 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000037252814, w: -1}
+  - {x: 1, y: 0, z: 0.000000007450563, w: -1}
+  - {x: 1, y: 0, z: 0.000000002483521, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: -0.000000002483521, w: -1}
+  - {x: -1, y: 0, z: -0.000000007450563, w: -1}
+  - {x: -1, y: 0, z: -0.0000000037252814, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
@@ -1121,12 +1121,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: 0.0000000029802352, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -2754,12 +2754,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: -0.0000000029802294, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -3063,12 +3063,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: 0.0000000029802352, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -3510,16 +3510,16 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0.00000048428706, w: -1}
   - {x: 1, y: 0, z: 0.00000048428706, w: -1}
   - {x: 1, y: 0, z: 0.00000048428706, w: -1}
+  - {x: 1, y: 0, z: 0.0000000037252814, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.000000002483521, w: -1}
+  - {x: 1, y: 0, z: 0.000000007450563, w: -1}
+  - {x: -1, y: 0, z: -0.000000007450563, w: -1}
+  - {x: -1, y: 0, z: -0.000000002483521, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: -0.0000000037252814, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
@@ -3838,12 +3838,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: 0.0000000029802352, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -4147,12 +4147,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: -0.0000000029802294, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -4765,12 +4765,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: 0.0000000029802352, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -5074,12 +5074,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: 0.0000000029802352, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
+  - {x: -1, y: 0, z: 0.0000000014901176, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -5462,12 +5462,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: -0.0000000029802294, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -6238,15 +6238,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6271,6 +6271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793051138766
 GameObject:
   m_ObjectHideFlags: 0
@@ -6315,15 +6316,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 10}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6348,6 +6349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793069751180
 GameObject:
   m_ObjectHideFlags: 0
@@ -6688,15 +6690,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 6}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6721,6 +6723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793146790710
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,15 +6768,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -6798,6 +6801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793155121828
 GameObject:
   m_ObjectHideFlags: 0
@@ -8142,15 +8146,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 10}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -8175,6 +8179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793574752233
 GameObject:
   m_ObjectHideFlags: 0
@@ -8219,15 +8224,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 3}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -8252,6 +8257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793792980373
 GameObject:
   m_ObjectHideFlags: 0
@@ -8296,15 +8302,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 6}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -8329,6 +8335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518793822317292
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,15 +8676,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 10}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -8702,6 +8709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518794029970910
 GameObject:
   m_ObjectHideFlags: 0
@@ -9129,15 +9137,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 5, z: 6}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -9162,6 +9170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518794339187406
 GameObject:
   m_ObjectHideFlags: 0
@@ -9205,14 +9214,14 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 0
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 35, z: 14}
   m_BoxOffset: {x: 0, y: -17, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
+  m_FarClip: 20
+  m_ShadowDistance: 10
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
@@ -9332,15 +9341,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -9365,6 +9374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518794392016040
 GameObject:
   m_ObjectHideFlags: 0
@@ -9409,15 +9419,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 2.5, y: 3, z: 2.5}
   m_BoxOffset: {x: 0, y: -1, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -9442,6 +9452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518794439773766
 GameObject:
   m_ObjectHideFlags: 0
@@ -10374,15 +10385,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 3}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -10407,6 +10418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6485518794833507932
 GameObject:
   m_ObjectHideFlags: 0
@@ -11719,12 +11731,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000014901161, w: -1}
+  - {x: 1, y: 0, z: 0.0000000029802323, w: -1}
+  - {x: -1, y: 0, z: -0.0000000029802294, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
+  - {x: -1, y: 0, z: -0.0000000014901147, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
@@ -12027,14 +12039,14 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: -5.201268e-11, w: -1}
+  - {x: 1, y: 0, z: -0.0000000011175395, w: -1}
+  - {x: 1, y: 0, z: -0.0000000011175395, w: -1}
+  - {x: 1, y: 0, z: -0.0000000021830664, w: -1}
+  - {x: -1, y: 0, z: 0.000000002183024, w: -1}
+  - {x: -1, y: 0, z: 0.0000000011175387, w: -1}
+  - {x: -1, y: 0, z: 0.0000000011175387, w: -1}
+  - {x: -1, y: 0, z: 5.2053327e-11, w: -1}
   m_Colors: []
   m_UnwrapParameters:
     m_HardAngle: 88

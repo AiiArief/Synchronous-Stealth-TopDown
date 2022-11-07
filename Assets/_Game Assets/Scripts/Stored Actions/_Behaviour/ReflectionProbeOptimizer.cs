@@ -8,6 +8,8 @@ public class ReflectionProbeOptimizer : MonoBehaviour
     ReflectionProbe m_probe;
     EntityCharacterPlayer m_mainPlayer;
 
+    [SerializeField] bool m_debug = false;
+
     private void Awake()
     {
         m_probe = GetComponent<ReflectionProbe>();
@@ -29,18 +31,34 @@ public class ReflectionProbeOptimizer : MonoBehaviour
             if (m_mainPlayer)
             {
                 int qualityLevel = QualitySettings.GetQualityLevel();
+                m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
 
                 int playerCloseEnough = _CheckPlayerIsCloseEnough();
 
-                bool isClose = qualityLevel == 3 && playerCloseEnough == 2;
+                //bool isClose = qualityLevel == 3 && playerCloseEnough == 2;
                 //m_probe.timeSlicingMode = (isClose) ? ReflectionProbeTimeSlicingMode.NoTimeSlicing : ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
 
-                if (playerCloseEnough > 0)
+                bool renderNow = (qualityLevel >= 2) ? playerCloseEnough > 0 : playerCloseEnough == 2;
+
+                if (renderNow)
+                {
                     m_probe.RenderProbe();
+
+                    if (m_debug) Debug.Log("Rendered : " + gameObject.name);
+
+                    //if (qualityLevel < 3)
+                      //  yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
+                }
             }
         }
     }
 
+    /**
+     * Out : 
+     * 2 = player is inside
+     * 1 = player outside but camera can look
+     * 0 = player outside & camera can't look
+     **/
     private int _CheckPlayerIsCloseEnough()
     {
         float viewDistance = Mathf.Max(m_probe.size.x, m_probe.size.z);

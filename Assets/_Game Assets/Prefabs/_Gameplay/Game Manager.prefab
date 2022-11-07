@@ -139,7 +139,7 @@ MonoBehaviour:
   m_skyboxSpeed: 0
   m_hasWindEffect: 0
   m_windAmbienceSoundEffect: {fileID: 0}
-  m_playerSpringBoneParent: {fileID: 4724986277636918154}
+  m_playerSpringBoneParent: {fileID: 7329843639184686620}
 --- !u!182 &4308202522295002837
 WindZone:
   m_ObjectHideFlags: 0
@@ -1067,6 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad82760b671a2f2468675817b07a23aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debugMode: 0
   m_minimumTimeBeforeNextPhase: 0.25
 --- !u!1 &7714449617017616692
 GameObject:
@@ -1544,9 +1545,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 811d8a9075a8ef64989deb23799c8046, type: 3}
---- !u!1 &4724986277636918154 stripped
+--- !u!1 &7329843639184686620 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2905742406267902356, guid: 811d8a9075a8ef64989deb23799c8046,
+  m_CorrespondingSourceObject: {fileID: 898773079571147778, guid: 811d8a9075a8ef64989deb23799c8046,
     type: 3}
   m_PrefabInstance: {fileID: 7620583902226666014}
   m_PrefabAsset: {fileID: 0}

@@ -1169,15 +1169,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 3}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -1202,6 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177089451552843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,15 +1543,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -1575,6 +1576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177089699643301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,15 +2213,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 10}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2244,6 +2246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177089910255094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,15 +2291,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 3, y: 5, z: 6}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2321,6 +2324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177089951003963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,15 +2666,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 10}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2695,6 +2699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177090349244319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,15 +2744,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 10}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -2772,6 +2777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177090392585471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,15 +3550,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 6}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -3577,6 +3583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177090614060174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,15 +3925,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -3951,6 +3958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177090674376415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,15 +4375,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -4400,6 +4408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177090924161735
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,15 +4453,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 6}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -4477,6 +4486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177091082649662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,15 +4584,15 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 2
-  m_TimeSlicingMode: 0
+  m_TimeSlicingMode: 1
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 3}
   m_BoxOffset: {x: 0, y: -2, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 30
-  m_ClearFlags: 2
+  m_FarClip: 20
+  m_ShadowDistance: 10
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.2, g: 0.12941177, b: 0.09019608, a: 0}
   m_CullingMask:
     serializedVersion: 2
@@ -4607,6 +4617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &5720177091264316839
 GameObject:
   m_ObjectHideFlags: 0
