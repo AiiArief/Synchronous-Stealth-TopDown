@@ -18,7 +18,10 @@ public class EntityCharacterPlayer : EntityCharacter
         base.WaitInput();
 
         if (_CheckIsOnEvent())
+        {
+            _HandleIsCombatAnimation();
             return;
+        }
 
         float moveH = Input.GetAxisRaw("Horizontal" + " #" + playerId);
         float moveV = Input.GetAxisRaw("Vertical" + " #" + playerId);
@@ -120,13 +123,16 @@ public class EntityCharacterPlayer : EntityCharacter
 
     private void _HandleIsCombatAnimation()
     {
-        var npcs = GameManager.Instance.npcManager.GetNPCPlayableList();
-        for (int i=0; i<npcs.Count; i++)
+        if(!_CheckIsOnEvent())
         {
-            if (npcs[i] is EntityCharacterNPC3DBot && Vector3.Distance(npcs[i].transform.position, transform.position) <= 20.0f / 2 + 1)
+            var npcs = GameManager.Instance.npcManager.GetNPCPlayableList();
+            for (int i = 0; i < npcs.Count; i++)
             {
-                animator.SetBool("isCombat", true);
-                return;
+                if (npcs[i] is EntityCharacterNPC3DBot && Vector3.Distance(npcs[i].transform.position, transform.position) <= 20.0f / 2 + 1)
+                {
+                    animator.SetBool("isCombat", true);
+                    return;
+                }
             }
         }
 

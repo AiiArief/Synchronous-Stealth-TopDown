@@ -18,7 +18,7 @@ public class StoredActionMove : StoredAction
         action = () =>
         {
             entity.characterController.Move(Vector3.down * gravitySpeed * Time.deltaTime);
-            entity.animator.SetInteger("moveRange", 0);
+            if(entity.animator.runtimeAnimatorController) entity.animator.SetInteger("moveRange", 0);
             actionHasDone = _CheckProcessInputHasOverMinimumTime();
         };
     }
@@ -91,7 +91,9 @@ public class StoredActionMove : StoredAction
             }
             else
             {
-                entity.GetComponent<TagEntityFootStepAble>()?.Step(currentNode, calculatedRange > 1); // balikin ke animator lagi aja kah?
+                if(calculatedRange > 0)
+                    entity.GetComponent<TagEntityFootStepAble>()?.Step(currentNode, calculatedRange > 1);
+
                 transform.position = new Vector3(target.x, entity.transform.position.y, target.z);
                 actionHasDone = true;
             }
@@ -126,11 +128,13 @@ public class StoredActionMove : StoredAction
                 break;
             case MoveHitType.FullHit:
                 entity.animator.SetTrigger("hit");
+                entity.animator.SetInteger("moveRange", calculatedRange);
                 break;
             case MoveHitType.InteractHit:
                 if(!m_hasInteracted)
                 {
-                    entity.animator.SetTrigger("hit");
+                    entity.animator.SetTrigger("interact");
+                    entity.animator.SetInteger("moveRange", calculatedRange);
                     interactedEntity.Interact(entity);
                     m_hasInteracted = true;
                 }

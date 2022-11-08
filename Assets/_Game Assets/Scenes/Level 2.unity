@@ -352,7 +352,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 12
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 434978527}
+  m_LookAt: {fileID: 1592142282}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 45
@@ -952,12 +952,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &434978527 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8639108025683394954, guid: 461ac25975a919743a81e862cbd9d663,
-    type: 3}
-  m_PrefabInstance: {fileID: 1592142280}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &750715246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6038730667185261669, guid: 94ff8021aff609544a23c4f9202793af,
@@ -2245,7 +2239,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 12
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 434978527}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 45
@@ -3738,6 +3732,12 @@ PrefabInstance:
 --- !u!4 &1592142281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5024685548789080539, guid: 461ac25975a919743a81e862cbd9d663,
+    type: 3}
+  m_PrefabInstance: {fileID: 1592142280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1592142282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6696784832386683770, guid: 461ac25975a919743a81e862cbd9d663,
     type: 3}
   m_PrefabInstance: {fileID: 1592142280}
   m_PrefabAsset: {fileID: 0}
