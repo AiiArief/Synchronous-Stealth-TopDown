@@ -284,6 +284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff0eeafe654dcf48928536900ec23e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &57876815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9140193952894948846, guid: 0318e0d6367670748be1e9c5e9cd8be4,
+    type: 3}
+  m_PrefabInstance: {fileID: 57876813}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &88340556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2245,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 12
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 57876815}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 45

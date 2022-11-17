@@ -8104,14 +8104,14 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 0.7784627, y: 0, z: 0.627691, w: -1}
-  - {x: 0.77846277, y: 0, z: 0.62769085, w: -1}
-  - {x: 0.77846277, y: 0, z: 0.62769085, w: -1}
-  - {x: 0.7784628, y: 0, z: 0.6276908, w: -1}
-  - {x: 0.7784627, y: 0, z: 0.627691, w: -1}
-  - {x: 0.7784628, y: 0, z: 0.62769073, w: -1}
-  - {x: 0.7784628, y: 0, z: 0.62769073, w: -1}
-  - {x: 0.778463, y: 0, z: 0.62769043, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: 0, y: 0, z: 1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
@@ -11752,7 +11752,6 @@ GameObject:
   - component: {fileID: 2929866044664653887}
   - component: {fileID: 8938679578883277323}
   - component: {fileID: 3128566856568984952}
-  - component: {fileID: 8485732078455162100}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -12996,18 +12995,4 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8664005394842815634}
-  m_Mesh: {fileID: 0}
---- !u!64 &8485732078455162100
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8664005394842815634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}

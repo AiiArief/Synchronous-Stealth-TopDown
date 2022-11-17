@@ -115,7 +115,7 @@ public class EntityEvent_Level0 : EntityEvent
     }
 
     [SerializeField] CutsceneCamera m_cutsceneCamera_note3DHumanoid;
-    public void DetailEvent_3DHumanoid()
+    public void DetailEvent_3DHumanoid(EntityCharacterNPCGodDeveloperNote agentVioletNote)
     {
         m_cutsceneCamera_note3DHumanoid.UseCamera();
 
@@ -123,6 +123,7 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Pesan dari The Developer :", em.genericEvent.voicePack))));
+        um.AddUIAction(() => { agentVioletNote.animator.SetInteger("expression", 3); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Ini lu, Agent Violet.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Lu berasal dari kelas 3D Humanoid.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Lu adalah spy terbaik di game ini.", em.genericEvent.voicePack))));
@@ -133,6 +134,7 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Game ini adalah game synchronous, apa itu synchronous?", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Ini game turn base tapi musuh dan player bergerak bersama.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Jadi gunakan turn mu sebijak mungkin.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => { agentVioletNote.animator.SetInteger("expression", 0); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_cutsceneCamera_note3DHumanoid.ReleaseCamera(); um.NextAction(); });
     }

@@ -10980,7 +10980,7 @@ MeshRenderer:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 6747498898119158466}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
@@ -11408,6 +11408,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8583531325655001835, guid: 119abf8a777b952468454ee6366838d0,
+        type: 3}
+      propertyPath: m_ProbeAnchor
+      value: 
+      objectReference: {fileID: 6747498899326470092}
     - target: {fileID: 8644548252283110802, guid: 119abf8a777b952468454ee6366838d0,
         type: 3}
       propertyPath: m_Mesh

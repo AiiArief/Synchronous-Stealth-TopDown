@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 55398410824065100}
   - component: {fileID: 4318222369472011758}
   - component: {fileID: 2260986207177517337}
-  - component: {fileID: 4044403848327120920}
-  - component: {fileID: 3003852518119514302}
   m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
@@ -653,28 +651,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &4044403848327120920
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7030003286295016213}
-  m_Mesh: {fileID: 0}
---- !u!64 &3003852518119514302
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7030003286295016213}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &429702746372921545
 PrefabInstance:
   m_ObjectHideFlags: 0
