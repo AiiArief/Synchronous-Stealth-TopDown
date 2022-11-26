@@ -99,8 +99,11 @@ public class UITutorialObject
     {
         if (instantActive) tutorialAnimator.gameObject.SetActive(true);
 
-        tutorialAnimator.SetInteger("type", (int)tutorial.tutorialType);
-        //tutorialAnimator.SetInteger("platform", 0); // ngurus platform gmana ya
+        if (tutorialAnimator.runtimeAnimatorController && tutorialAnimator.gameObject.activeInHierarchy)
+        {
+            tutorialAnimator.SetInteger("type", (int)tutorial.tutorialType);
+            //tutorialAnimator.SetInteger("platform", 0); // ngurus platform gmana ya
+        }
         tutorialText.text = LocalizationManager.Translate(tutorial.locString);
     }
 }

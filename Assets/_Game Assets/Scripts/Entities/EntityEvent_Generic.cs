@@ -159,7 +159,7 @@ public class EntityEvent_Generic : EntityEvent
             new DialogueChoice("Passwordnya dapat dimana ya?", () => {
                 if(m_trappedEvent_Camera)
                 {
-                    string passwordProtectorName = LocalizationManager.Translate(LocalizationManager.CHARACTER_2D1BIT_PASSWORDPROTECTOR);
+                    string passwordProtectorName = LocalizationManager.Translate(LocalizationManager.CHARACTER_2D1BIT_FIREPLACE);
 
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Y-yang setel passwordnya sih tadi ke arah timur laut...", doorSwitch.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));

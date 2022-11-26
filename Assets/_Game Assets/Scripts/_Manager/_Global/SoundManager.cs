@@ -38,6 +38,13 @@ public class SoundManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void PlayMusicEffect(AudioClip audio)
+    {
+        // pause music
+        // play me di audio source ke dua
+        // kalo udah selesai resume
+    }
+
     public IEnumerator FadeOutMusic(float time)
     {
         float startVolume = musicSource.volume;

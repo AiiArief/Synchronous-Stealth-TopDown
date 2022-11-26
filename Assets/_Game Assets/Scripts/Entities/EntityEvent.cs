@@ -15,9 +15,9 @@ public class EntityEvent : Entity
     }
 
     StoredStatusEffect[] m_eventStatusEffects;
-    public void AddBasicStatusEffectOnStartingEvent()
+    public void AddBasicStatusEffectOnStartingEvent(bool isCombat = false)
     {
-        m_eventStatusEffects = new StoredStatusEffect[2] { new StoredStatusEffectEventControl(player), new StoredStatusEffectAutoSkip(player) };
+        m_eventStatusEffects = new StoredStatusEffect[2] { new StoredStatusEffectEventControl(player, isCombat), new StoredStatusEffectAutoSkip(player) };
         player.storedStatusEffects.AddRange(m_eventStatusEffects);
     }
 

@@ -8324,7 +8324,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 11, y: 87}
     m_realWorldPos: {x: -39, y: 30, z: 37}
-    m_isStaticNode: 1
+    m_isStaticNode: 0
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -22912,7 +22912,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 32, y: 71}
     m_realWorldPos: {x: -18, y: 30, z: 21}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -23612,7 +23612,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 33, y: 71}
     m_realWorldPos: {x: -17, y: 30, z: 21}
-    m_isStaticNode: 0
+    m_isStaticNode: 1
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -62406,7 +62406,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 89, y: 13}
     m_realWorldPos: {x: 39, y: 30, z: -37}
-    m_isStaticNode: 1
+    m_isStaticNode: 0
     m_footStepType: 0
     gCost: 0
     hCost: 0
@@ -62924,7 +62924,7 @@ MonoBehaviour:
     fCost: 0
   - m_gridPos: {x: 89, y: 87}
     m_realWorldPos: {x: 39, y: 30, z: 37}
-    m_isStaticNode: 1
+    m_isStaticNode: 0
     m_footStepType: 0
     gCost: 0
     hCost: 0

@@ -6560,6 +6560,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3814835542351948344, guid: e1bfbba76ddd969429649c1d8e05f9b7,
+        type: 3}
+      propertyPath: m_voiceClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d28d8ef097882ea4b8a9429ce12e626a, type: 3}
     - target: {fileID: 3877006137479497678, guid: e1bfbba76ddd969429649c1d8e05f9b7,
         type: 3}
       propertyPath: m_Mesh

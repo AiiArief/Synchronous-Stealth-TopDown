@@ -47,29 +47,29 @@ MonoBehaviour:
         m_PostInfinity: 0
         m_RotationOrder: 0
   - m_From: Main VCam
-    m_To: Combat 4
-    m_Blend:
-      m_Style: 6
-      m_Time: 1
-      m_CustomCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 0
-        m_PostInfinity: 0
-        m_RotationOrder: 0
-  - m_From: Main VCam
-    m_To: Combat 5
-    m_Blend:
-      m_Style: 6
-      m_Time: 1
-      m_CustomCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 0
-        m_PostInfinity: 0
-        m_RotationOrder: 0
-  - m_From: Main VCam
     m_To: Combat 6
+    m_Blend:
+      m_Style: 6
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: Main VCam
+    m_To: Combat 2 (1)
+    m_Blend:
+      m_Style: 6
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: Main VCam
+    m_To: Listening
     m_Blend:
       m_Style: 6
       m_Time: 1
@@ -101,6 +101,28 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
+  - m_From: Combat 3
+    m_To: Combat 2 (1)
+    m_Blend:
+      m_Style: 6
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: Combat 2 (1)
+    m_To: Combat 3
+    m_Blend:
+      m_Style: 6
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
   - m_From: '**ANY CAMERA**'
     m_To: Main VCam
     m_Blend:
@@ -114,6 +136,17 @@ MonoBehaviour:
         m_RotationOrder: 0
   - m_From: Cutscene 2 - Combat 1
     m_To: Combat 1
+    m_Blend:
+      m_Style: 6
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: Main VCam
+    m_To: Havvatopia Miniature
     m_Blend:
       m_Style: 6
       m_Time: 1

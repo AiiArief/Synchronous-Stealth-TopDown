@@ -65,6 +65,11 @@ public class LocalizationManager : MonoBehaviour
         "Developer Log Diary"
     );
 
+    public static readonly LocalizationString CHARACTER_CRACKOFTIME = new LocalizationString(
+        "Crack of Time",
+        "Pecahan Waktu"
+    );
+
     public static readonly LocalizationString CHARACTER_2D1BIT_DOOR = new LocalizationString(
         "(2D 1 Bit) Door",
         "(2D 1 Bit) Pintu"
@@ -80,14 +85,14 @@ public class LocalizationManager : MonoBehaviour
         "(2D 1 Bit) Pintu dengan Password"
     );
 
-    public static readonly LocalizationString CHARACTER_CRACKOFTIME = new LocalizationString(
-        "Crack of Time",
-        "Pecahan Waktu"
-    );
-
     public static readonly LocalizationString CHARACTER_RGBGAMINGDOOR = new LocalizationString(
         "(2D 1 Bit) RGB Gaming Door",
         "(2D 1 Bit) Pintu Gaming RGB"
+    );
+
+    public static readonly LocalizationString CHARACTER_2D1BIT_SIGNPOST = new LocalizationString(
+        "(2D 1 Bit) Signpost",
+        "(2D 1 Bit) Plang"
     );
 
     public static readonly LocalizationString CHARACTER_ELEFATAA = new LocalizationString(
@@ -95,9 +100,9 @@ public class LocalizationManager : MonoBehaviour
         "(2D 1 Bit) Elefataa"
     );
 
-    public static readonly LocalizationString CHARACTER_2D1BIT_PASSWORDPROTECTOR = new LocalizationString(
-        "(2D 1 Bit) Password Protector",
-        "(2D 1 Bit) Penjaga Password"
+    public static readonly LocalizationString CHARACTER_2D1BIT_FIREPLACE = new LocalizationString(
+        "(2D 1 Bit) Fire Place",
+        "(2D 1 Bit) Fire Place"
     );
 
     #endregion

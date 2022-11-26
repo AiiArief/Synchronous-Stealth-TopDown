@@ -44,6 +44,9 @@ public class DatabaseManager : MonoBehaviour
     [SerializeField] AudioClip m_tikTok;
     public AudioClip tikTok { get { return m_tikTok; } }
 
+    [SerializeField] AudioClip m_victoryME;
+    public AudioClip victoryME { get { return m_victoryME; } }
+
     [SerializeField] SceneLevel[] m_sceneLevels;
     public SceneLevel[] sceneLevels { get { return m_sceneLevels; } }
 

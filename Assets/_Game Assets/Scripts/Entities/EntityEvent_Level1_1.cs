@@ -164,7 +164,6 @@ public class EntityEvent_Level1_1 : EntityEvent
                 })));
     }
 
-    [SerializeField] CutsceneCamera m_passwordTriggerEvent_1_Camera;
     [SerializeField] EntityCharacterNPC3DBotHeadphone m_passwordTriggerEvent_1_3DBH_1;
     [SerializeField] EntityCharacterNPC3DBotHeadphone m_passwordTriggerEvent_1_3DBH_2;
     public void PasswordTriggerEvent_1()
@@ -172,28 +171,42 @@ public class EntityEvent_Level1_1 : EntityEvent
         int eventId = 1;
         string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
 
-        m_passwordTriggerEvent_1_Camera.UseCamera();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
-        um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); player.animator.SetInteger("expression", 2); um.NextAction(); });
+        um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(true); player.animator.SetInteger("expression", 2); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Kamu secara ga sengaja (apa sengaja ya?) dengerin apa yang mereka bicarakan."))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "You are accidentally (or maybe not?) listening to what they say."))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Kamu secara ga sengaja (apa sengaja ya?) dengerin apa yang mereka bicarakan."))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "COY! LU UDAH SETEL PASSWORD DI PINTU SANA BELOM?", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "HAH??! APAAN GA KEDENGERAN!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "HAH?? LU NGOMONG APAAN BARUSAN? PASSWORDNYA UDAH DI SETEL APA BELOM??", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "APAAN???!!! PASSWORDNYA 1 2 3!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "LU SETEL 3 PASSWORD DI PINTUNYA?????", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "NGOMONG YANG KERAS!!! GA KEDENGERAN COY!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", true); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", false); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "HAVE YOU SET THE PASSWORD FOR THAT DOOR ALREADY?", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "COY! LU UDAH SETEL PASSWORD DI PINTU SANA BELOM?", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", false); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", true); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "HUH??! WHAT DID YOU JUST SAY!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "HAH??! APAAN GA KEDENGERAN!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", true); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", false); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "HUH?? I CAN'T HEAR WHAT YOU SAID! HAVE YOU SET THE PASSWORD ALREADY??", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "HAH?? LU NGOMONG APAAN BARUSAN? PASSWORDNYA UDAH DI SETEL APA BELOM??", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", false); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", true); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "WHAATT???!!! THE PASSWORD IS 1 2 3!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "APAAN???!!! PASSWORDNYA 1 2 3!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", true); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", false); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "THE PASSWORD FOR THAT DOOR IS A TO TREE?????", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #1", "LU SETEL 3 PASSWORD DI PINTUNYA?????", m_passwordTriggerEvent_1_3DBH_1.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", false); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", true); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "SAY LOUDER!!! I CAN'T HEAR YOU!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "NGOMONG YANG KERAS!!! GA KEDENGERAN COY!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
+        um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", false); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", false); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
 
         um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); player.animator.SetInteger("expression", 0); um.NextAction(); });
         um.AddUIAction(() => { em.memoryTriggerEvents[eventId - 1].SetIsAvailable(false); um.NextAction(); });
+        // suara ME disini
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
-        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_passwordTriggerEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
     public void DevlogDiaryTriggerEvent_1()

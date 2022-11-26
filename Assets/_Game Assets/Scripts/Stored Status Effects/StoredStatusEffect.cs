@@ -108,10 +108,14 @@ public class StoredStatusEffectCaptured : StoredStatusEffectDisableMoveInput
 
 public class StoredStatusEffectEventControl : StoredStatusEffectDisableMoveInput
 {
-    public StoredStatusEffectEventControl(EntityCharacter entity, int turnCount = -1, bool disableMove = true, bool disableTurn = true) : base(entity, turnCount, disableMove, disableTurn)
+    bool m_isCombat = false;
+    public bool isCombat { get { return m_isCombat; } }
+
+    public StoredStatusEffectEventControl(EntityCharacter entity, bool isCombat = false, int turnCount = -1, bool disableMove = true, bool disableTurn = true) : base(entity, turnCount, disableMove, disableTurn)
     {
         effectAction = () =>
         {
+            m_isCombat = isCombat;
             // release animator
         };
 

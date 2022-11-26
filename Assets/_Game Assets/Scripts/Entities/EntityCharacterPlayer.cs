@@ -8,18 +8,21 @@ public class EntityCharacterPlayer : EntityCharacter
 {
     public int playerId { get { return transform.GetSiblingIndex(); } }
 
+    IEnumerable<StoredStatusEffectEventControl> m_eventControlList;
+
     public override void SetupWaitInput()
     {
         base.SetupWaitInput();
+        m_eventControlList = storedStatusEffects.OfType<StoredStatusEffectEventControl>();
     }
 
     public override void WaitInput()
     {
         base.WaitInput();
 
-        if (_CheckIsOnEvent())
+        if (m_eventControlList.Count() > 0)
         {
-            _HandleIsCombatAnimation();
+            _HandleIsCombatAnimation(m_eventControlList);
             return;
         }
 
@@ -33,7 +36,7 @@ public class EntityCharacterPlayer : EntityCharacter
         if (skipTurn)
         {
             StoredActionSkipTurn();
-            storedActions.Add(new StoredActionCustom(() => _HandleIsCombatAnimation()));
+            storedActions.Add(new StoredActionCustom(() => _HandleIsCombatAnimation(m_eventControlList)));
             return;
         }
 
@@ -45,7 +48,7 @@ public class EntityCharacterPlayer : EntityCharacter
 
             storedActions.Add(new StoredActionTurn(this, angle, false));
             storedActions.Add(new StoredActionMove(this, moveDir, true, moveRange));
-            storedActions.Add(new StoredActionCustom(() => _HandleIsCombatAnimation()));
+            storedActions.Add(new StoredActionCustom(() => _HandleIsCombatAnimation(m_eventControlList)));
             return;
         }
 
@@ -115,24 +118,21 @@ public class EntityCharacterPlayer : EntityCharacter
         m_buttonHoldTime = 0;
     }
 
-    private bool _CheckIsOnEvent()
+    private void _HandleIsCombatAnimation(IEnumerable<StoredStatusEffectEventControl> eventControlList)
     {
-        var disableMoveInputList = storedStatusEffects.OfType<StoredStatusEffectEventControl>();
-        return disableMoveInputList.Count() > 0;
-    }
-
-    private void _HandleIsCombatAnimation()
-    {
-        if(!_CheckIsOnEvent())
+        if(eventControlList.Count() > 0)
         {
-            var npcs = GameManager.Instance.npcManager.GetNPCPlayableList();
-            for (int i = 0; i < npcs.Count; i++)
+            animator.SetBool("isCombat", eventControlList.First().isCombat);
+            return;
+        }
+
+        var npcs = GameManager.Instance.npcManager.GetNPCPlayableList();
+        for (int i = 0; i < npcs.Count; i++)
+        {
+            if (npcs[i] is EntityCharacterNPC3DBot && Vector3.Distance(npcs[i].transform.position, transform.position) <= 20.0f / 2.5f) // kamera width dibagi 2 biar tengah, minus konstan
             {
-                if (npcs[i] is EntityCharacterNPC3DBot && Vector3.Distance(npcs[i].transform.position, transform.position) <= 20.0f / 2 + 1)
-                {
-                    animator.SetBool("isCombat", true);
-                    return;
-                }
+                animator.SetBool("isCombat", true);
+                return;
             }
         }
 
