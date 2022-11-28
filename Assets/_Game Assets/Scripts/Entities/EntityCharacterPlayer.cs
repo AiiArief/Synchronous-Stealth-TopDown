@@ -30,7 +30,7 @@ public class EntityCharacterPlayer : EntityCharacter
         float moveV = Input.GetAxisRaw("Vertical" + " #" + playerId);
         bool isMoving = Mathf.Abs(moveH) > 0.0f || Mathf.Abs(moveV) > 0.0f;
         bool moveMod = Input.GetButton("Move Modifier" + " #" + playerId);
-        bool skipTurn = _CheckDoubleInput("Move Modifier" + " #" + playerId, 0.5f);
+        bool skipTurn = _CheckHoldInput("Shoot" + " #" + playerId, 0.125f);
         bool pause = Input.GetKey(KeyCode.Escape);
 
         if (skipTurn)
@@ -98,9 +98,10 @@ public class EntityCharacterPlayer : EntityCharacter
     }
 
     [HideInInspector] float m_buttonHoldTime = 0;
+    //[HideInInspector] bool m_buttonHoldBypassReset = false;
     private bool _CheckHoldInput(string inputName, float holdTime)
     {
-        if (Input.GetButtonDown(inputName))
+        if (Input.GetButtonDown(inputName) || Input.GetButtonUp(inputName))
             m_buttonHoldTime = 0;
 
         if (Input.GetButton(inputName))
@@ -115,7 +116,7 @@ public class EntityCharacterPlayer : EntityCharacter
     {
         m_buttonDownCount = 0;
         m_buttonDownTime = 0;
-        m_buttonHoldTime = 0;
+        m_buttonHoldTime = 0; // kalo lagi neken, jangan?
     }
 
     private void _HandleIsCombatAnimation(IEnumerable<StoredStatusEffectEventControl> eventControlList)

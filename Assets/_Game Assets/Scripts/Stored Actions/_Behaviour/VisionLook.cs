@@ -109,9 +109,9 @@ public class VisionLook : MonoBehaviour
         int rayCountAlert = (360 / 5) / (360 / (int)m_coneAngle);
 
         float viewDistance = m_alertDistance + m_suspiciousDistance;
-        Vector3 localOrigin = new Vector3(0.0f, -transform.localPosition.y + 0.1f, 0.0f);
+        Vector3 localOrigin = new Vector3(0.0f, -transform.localPosition.y + 0.2f, 0.0f);
         float viewDistanceAlert = m_alertDistance;
-        Vector3 localOriginAlert = new Vector3(0.0f, -transform.localPosition.y + 0.05f, 0.0f);
+        Vector3 localOriginAlert = new Vector3(0.0f, -transform.localPosition.y + 0.15f, 0.0f);
 
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
@@ -134,28 +134,23 @@ public class VisionLook : MonoBehaviour
             bool isInAngle = (rayAngleClamp[0] > rayAngleClamp[1]) ?
                 !(currentAngle >= rayAngleClamp[1] && currentAngle <= rayAngleClamp[0]) :
                 currentAngle >= rayAngleClamp[0] && currentAngle <= rayAngleClamp[1];
-            if (isInAngle)
+
+            float distanceIsInAngle = isInAngle ? viewDistance : 1.5f;
+            RaycastHit[] hits = Physics.RaycastAll(transform.position, _GenerateVectorFromAngle(currentAngle), distanceIsInAngle, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+            vertex = transform.InverseTransformPoint(transform.position + localOrigin + _GenerateVectorFromAngle(currentAngle) * distanceIsInAngle);
+
+            if (hits.Length > 0)
             {
-                RaycastHit[] hits = Physics.RaycastAll(transform.position, _GenerateVectorFromAngle(currentAngle), viewDistance, Physics.AllLayers, QueryTriggerInteraction.Ignore);
-                
-                vertex = transform.InverseTransformPoint(transform.position + localOrigin + _GenerateVectorFromAngle(currentAngle) * viewDistance);
-                if (hits.Length > 0)
+                Array.Sort(hits, delegate (RaycastHit hit1, RaycastHit hit2) { return hit1.distance.CompareTo(hit2.distance); });
+                foreach (RaycastHit hit in hits)
                 {
-                    Array.Sort(hits, delegate (RaycastHit hit1, RaycastHit hit2) { return hit1.distance.CompareTo(hit2.distance); });
-                    foreach (RaycastHit hit in hits)
+                    if (hit.collider.GetComponent<TagVisionLook>())
                     {
-                        if (hit.collider.GetComponent<TagVisionLook>())
-                        {
-                            var raycastHitPoint = transform.InverseTransformPoint(hit.point);
-                            vertex = new Vector3(raycastHitPoint.x, localOrigin.y, raycastHitPoint.z);
-                            break;
-                        }
+                        var raycastHitPoint = transform.InverseTransformPoint(hit.point);
+                        vertex = new Vector3(raycastHitPoint.x, localOrigin.y, raycastHitPoint.z);
+                        break;
                     }
                 }
-            }
-            else
-            {
-                vertex = transform.InverseTransformPoint(transform.position + localOrigin + _GenerateVectorFromAngle(currentAngle, 1.5f));
             }
 
             vertices[vertexIndex] = vertex;
