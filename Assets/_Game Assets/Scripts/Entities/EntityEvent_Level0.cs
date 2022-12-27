@@ -79,7 +79,7 @@ public class EntityEvent_Level0 : EntityEvent
     }
 
     [SerializeField] CutsceneCamera m_cutsceneCamera_note3DSphereRobot;
-    public void DetailEvent_3DSphereRobot()
+    public void DetailEvent_3DSphereRobot(EntityCharacterNPCGodDeveloperNote sphereRobot)
     {
         m_cutsceneCamera_note3DSphereRobot.UseCamera();
 
@@ -87,12 +87,14 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Pesan dari The Developer :", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Ini salah satu sub-class NPC dari kelas 3D Sphere Robot, 3D Headphone Sphere Robot.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => { sphereRobot.animator.SetInteger("expression", 3); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Kenalkan, ini adalah salah satu sub-class NPC dari kelas 3D Sphere Robot, 3D Headphone Sphere Robot.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Mereka adalah salah satu kelas dominan dari penduduk Kota Havvatopia.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Namun saat ini mereka seperti kerasukan gitu, sehingga menempatkan mereka menjadi antagonis dari game ini.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Lu ga boleh dan ga bisa bunuh mereka, serta lu ga boleh ketauan oleh mereka.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Kalo lu ketauan oleh mereka, lu harus time leap.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Ntar lu balik ke checkpoint terakhir.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => { sphereRobot.animator.SetInteger("expression", 0); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_cutsceneCamera_note3DSphereRobot.ReleaseCamera(); um.NextAction(); });
     }
@@ -110,7 +112,7 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Sama seperti Kota lainnya, Kota ini terletak didalam 3D Titan Sphere Robot yang sudah mati.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Kota ini dipimpin oleh Havva, dia yang memanggil lu kesana.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Dia memanggil lu karena saat ini Kota Havvatopia sedang dalam keadaan darurat.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "3D Titan Sphere Robot yang ditinggali oleh Havvatopia tiba-tiba hidup lagi dan sedang bergerak entah kemana.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Semua penduduk Havvatopia saat ini terjebak di kota ini.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Nah, tugas lu yaitu ketemu dengan Havva dan investigasi apa yang terjadi di Havvatopia serta selamatkan penduduk Havvatopia yang saat ini sedang terjebak disana.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_cutsceneCamera_noteHavvaKingdom.ReleaseCamera(); um.NextAction(); });

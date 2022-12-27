@@ -125,6 +125,5 @@ public class EntityCharacterNPC3DBotHeadphone : EntityCharacterNPC3DBot
     private void _HandleIsCombatAnimation()
     {
         animator.SetBool("isCombat", alertState != AlertStateEnum.Idle);
-        animator.SetInteger("expression", (alertState != AlertStateEnum.Idle) ? 0 : 3);
     }
 }

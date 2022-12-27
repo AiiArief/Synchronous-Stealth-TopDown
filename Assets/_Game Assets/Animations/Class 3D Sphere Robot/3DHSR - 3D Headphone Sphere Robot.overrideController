@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 3DHSR - 3D Headphone Sphere Robot
+  m_Controller: {fileID: 9100000, guid: 288ac22f7871b7741a684a9b2ac60742, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 431ca83b801fae341bc41599c5d68ddd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 431ca83b801fae341bc41599c5d68ddd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b6c2738af1a57cf49a43706acc088e79, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b6c2738af1a57cf49a43706acc088e79, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1b6215df381cbbf40a1f74dd0e98ee1c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1b6215df381cbbf40a1f74dd0e98ee1c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c8952299d07e47945a9c82fb63b8a0bf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c8952299d07e47945a9c82fb63b8a0bf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: be2eb210fbbf32d40b3f267d0c53235d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: be2eb210fbbf32d40b3f267d0c53235d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 22995a51229211342a044dc663d3afd5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: edf8af87b85ccbc4cbdbdf1849c70166, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0c7a1b5a90aae1f4687bb8ea8d9b6592, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e86cc2b584486374dbe28c0a330bf8b6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b8f4272072a76da43a3bc39272ef8f56, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1859f9a9e50636c4a902ccab0c904a17, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: dbfce9be7310e1e4fbf07706d7b3528f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4dc1bdf5b56e2f94f80e74efe508b475, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: eefca3049cb48d34ea2da30fca9ed2d5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 39b4616567770494ababe40b13bf6216, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 24979b18d77d6814facebcd3b3f017eb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3d1399f27851eae42b9687a6107d4371, type: 2}
