@@ -2468,11 +2468,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -30.5, y: 29.499998}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -2502,11 +2502,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 30, y: 29.499998}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -2586,18 +2586,18 @@ MonoBehaviour:
   - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
-  - {x: 0.5, y: 10.500002}
-  - {x: 0.50001717, y: 6.999998}
-  - {x: 0.000017166138, y: 7.0000057}
-  - {x: 0, y: 10.500002}
+  - {x: 0.99996567, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0.000034332275, y: 0}
+  - {x: 0, y: 1}
   - {x: 0.49957466, y: 1}
   - {x: 0.49957466, y: 0}
   - {x: -0.00042533875, y: 0}
   - {x: -0.00042533875, y: 1}
-  - {x: -0.000017166138, y: 6.999998}
-  - {x: 0, y: 10.500002}
-  - {x: 0.5, y: 10.500002}
-  - {x: 0.49998283, y: 7.0000057}
+  - {x: 0, y: 0}
+  - {x: 0.000034332275, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0.99996567, y: 0}
   - {x: -0.00015640259, y: 0}
   - {x: -0.00015640259, y: 1}
   - {x: 3.4998398, y: 1}
@@ -2613,18 +2613,18 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: -0.0000076293945, w: -1}
+  - {x: 1, y: 0, z: -0.000015258789, w: -1}
+  - {x: 1, y: 0, z: -0.0000076293945, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
+  - {x: -1, y: 0, z: 0.0000076293945, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0.0000076293945, w: -1}
+  - {x: -1, y: 0, z: 0.000015258789, w: -1}
   - {x: 0.000004904616, y: 0, z: -1, w: -1}
   - {x: 0.000004904616, y: 0, z: -1, w: -1}
   - {x: 0.000004904616, y: 0, z: -1, w: -1}
@@ -3352,11 +3352,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -30.5, y: 5.5}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -3386,11 +3386,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 30, y: 5.5}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -3470,18 +3470,18 @@ MonoBehaviour:
   - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
-  - {x: 0.5, y: 34.5}
-  - {x: 0.5, y: 21}
-  - {x: 0, y: 21}
-  - {x: 0, y: 34.5}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 1}
-  - {x: 0, y: 21}
-  - {x: 0, y: 34.5}
-  - {x: 0.5, y: 34.5}
-  - {x: 0.5, y: 21}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
   - {x: -24.5, y: 0}
   - {x: -24.5, y: 1}
   - {x: -11, y: 1}
@@ -3727,11 +3727,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -30.5, y: 5.5}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -3761,11 +3761,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 30, y: 5.5}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -3845,18 +3845,18 @@ MonoBehaviour:
   - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
-  - {x: 0.5, y: 24.5}
-  - {x: 0.5, y: 18.5}
-  - {x: 0, y: 18.5}
-  - {x: 0, y: 24.5}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 1}
-  - {x: 0, y: 18.5}
-  - {x: 0, y: 24.5}
-  - {x: 0.5, y: 24.5}
-  - {x: 0.5, y: 18.5}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
   - {x: -14.5, y: 0}
   - {x: -14.5, y: 1}
   - {x: -8.5, y: 1}
@@ -4795,11 +4795,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -30.5, y: -11}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -4829,11 +4829,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 30, y: -11}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -4913,18 +4913,18 @@ MonoBehaviour:
   - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
-  - {x: 0.5, y: 18}
-  - {x: 0.5, y: 4.5}
-  - {x: 0, y: 4.5}
-  - {x: 0, y: 18}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 1}
-  - {x: 0, y: 4.5}
-  - {x: 0, y: 18}
-  - {x: 0.5, y: 18}
-  - {x: 0.5, y: 4.5}
+  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 0}
   - {x: -8, y: 0}
   - {x: -8, y: 1}
   - {x: 5.5, y: 1}
@@ -5388,11 +5388,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -30.5, y: 29.499998}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -5422,11 +5422,11 @@ MonoBehaviour:
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
-      m_Fill: 1
+      m_Fill: 2
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 30, y: 29.499998}
+      m_Offset: {x: 0, y: 0}
       m_Rotation: 0
-      m_Anchor: 9
+      m_Anchor: 4
     m_Material: {fileID: 0}
     m_SubmeshIndex: 1
     m_ManualUV: 0
@@ -5506,18 +5506,18 @@ MonoBehaviour:
   - {x: 0, y: 1}
   - {x: 0.5, y: 1}
   - {x: 0.5, y: 0}
-  - {x: 0.5, y: 10.500002}
-  - {x: 0.50001717, y: 6.999998}
-  - {x: 0.000017166138, y: 7.0000057}
-  - {x: 0, y: 10.500002}
+  - {x: 0.99996567, y: 1}
+  - {x: 1, y: 0}
+  - {x: 0.000034332275, y: 0}
+  - {x: 0, y: 1}
   - {x: 0.49957466, y: 1}
   - {x: 0.49957466, y: 0}
   - {x: -0.00042533875, y: 0}
   - {x: -0.00042533875, y: 1}
-  - {x: -0.000017166138, y: 6.999998}
-  - {x: 0, y: 10.500002}
-  - {x: 0.5, y: 10.500002}
-  - {x: 0.49998283, y: 7.0000057}
+  - {x: 0, y: 0}
+  - {x: 0.000034332275, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0.99996567, y: 0}
   - {x: -0.00015640259, y: 0}
   - {x: -0.00015640259, y: 1}
   - {x: 3.4998398, y: 1}
@@ -5533,18 +5533,18 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: -0.0000076293945, w: -1}
+  - {x: 1, y: 0, z: -0.000015258789, w: -1}
+  - {x: 1, y: 0, z: -0.0000076293945, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
   - {x: 1, y: 0, z: -0.000015258789, w: -1}
+  - {x: -1, y: 0, z: 0.0000076293945, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0.0000076293945, w: -1}
+  - {x: -1, y: 0, z: 0.000015258789, w: -1}
   - {x: 0.000004904616, y: 0, z: -1, w: -1}
   - {x: 0.000004904616, y: 0, z: -1, w: -1}
   - {x: 0.000004904616, y: 0, z: -1, w: -1}
