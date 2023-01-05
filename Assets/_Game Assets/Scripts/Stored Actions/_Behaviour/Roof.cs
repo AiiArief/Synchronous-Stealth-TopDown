@@ -6,14 +6,27 @@ using UnityEngine.SceneManagement;
 public class Roof : MonoBehaviour
 {
     [SerializeField] string m_enableRoofSceneName = "Level 1";
+    [SerializeField] GameObject m_roofHidden;
 
     private void Awake()
     {
         bool isActiveScene = SceneManager.GetActiveScene().name == m_enableRoofSceneName;
         int layer = (isActiveScene) ? LayerMask.NameToLayer("Roof") : LayerMask.NameToLayer("Default");
-        for (int i=1; i<transform.childCount; i++)
+        m_roofHidden.gameObject.SetActive(isActiveScene);
+
+        ChangeObjectLayerRecursively(transform, layer);
+    }
+
+    private void ChangeObjectLayerRecursively(Transform _transform, int layer)
+    {
+        foreach (Transform t in _transform)
         {
-            transform.GetChild(i).gameObject.layer = layer;
+            if (t.gameObject == m_roofHidden)
+                continue;
+
+            t.gameObject.layer = layer;
+
+            ChangeObjectLayerRecursively(t, layer);
         }
     }
 }

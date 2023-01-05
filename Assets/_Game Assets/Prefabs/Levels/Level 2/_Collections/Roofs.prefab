@@ -8194,6 +8194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enableRoofSceneName: Level 2
+  m_roofHidden: {fileID: 393034169716983933}
 --- !u!1 &393034170686080770
 GameObject:
   m_ObjectHideFlags: 0

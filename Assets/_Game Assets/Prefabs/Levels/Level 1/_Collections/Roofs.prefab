@@ -25380,7 +25380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9147515526913448038}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Reflection Probes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27193,7 +27193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8819534936061263363}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43408,6 +43408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enableRoofSceneName: Level 1
+  m_roofHidden: {fileID: 4837909702051717750}
 --- !u!1 &4837909701828110997
 GameObject:
   m_ObjectHideFlags: 0
@@ -47704,15 +47705,15 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 0.7587632, y: -0.6323027, z: 0.15643446, w: -1}
-  - {x: 0.7587632, y: -0.6323027, z: 0.15643446, w: -1}
-  - {x: 0.7587632, y: -0.6323027, z: 0.15643446, w: -1}
+  - {x: -0.000000030526373, y: 0.000000025438645, z: 1, w: -1}
+  - {x: -0.000000030526373, y: 0.000000025438645, z: 1, w: -1}
+  - {x: -0.000000030526373, y: 0.000000025438645, z: 1, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 0.7587632, y: 0.6323027, z: 0.15643446, w: -1}
-  - {x: 0.7587632, y: 0.6323027, z: 0.15643446, w: -1}
-  - {x: 0.7587632, y: 0.6323027, z: 0.15643446, w: -1}
+  - {x: -0.000000030526373, y: -0.000000025438645, z: 1, w: -1}
+  - {x: -0.000000030526373, y: -0.000000025438645, z: 1, w: -1}
+  - {x: -0.000000030526373, y: -0.000000025438645, z: 1, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
@@ -57750,7 +57751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649285992832015237}
   - component: {fileID: 3156756907587702291}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
