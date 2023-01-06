@@ -29,13 +29,13 @@ public class LocalizationManager : MonoBehaviour
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
     public static readonly LocalizationString TUTORIAL_INTERACT = new LocalizationString("Hit any object to interact", "Tabrak objek apapun untuk berinteraksi");
     public static readonly LocalizationString TUTORIAL_RUN = new LocalizationString("Hold + move to run", "Tahan + gerak untuk lari");
-    public static readonly LocalizationString TUTORIAL_SKIP = new LocalizationString("Rapidly tap to skip turn", "Tekan berkali-kali untuk lewati giliran");
+    public static readonly LocalizationString TUTORIAL_SKIP = new LocalizationString("Hold to skip turn", "Tahan untuk lewati giliran");
     public static readonly LocalizationString TUTORIAL_NEXT = new LocalizationString("Next", "Lanjut");
     public static readonly LocalizationString TUTORIAL_SELECT = new LocalizationString("Select", "Pilih");
     public static readonly LocalizationString TUTORIAL_CHECKPOINT = new LocalizationString("Checkpoint!", "Checkpoint!");
     public static readonly LocalizationString TUTORIAL_HUBWORLD = new LocalizationString("Hub World", "Hub World");
-    public static readonly LocalizationString TUTORIAL_HAVVASKINGDOM_NOBLEAREA = new LocalizationString("Havva's Kingdom Noble Area", "Area Bangsawan Kerajaan Havva");
-    public static readonly LocalizationString TUTORIAL_HAVVASKINGDOM_OBSERVATORY = new LocalizationString("Havva's Kingdom Observatory", "Observatorium Kerajaan Havva");
+    public static readonly LocalizationString TUTORIAL_HAVVASKINGDOM_NOBLEAREA = new LocalizationString("Havvatopia - Uptown", "Havvatopia - Pusat Kota Bagian Atas");
+    public static readonly LocalizationString TUTORIAL_HAVVASKINGDOM_OBSERVATORY = new LocalizationString("Havvatopia - Observatory", "Havvatopia - Observatorium");
     #endregion
 
     #region Character

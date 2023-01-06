@@ -178,7 +178,7 @@ public class EntityEvent_Level2 : EntityEvent
                         )));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => { player.animator.SetInteger("expression", 0); um.NextAction(); });
-                    um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_talkEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),
         })));

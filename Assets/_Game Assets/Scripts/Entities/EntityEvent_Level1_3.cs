@@ -9,7 +9,7 @@ public class EntityEvent_Level1_3 : EntityEvent
     public void TutorialSkipTurn()
     {
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.MoveMod, LocalizationManager.TUTORIAL_SKIP), 5.0f); um.NextAction(); });
+        um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.Shoot, LocalizationManager.TUTORIAL_SKIP), 5.0f); um.NextAction(); });
     }
     
     public void DevlogDiaryTriggerEvent_3()
