@@ -31,7 +31,10 @@ public class SimpleMovement : MonoBehaviour
         rb.rotation = Camera.main.transform.rotation;
         rb.velocity = transform.forward * Input.GetAxis(m_verticalInputAxis) * m_speed * Time.deltaTime + transform.right * Input.GetAxis(m_horizontalInputAxis) * m_speed * Time.deltaTime;
 
-        if(Input.GetButtonDown(m_shootScreenshotButton))
-            UnityEngine.ScreenCapture.CaptureScreenshot("last_win.png");
+        if (Input.GetButtonDown(m_shootScreenshotButton))
+        {
+            ScreenCapture.CaptureScreenshot("last_win.png");
+            print("screenshotted!");
+        }
     }
 }
