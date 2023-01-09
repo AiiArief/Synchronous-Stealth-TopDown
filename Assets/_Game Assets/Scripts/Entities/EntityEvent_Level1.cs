@@ -16,7 +16,7 @@ public class EntityEvent_Level1 : EntityEvent
             player.animator.gameObject.SetActive(false);
 
             um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
-            um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVASKINGDOM_NOBLEAREA), 3.0f); um.NextAction(); });
+            um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVATOPIA_UPTOWN), 3.0f); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
             um.AddUIAction(() => { em.triggerCheckpoints[0].teleportArea.gameObject.SetActive(true); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.AnimateTransition("flashbang")));
@@ -31,7 +31,7 @@ public class EntityEvent_Level1 : EntityEvent
         }
 
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVASKINGDOM_NOBLEAREA), 5.0f); um.NextAction(); });
+        um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVATOPIA_UPTOWN), 5.0f); um.NextAction(); });
         um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(2); um.NextAction(); });
     }
 

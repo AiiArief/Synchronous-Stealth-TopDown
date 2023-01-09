@@ -10,7 +10,7 @@ public class EntityEvent_Level2 : EntityEvent
         base.EventOnLoadLevel();
 
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVASKINGDOM_OBSERVATORY), 5.0f); um.NextAction(); });
+        um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVATOPIA_OBSERVATORY), 5.0f); um.NextAction(); });
         um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(4); um.NextAction(); });
     }
 
