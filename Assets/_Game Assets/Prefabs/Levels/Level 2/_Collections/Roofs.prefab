@@ -44,12 +44,12 @@ GameObject:
   - component: {fileID: 393034169940833310}
   - component: {fileID: 393034169940833311}
   - component: {fileID: 393034169940833308}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 109
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &393034169940833309
 Transform:
@@ -7047,12 +7047,12 @@ GameObject:
   - component: {fileID: 393034170325930660}
   - component: {fileID: 393034170325930658}
   - component: {fileID: 393034170325930661}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 109
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &393034170325930656
 Transform:

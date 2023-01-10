@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 1
     smallestHole: 0.05
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 5c25b38975defa8449c04370f4f75817
+  m_OcclusionCullingData: {fileID: 36300000, guid: 98a1ea3ae65cc514db599bfa6598ee3b,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -3102,7 +3103,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1125682
+  m_Name: pb_Mesh-178934
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3927,7 +3928,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1125674
+  m_Name: pb_Mesh-178930
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4446,7 +4447,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1125690
+  m_Name: pb_Mesh-178938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9622,7 +9623,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1125672
+  m_Name: pb_Mesh-178928
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9949,6 +9950,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 393034169940833306, guid: 552fa0dc702cc364ca9fa3df8ce84ee5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 393034169940833308, guid: 552fa0dc702cc364ca9fa3df8ce84ee5,
         type: 3}
       propertyPath: m_Mesh
@@ -9969,6 +9975,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 888559468}
+    - target: {fileID: 393034170325930657, guid: 552fa0dc702cc364ca9fa3df8ce84ee5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 393034170325930658, guid: 552fa0dc702cc364ca9fa3df8ce84ee5,
         type: 3}
       propertyPath: m_Mesh
