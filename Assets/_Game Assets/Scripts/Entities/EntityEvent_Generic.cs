@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class EntityEvent_Generic : EntityEvent
 {
@@ -46,6 +47,8 @@ public class EntityEvent_Generic : EntityEvent
 
     public void PlayerIsCapturedEvent(EntityCharacterNPC byWhom)
     {
+        Analytics.CustomEvent("player_iscaptured", player.transform.position);
+
         um.ClearUIAction();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class GlobalGameManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class GlobalGameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        HandleSpecs();
     }
 
     private void Update()
@@ -61,5 +64,16 @@ public class GlobalGameManager : MonoBehaviour
             QualitySettings.SetQualityLevel(3, true);
             Screen.SetResolution(3840, 2160, FullScreenMode.FullScreenWindow, 60);
         }
+    }
+
+    private void HandleSpecs()
+    {
+        string cpu = SystemInfo.processorType;
+        string ram = SystemInfo.systemMemorySize + " MB";
+        string gpu = SystemInfo.graphicsDeviceName + " (" + SystemInfo.graphicsMemorySize + "MB)";
+
+        // adjust quality here
+
+        Analytics.CustomEvent("hardware_specs", new Dictionary<string, object> { {"CPU", cpu}, {"RAM", ram}, {"GPU", gpu} });
     }
 }

@@ -615,7 +615,7 @@ PlayerSettings:
     Collab: 0
     ErrorHub: 0
     Hub: 0
-    UNet: 0
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -628,10 +628,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 0b4e746b-624a-44d9-807a-834b0cd07b26
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Super Spy Violet
+  organizationId: unity_cvx_t3aha2t2cw
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
