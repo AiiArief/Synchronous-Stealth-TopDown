@@ -54,7 +54,7 @@ public class EntityEvent_Generic : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
         // seharusnya dapetin nama bywhom dulu
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_3DHEADPHONESPHEREROBOT_GUARD, "WOY, SIAPA LU! ALERT! ALERT!", byWhom.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_3DHEADPHONESPHEREROBOT_GUARD, LocalizationManager.CAPTURED, byWhom.voicePack),
                 new DialogueChoice[2] {
                     new DialogueChoice(LocalizationManager.CAPTURED_CHOICES[0], () => { _RetryLastCheckpointButton(); }),
                     new DialogueChoice(LocalizationManager.CAPTURED_CHOICES[1], () => { QuitButton(); })

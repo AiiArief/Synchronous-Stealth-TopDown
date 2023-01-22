@@ -1,1 +1,17 @@
-﻿Key,Id,Custom(01),English(en),Indonesian(id)
+Key,Id,Custom(01),English(en),Indonesian(id)
+GENERIC_PAUSE_CHOICES_RESUME,,,... (Resume) ,... (Lanjutkan main) 
+GENERIC_PAUSE_CHOICES_RETRY,,,,Mau time leap! (Ulang dari checkpoint terakhir) 
+GENERIC_PAUSE_CHOICES_QUIT,,,,Udahan kerjanya ah. (Keluar dari game) 
+GENERIC_CAPTURED,,,,WOY! SAPA LU! ALERT! ALERT! ALERT! 
+GENERIC_CAPTURED_CHOICES_RETRY,,,,Saatnya time leap! (Ulang dari checkpoint terakhir) 
+GENERIC_CAPTURED_CHOICES_QUIT,,,,Au ah. (Keluar) 
+GENERIC_DOORNOSWITCH ,,,,Pintunya ga ada penghuninya... 
+GENERIC_PASSWORD_CHOICES_ENTERPASSWORD,,,,Masukkan Password. 
+GENERIC_PASSWORD_CHOICES_HAVEANSWERS,,,,Masukkan Password (Sudah punya jawabannya). 
+GENERIC_PASSWORD_CHOICES_CANCEL,,,,Gajadi. 
+GENERIC_PASSWORD_QUESTION,,,,Pertanyaan #
+GENERIC_PASSWORD_CHOICES_ANSWER ,,,,
+GENERIC_PASSWORD_THEANSWERIS,,,,Jawabannya adalah 
+GENERIC_MEMORY_CRACKOFTIME,,,,Ada banyak suara dari masa lalu terdengar di pecahan waktu ini... 
+GENERIC_MEMORY_REMEMBERED ,,,,Secara tiba-tiba hapal semua dialog barusan... 
+GENERIC_MEMORY_MAYBETHOSEDIALOGUES,,,,Mungkin dialog-dialog tersebut bisa dipakai untuk password di pintu tertentu! 

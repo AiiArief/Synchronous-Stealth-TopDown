@@ -26,6 +26,8 @@ public class LocalizationManager : MonoBehaviour
     }
 
     // initialize db disini
+    // ganti bahasa juga disini, setiap ganti bahasa set ulang table
+    // ntar aksesnya db apa .get entry("NAMATABLE_").getserializefield
 
     #region Tutorial
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
@@ -116,6 +118,11 @@ public class LocalizationManager : MonoBehaviour
         new LocalizationString("I want to time leap! (Restart from last checkpoint)", "Mau time leap! (Ulang dari checkpoint terakhir)"),
         new LocalizationString("I don't want to work anymore. (Quit)", "Udahan kerjanya ah. (Keluar dari game)"),
     };
+
+    public static readonly LocalizationString CAPTURED = new LocalizationString(
+        "HEY! WHO ARE YOU! ALERT! ALERT! ALERT!",
+        "WOY! SAPA LU! ALERT! ALERT! ALERT!"
+    );
 
     public static readonly LocalizationString[] CAPTURED_CHOICES = new LocalizationString[2]
     {
