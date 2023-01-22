@@ -27,6 +27,38 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2307f2e60b9eec74c9d85cf0782098f6
+    m_Address: Assets/_Game Assets/Localizations/_Character/Character Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af8c355276df430469603e35dcad5fa9
+    m_Address: Assets/_Game Assets/Localizations/_Generic/Generic Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1f260ba2a727ba45a477896733fa10d
+    m_Address: Assets/_Game Assets/Localizations/Void World/Void World Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f47f2c91688bf045b8b8491d944fc3e
+    m_Address: Assets/_Game Assets/Localizations/Hub World/Hub World Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91c75cd74083a6b4e9b73d6b2f57bcdb
+    m_Address: Assets/_Game Assets/Localizations/Havvatopia - Uptown/Havvatopia -
+      Uptown Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54828e88e48c63c48826ec18800dc832
+    m_Address: Assets/_Game Assets/Localizations/Havvatopia - Observatory/Havvatopia
+      - Observatory Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 03d066d00fe51fc418a20a1e7571d0bf, type: 2}
   m_SchemaSet:

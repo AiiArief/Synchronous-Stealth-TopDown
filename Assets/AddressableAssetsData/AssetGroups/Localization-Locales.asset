@@ -41,20 +41,14 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ef9ceb8b4799dd64991c6f45851c5eb7
-    m_Address: English (en)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 376789d8c68ee8d49b19b86cc7b47594
     m_Address: Indonesian (id)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5f569b30a7ff22240b8da08113f6036b
-    m_Address: Broken English (brok-en)
+  - m_GUID: ef9ceb8b4799dd64991c6f45851c5eb7
+    m_Address: English (en)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

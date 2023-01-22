@@ -25,6 +25,8 @@ public class LocalizationManager : MonoBehaviour
         return localizationString.translatedStrings[languageId];
     }
 
+    // initialize db disini
+
     #region Tutorial
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
     public static readonly LocalizationString TUTORIAL_INTERACT = new LocalizationString("Hit any object to interact", "Tabrak objek apapun untuk berinteraksi");
