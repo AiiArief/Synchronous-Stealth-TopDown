@@ -27,7 +27,7 @@ public class LocalizationManager : MonoBehaviour
 
     // initialize db disini
     // ganti bahasa juga disini, setiap ganti bahasa set ulang table
-    // ntar aksesnya db apa .get entry("NAMATABLE_").getserializefield
+    // ntar aksesnya db apa .get entry("tablename.var[id].dialogue_desc").getserializefield
 
     #region Tutorial
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
