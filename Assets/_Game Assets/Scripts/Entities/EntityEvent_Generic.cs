@@ -96,10 +96,15 @@ public class EntityEvent_Generic : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "M-mungkin Havva mengetahui passwordnya...", doorSwitch.voicePack),
         new DialogueChoice[2] {
             new DialogueChoice(passwordChoice, () => {
+                string[] elevata_downtown_answers_1 = new string[3] { "E", "D", "B" };
+                string[] elevata_downtown_answers_2 = new string[3] { "C", "D", "E" };
+                string[] elevata_downtown_answers_3 = new string[3] { "E", "F", "D" };
+                string[] elevata_downtown_answers_4 = new string[3] { "C E G", "E F# G", "A G# G" };
                 doorSwitch.switchForDoors[0].EnterPassword(new PasswordChoice[] {
-                    new PasswordChoice(2, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[0], doorSwitch.voicePack), haveKey),
-                    new PasswordChoice(1, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[1], doorSwitch.voicePack), haveKey),
-                    new PasswordChoice(0, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[2], doorSwitch.voicePack), haveKey),
+                    new PasswordChoice(2, elevata_downtown_answers_1 , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[0], doorSwitch.voicePack), haveKey),
+                    new PasswordChoice(1, elevata_downtown_answers_2 , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[1], doorSwitch.voicePack), haveKey),
+                    new PasswordChoice(0, elevata_downtown_answers_3 , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[2], doorSwitch.voicePack), haveKey),
+                    new PasswordChoice(1, elevata_downtown_answers_4 , new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, LocalizationManager.GENERIC_PASSWORD_QUESTION[2], doorSwitch.voicePack), haveKey),
                 },
                 () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
