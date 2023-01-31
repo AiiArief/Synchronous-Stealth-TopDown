@@ -48,6 +48,8 @@ public class EntityEvent_Level1_1 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz... Adakah... yang bisa dibantu...", door.voicePack),
                 new DialogueChoice[3] {
                     new DialogueChoice("Havva sedang dimana ya?", () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... zzz...", door.voicePack))));
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Sebelum mati lampu Havva berada di Observatory, lantai paling atas...", door.voicePack))));
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Silahkan pergi bersama Elefataa ke sana...", door.voicePack))));
@@ -61,6 +63,8 @@ public class EntityEvent_Level1_1 : EntityEvent
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                     new DialogueChoice("Boleh lewat ga?", () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOOR, "... Oiya ini... silahkan lewat...", door.voicePack))));
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
@@ -68,6 +72,8 @@ public class EntityEvent_Level1_1 : EntityEvent
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                     new DialogueChoice("Enggak jadi.", () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
@@ -130,6 +136,8 @@ public class EntityEvent_Level1_1 : EntityEvent
                             new PasswordChoice(2, LocalizationManager.GENERIC_PASSWORD_ANSWER , new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, LocalizationManager.GENERIC_PASSWORD_QUESTION[2], door.voicePack), haveKey),
                         },
                         () => {
+                            um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Passwordnya benar, yeaaay!", door.voicePack))));
                             um.AddUIAction(() => { door.SetDoorIsClosed(false); um.NextAction(); });
@@ -137,6 +145,8 @@ public class EntityEvent_Level1_1 : EntityEvent
                             um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_1_Camera.ReleaseCamera(); um.NextAction(); });
                         },
                         () => {
+                            um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));                            
                             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "PASSWORDNYA SALAH!!!!", door.voicePack))));
                             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                             um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
@@ -147,6 +157,8 @@ public class EntityEvent_Level1_1 : EntityEvent
                         });
                     }),
                     new DialogueChoice("Kenapa butuh password?", () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Hmm... iya yah, kenapa ya...", door.voicePack)))); 
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_DOORPASSWORD, "Yang setel passwordnya juga bukan Havva...", door.voicePack))));
@@ -158,6 +170,8 @@ public class EntityEvent_Level1_1 : EntityEvent
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                     new DialogueChoice(LocalizationManager.GENERIC_PASSWORD_CHOICES[2], () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_password_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
@@ -191,14 +205,19 @@ public class EntityEvent_Level1_1 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("(3D Headphone Sphere Robot) Guard #2", "NGOMONG YANG KERAS!!! GA KEDENGERAN COY!!!", m_passwordTriggerEvent_1_3DBH_2.voicePack))));
         um.AddUIAction(() => { m_passwordTriggerEvent_1_3DBH_1.animator.SetBool("isTalking", false); m_passwordTriggerEvent_1_3DBH_2.animator.SetBool("isTalking", false); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { player.animator.SetInteger("expression", 0); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
 
-        um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); player.animator.SetInteger("expression", 0); um.NextAction(); });
+        um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); StartCoroutine(GlobalGameManager.Instance.soundManager.PlayMusicEffect(GlobalGameManager.Instance.databaseManager.me_victory)); um.NextAction(); });
         um.AddUIAction(() => { em.memoryTriggerEvents[eventId - 1].SetIsAvailable(false); um.NextAction(); });
-        // suara ME disini
+        um.AddUIAction(() => { player.animator.SetInteger("expression", 3); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { player.animator.SetInteger("expression", 0); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(2.0f)));
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
@@ -208,7 +227,6 @@ public class EntityEvent_Level1_1 : EntityEvent
         string key = ProfileManager.PLAYERPREFS_HAVEDIARY + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
         if (PlayerPrefs.HasKey(key))
             return;
-
 
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });

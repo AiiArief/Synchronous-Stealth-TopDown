@@ -243,7 +243,7 @@ public class EntityCharacterNPC2D1BitDoor : EntityCharacterNPC2D1Bit
     private void _HandleCheckSound(bool answerIsTrue)
     {
         var dm = GlobalGameManager.Instance.databaseManager;
-        GetComponent<AudioSource>().PlayOneShot((answerIsTrue) ? dm.passwordTrue : dm.passwordWrong);
+        GetComponent<AudioSource>().PlayOneShot((answerIsTrue) ? dm.sfx_passwordTrue : dm.sfx_passwordWrong);
     }
 
     private IEnumerator _HandleDoorCollider(bool isClosed)

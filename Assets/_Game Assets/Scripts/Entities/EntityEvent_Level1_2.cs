@@ -20,6 +20,8 @@ public class EntityEvent_Level1_2 : EntityEvent
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SWITCH, "Lu mau gua tutup pintunya biar mereka ga bisa liat lu?", doorSwitch.voicePack),
                     new DialogueChoice[2] {
                     new DialogueChoice("Boleh.", () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Idk); um.NextAction(); });
                         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SWITCH, "Untungnya mereka bego, jadi mereka ga bakalan nyadar wkwk.", doorSwitch.voicePack))));
                         um.AddUIAction(() => { doorSwitch.UseSwitch(); m_closeDoorEvent_1_firstTime = false; um.NextAction(); });
@@ -27,6 +29,8 @@ public class EntityEvent_Level1_2 : EntityEvent
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_closeDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                     new DialogueChoice("Gausah deh.", () => {
+                        um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
+                        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_closeDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),

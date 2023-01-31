@@ -11,7 +11,6 @@ public class EntityEvent_Level2 : EntityEvent
 
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVATOPIA_OBSERVATORY), 5.0f); um.NextAction(); });
-        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(4); um.NextAction(); });
     }
 
     [SerializeField] CutsceneCamera m_elevatorEvent_Camera;
@@ -26,8 +25,8 @@ public class EntityEvent_Level2 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Hello); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Halo! Selamat datang di Havvatopia bagian Observatorium!", doorSwitch.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_ELEFATAA, "Mau naikki aku ke mana?", doorSwitch.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Halo! Selamat datang di Havvatopia bagian Observatorium!", doorSwitch.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Mau naikki aku ke mana?", doorSwitch.voicePack),
             new DialogueChoice[5] {
                 new DialogueChoice("Havvatopia - Uptown", () => {
                     em.genericEvent.ElefataaEvent_Generic_Uptown(this, doorSwitch);
@@ -61,22 +60,21 @@ public class EntityEvent_Level2 : EntityEvent
             m_firstTime = false;
             um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2DHUMANOID_HAVVA, "..."))));
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
             um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2DHUMANOID_HAVVA, "..."))));
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
             um.AddUIAction(() => { havva.animator.SetInteger("cg", 1); um.NextAction(); });
-            um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
-            um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(_FadeOutHavvaMusic(havva, 3.0f)));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2DHUMANOID_HAVVA, "..."))));
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
             um.AddUIAction(() => { havva.animator.SetInteger("cg", 2); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2DHUMANOID_HAVVA, "..."))));
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-            um.AddUIAction(() => { havva.animator.SetInteger("cg", 3); um.NextAction(); });
+            um.AddUIAction(() => { havva.animator.SetInteger("cg", 3); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_passwordWrong); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
             um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."),
@@ -107,29 +105,30 @@ public class EntityEvent_Level2 : EntityEvent
                     string key = ProfileManager.PLAYERPREFS_HAVEPASSWORD + "_" + SceneManager.GetActiveScene().name + "_" + eventId;
 
                     um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => { player.animator.SetTrigger("interact"); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_computer); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Membuka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\"..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
 
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 4); um.NextAction(); });
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 4); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_pptTransition); um.NextAction(); });
                     um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Perkenalkan, yang barusan kena error adalah Havva, walikota dari Havvatopia.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Havva tidak mengira kalau rumor memainkan lagu yang dia mainkan barusan beneran bisa memanggil Spy.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Baterai laptopnya Havva sudah sekarat dan sebentar lagi Havva berubah jadi objek statis.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Oleh karena itu, Havva sangat berterima kasih kepada Agent Violet karena sudah datang tepat pada waktunya.\"", em.genericEvent.voicePack))));
                     
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 5); um.NextAction(); });
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 5); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_pptTransition); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Havva awalnya lagi bermain piano dan mengatur Havvatopia di observatory seperti biasa.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Tiba-tiba, 3D Titan Sphere Robot yang ditinggali oleh penduduk Havvatopia sejak lama ini, hidup lagi dan bergerak.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Dan juga, seluruh wifi di Havvatopia mati dan saat ini Havvatopia sedang menggunakan listrik darurat.\"", em.genericEvent.voicePack))));
                     
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 6); um.NextAction(); });
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 6); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_pptTransition); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Nah, Havva butuh bantuan Agent Violet nih.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Bantuannya yaitu investigasi apa yang terjadi di Havvatopia dan cari tahu Havvatopia sedang bergerak menuju kearah mana.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Lalu juga Havva membutuhkan bantuan Violet untuk menyalakan kembali listrik dan wifi di Havvatopia agar bisa mengontrol kembali 3D Titan Sphere ini.\"", em.genericEvent.voicePack))));
 
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 7); um.NextAction(); });
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 7); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_pptTransition); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Ini adalah foto kerangka Havvatopia.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Untuk menyalakan listrik dan wifi di Havvatopia, Agent Violet harus ke engine room.\"", em.genericEvent.voicePack))));
@@ -139,14 +138,14 @@ public class EntityEvent_Level2 : EntityEvent
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Dari Underground, Agent Violet bisa ke engine room menggunakan tangga darurat Elefataa.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Ada 1000 anak tangga di tangga darurat tersebut, Havva berharap semoga Agent Violet tidak capek.\"", em.genericEvent.voicePack))));
 
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 8); um.NextAction(); });
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 8); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_pptTransition); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Sekian presentasinya Havva.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Untuk pergi ke Downtown, passwordnya sudah tertera disini.\"", em.genericEvent.voicePack))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "\"Sekali lagi, Havva berterima kasih karena Agent Violet sudah datang.\"", em.genericEvent.voicePack))));
 
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-                    um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); um.NextAction(); });
+                    um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); StartCoroutine(GlobalGameManager.Instance.soundManager.PlayMusicEffect(GlobalGameManager.Instance.databaseManager.me_victory)); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
@@ -154,9 +153,10 @@ public class EntityEvent_Level2 : EntityEvent
                 }),
                 new DialogueChoice("Jalankan ulang program interface 2D Humanoid", () => {
                     um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => { player.animator.SetTrigger("interact"); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_computer); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Menjalankan program interface 2D Humanoid..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 3); um.NextAction(); });
+                    um.AddUIAction(() => { havva.animator.SetInteger("cg", 3); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_passwordWrong); um.NextAction(); });
                     um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(1); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
@@ -165,6 +165,7 @@ public class EntityEvent_Level2 : EntityEvent
                 }),
                 new DialogueChoice("Buka folder \"Homework\" berukuran 120Gb", () => {
                     um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(2); um.NextAction(); });
+                    um.AddUIAction(() => { player.animator.SetTrigger("interact"); havva.audioSource.PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_computer); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Membuka folder \"Homework\"..."))));
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."),
@@ -182,5 +183,19 @@ public class EntityEvent_Level2 : EntityEvent
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_talkEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),
         })));
+    }
+
+    private IEnumerator _FadeOutHavvaMusic(EntityCharacterNPC2DHumanoidLaptop havva, float fadeOutTime)
+    {
+        while(havva.audioSource.volume > 0.0f)
+        {
+            havva.audioSource.volume = Mathf.Max(havva.audioSource.volume - (1.0f / fadeOutTime) * Time.deltaTime, 0.0f);
+            yield return null;
+        }
+
+        havva.audioSource.Stop();
+        havva.audioSource.volume = 1.0f;
+
+        um.NextAction();
     }
 }

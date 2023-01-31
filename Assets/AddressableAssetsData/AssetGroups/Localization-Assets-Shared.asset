@@ -17,11 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 625aaad6bef6e7442b00ff20bfde32e3
   m_SerializeEntries:
-  - m_GUID: 4bb0a090db2d4604b83e099cc1819b6d
-    m_Address: Assets/_Game Assets/Localizations/Dialogue Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 358b44cd4bfa39d4d85b9169ef4bdcc9
     m_Address: Assets/_Game Assets/Localizations/Tutorial Shared Data.asset
     m_ReadOnly: 1

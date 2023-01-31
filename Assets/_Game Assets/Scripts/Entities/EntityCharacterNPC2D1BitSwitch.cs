@@ -84,7 +84,7 @@ public class EntityCharacterNPC2D1BitSwitch : EntityCharacterNPC2D1Bit
         if((currentAutoSwitch > 12 && currentAutoSwitch % 4 == 0) || 
             (currentAutoSwitch > 4 && currentAutoSwitch <= 12 && currentAutoSwitch % 2 == 0) ||
             (currentAutoSwitch <= 4))
-            GetComponent<AudioSource>().PlayOneShot(GlobalGameManager.Instance.databaseManager.tikTok);
+            GetComponent<AudioSource>().PlayOneShot(GlobalGameManager.Instance.databaseManager.sfx_tikTok);
     }
 
     private void _UpdateLineRenderer()

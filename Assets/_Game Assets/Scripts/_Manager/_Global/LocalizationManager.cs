@@ -89,7 +89,7 @@ public class LocalizationManager : MonoBehaviour
         "(2D 1 Bit) Pintu dengan Password"
     );
 
-    public static readonly LocalizationString CHARACTER_RGBGAMINGDOOR = new LocalizationString(
+    public static readonly LocalizationString CHARACTER_2D1BIT_RGBGAMINGDOOR = new LocalizationString(
         "(2D 1 Bit) RGB Gaming Door",
         "(2D 1 Bit) Pintu Gaming RGB"
     );
@@ -99,7 +99,7 @@ public class LocalizationManager : MonoBehaviour
         "(2D 1 Bit) Plang"
     );
 
-    public static readonly LocalizationString CHARACTER_ELEFATAA = new LocalizationString(
+    public static readonly LocalizationString CHARACTER_2D1BIT_ELEFATAA = new LocalizationString(
         "(2D 1 Bit) Elefataa",
         "(2D 1 Bit) Elefataa"
     );
@@ -107,6 +107,11 @@ public class LocalizationManager : MonoBehaviour
     public static readonly LocalizationString CHARACTER_2D1BIT_FIREPLACE = new LocalizationString(
         "(2D 1 Bit) Fire Place",
         "(2D 1 Bit) Fire Place"
+    );
+
+    public static readonly LocalizationString CHARACTER_2DHUMANOID_HAVVA = new LocalizationString(
+        "(2D humanoid) Havva",
+        "(2D Humanoid) Havva"
     );
 
     #endregion

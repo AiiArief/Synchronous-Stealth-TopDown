@@ -37,14 +37,20 @@ public class EntityEvent_Level1_9 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"PASSWORDNYA 1 0 2...\""))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_CRACKOFTIME, "\"BZZZZT... BZZZZT...\""))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { player.animator.SetInteger("expression", 0); player.animator.SetBool("isMemory", false); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
 
-        um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); player.animator.SetInteger("expression", 0); player.animator.SetBool("isMemory", false); um.NextAction(); });
+        um.AddUIAction(() => { PlayerPrefs.SetString(key, true.ToString()); StartCoroutine(GlobalGameManager.Instance.soundManager.PlayMusicEffect(GlobalGameManager.Instance.databaseManager.me_victory)); um.NextAction(); });
         um.AddUIAction(() => { em.memoryTriggerEvents[eventId - 1].SetIsAvailable(false); um.NextAction(); });
+        um.AddUIAction(() => { player.animator.SetInteger("expression", 3); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[0]))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.GENERIC_MEMORY_REMEMBERED[1]))));
-        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_passwordTriggerEvent_2_Camera.ReleaseCamera(); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { player.animator.SetInteger("expression", 0); m_passwordTriggerEvent_2_Camera.ReleaseCamera(); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
     public void DevlogDiaryTriggerEvent_9()

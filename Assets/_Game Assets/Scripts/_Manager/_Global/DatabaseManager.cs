@@ -32,20 +32,23 @@ public class DatabaseManager : MonoBehaviour
     [SerializeField] AudioClip m_music_fireBrand;
     public AudioClip music_fireBrand { get { return m_music_fireBrand; } }
 
-    [SerializeField] AudioClip m_music_waltz_havva;
-    public AudioClip music_waltz_havva { get { return m_music_waltz_havva; } }
+    [SerializeField] AudioClip m_me_victory;
+    public AudioClip me_victory { get { return m_me_victory; } }
 
-    [SerializeField] AudioClip m_passwordTrue;
-    public AudioClip passwordTrue { get { return m_passwordTrue; } }
+    [SerializeField] AudioClip m_sfx_passwordTrue;
+    public AudioClip sfx_passwordTrue { get { return m_sfx_passwordTrue; } }
 
-    [SerializeField] AudioClip m_passwordWrong;
-    public AudioClip passwordWrong { get { return m_passwordWrong; } }
+    [SerializeField] AudioClip m_sfx_passwordWrong;
+    public AudioClip sfx_passwordWrong { get { return m_sfx_passwordWrong; } }
 
-    [SerializeField] AudioClip m_tikTok;
-    public AudioClip tikTok { get { return m_tikTok; } }
+    [SerializeField] AudioClip m_sfx_tikTok;
+    public AudioClip sfx_tikTok { get { return m_sfx_tikTok; } }
 
-    [SerializeField] AudioClip m_victoryME;
-    public AudioClip victoryME { get { return m_victoryME; } }
+    [SerializeField] AudioClip m_sfx_computer;
+    public AudioClip sfx_computer { get { return m_sfx_computer; } }
+
+    [SerializeField] AudioClip m_sfx_pptTransition;
+    public AudioClip sfx_pptTransition { get { return m_sfx_pptTransition; } }
 
     [SerializeField] SceneLevel[] m_sceneLevels;
     public SceneLevel[] sceneLevels { get { return m_sceneLevels; } }

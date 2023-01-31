@@ -17,12 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: d0716f8394a1d2a45bd6b68b33ed76f9
   m_SerializeEntries:
-  - m_GUID: 804177b1735afec4ea32f4680e3bd5d6
-    m_Address: Dialogue_id
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-id
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3cb9fcea4154e46429b9226c76c06bdb
     m_Address: Tutorial_id
     m_ReadOnly: 1

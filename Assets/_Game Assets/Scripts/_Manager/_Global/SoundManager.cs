@@ -5,20 +5,12 @@ using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
-    [HideInInspector]
-    public AudioSource musicSource;
+    [SerializeField] AudioSource m_musicSource;
+    public AudioSource musicSource { get { return m_musicSource; } }
+    [SerializeField] AudioSource m_meSource;
+    public AudioSource meSource { get { return m_meSource; } }
 
     public AudioMixer audioMixer;
-
-    private void Awake()
-    {
-        musicSource = GetComponent<AudioSource>();
-    }
-
-    public void ToggleMute(bool isOn)
-    {
-        audioMixer.SetFloat("vol", (isOn) ? -80.0f : 0.0f);
-    }
 
     public void PlayMusic(int music, bool stopSamePlayedMusic = true)
     {
@@ -28,35 +20,55 @@ public class SoundManager : MonoBehaviour
             [1] = GlobalGameManager.Instance.databaseManager.music_teddyBearWaltz,
             [2] = GlobalGameManager.Instance.databaseManager.music_spyGlass,
             [3] = GlobalGameManager.Instance.databaseManager.music_fireBrand,
-            [4] = GlobalGameManager.Instance.databaseManager.music_waltz_havva,
         }; 
         
-        if (musicSource.isPlaying && musicSource.clip == library[music] && !stopSamePlayedMusic)
+        if (m_musicSource.isPlaying && m_musicSource.clip == library[music] && !stopSamePlayedMusic)
             return;
 
-        musicSource.clip = library[music];
-        musicSource.Play();
+        m_musicSource.clip = library[music];
+        m_musicSource.Play();
     }
 
-    public void PlayMusicEffect(AudioClip audio)
+    public IEnumerator PlayMusicEffect(AudioClip audio)
     {
-        // pause music
-        // play me di audio source ke dua
-        // kalo udah selesai resume
+        StartCoroutine(FadeOutMusic(0.25f, false));
+        yield return new WaitForSeconds(0.25f);
+
+        m_meSource.PlayOneShot(audio);
+        while (m_meSource.isPlaying)
+            yield return null;
+
+        StartCoroutine(FadeInMusic(1.0f));
     }
 
-    public IEnumerator FadeOutMusic(float time)
+    public IEnumerator FadeOutMusic(float time, bool stopMusic = true)
     {
-        float startVolume = musicSource.volume;
-
-        while (musicSource.volume > 0)
+        while (m_musicSource.volume > 0)
         {
-            musicSource.volume -= startVolume * Time.deltaTime / time;
+            musicSource.volume -= 1.0f * Time.deltaTime / time;
 
             yield return null;
         }
 
-        musicSource.Stop();
-        musicSource.volume = startVolume;
+        if (stopMusic)
+        {
+            m_musicSource.Stop();
+            m_musicSource.volume = 1.0f;
+        }
+    }
+
+    public IEnumerator FadeInMusic(float time)
+    {
+        m_musicSource.volume = 0.0f;
+        if (!m_musicSource.isPlaying)
+            m_musicSource.Play();
+
+        while (m_musicSource.volume < 1.0f)
+        {
+            musicSource.volume += 1.0f * Time.deltaTime / time;
+
+            yield return null;
+        }
+
     }
 }

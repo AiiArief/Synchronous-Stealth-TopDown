@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EntityCharacterNPC2DHumanoidLaptop : EntityCharacterNPC
 {
+    [SerializeField] AudioSource m_audioSource;
+    public AudioSource audioSource { get { return m_audioSource; } }
+
     public override void WaitInput()
     {
         base.WaitInput();
