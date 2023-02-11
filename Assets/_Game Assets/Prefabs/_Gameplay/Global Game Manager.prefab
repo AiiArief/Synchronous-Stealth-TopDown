@@ -254,6 +254,12 @@ MonoBehaviour:
     - Level 1-Static 1
     - Level 3-Static 1
     m_physicsModes: ffffffff00000000000000000000000000000000
+  - m_sceneName: Havvatopia - Downtown
+    m_scenes:
+    - Level 3
+    - Level 3-Static 1
+    - Havvatopia
+    m_physicsModes: ffffffff0000000000000000
 --- !u!1 &3470207479386773933
 GameObject:
   m_ObjectHideFlags: 0
