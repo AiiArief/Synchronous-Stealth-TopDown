@@ -13,12 +13,19 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
 
         AddBasicStatusEffectOnStartingEvent();
 
+        string currentScene = PlayerPrefs.GetString(ProfileManager.PLAYERPREFS_CURRENTSCENE, "Void World");
+
+        #region End Game - Demo
+        if (currentScene == "Havvatopia - Downtown") {
+            _EndGameDemo();
+            return;
+        }
+        #endregion
+
         um.AddUIAction(() => StartCoroutine(um.AnimateTransition("logoSSV", 5.0f)));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
 
-        string currentScene = PlayerPrefs.GetString(ProfileManager.PLAYERPREFS_CURRENTSCENE, "Void World");
-
-        #region Tengah Game
+        #region Mid Game
         if (currentScene != "Void World")
         {
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Agent Violet. Kerja oy, lu masih menjalankan misi infiltrasi Kerajaan Havva kan?", em.genericEvent.voicePack),
@@ -149,5 +156,11 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
             trackedDolly.m_PathPosition = currentPath;
             yield return new WaitForEndOfFrame();
         }
+    }
+
+    private void _EndGameDemo() {
+        um.AddUIAction(() => { StartCoroutine(VCamSlowlyGlideUp()); StartCoroutine(um.AnimateTransition("fade", 5.0f)); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Umm... jadi gini...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Umm... jadi gini...", em.genericEvent.voicePack))));
     }
 }

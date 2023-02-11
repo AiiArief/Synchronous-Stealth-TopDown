@@ -109,12 +109,12 @@ public class EntityEvent_Generic : EntityEvent
                 () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.ThumbUp); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Passwordnya benar!", doorSwitch.voicePack))));
-                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Ayo kita ke bawah!", doorSwitch.voicePack))));
+                    um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Ayo kita ke sana!", doorSwitch.voicePack))));
                     um.AddUIAction(() => { doorSwitch.UseSwitch(); um.NextAction(); });
                     um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
                     um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
                     um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
-                    um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[0], false));     // kasih tau ke void world buat siapin kalo ini udah selesai demonya                               
+                    um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[4]));
                 },
                 () => {
                     um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "M-maaf, tapi passwordnya salah...", doorSwitch.voicePack))));
