@@ -66,6 +66,11 @@ public class GlobalGameManager : MonoBehaviour
         }
     }
 
+    private void OnApplicationQuit()
+    {
+        Application.OpenURL("https://forms.gle/TaZ6Vkf4QSFH9WS2A");
+    }
+
     private void HandleSpecs()
     {
         string cpu = SystemInfo.processorType;

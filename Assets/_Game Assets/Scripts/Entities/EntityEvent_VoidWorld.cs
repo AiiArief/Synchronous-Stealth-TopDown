@@ -160,7 +160,63 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
 
     private void _EndGameDemo() {
         um.AddUIAction(() => { StartCoroutine(VCamSlowlyGlideUp()); StartCoroutine(um.AnimateTransition("fade", 5.0f)); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Umm... jadi gini...", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Umm... jadi gini...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Halo lagi, Agent Violet.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua liat lu udah sampai di Pusat Kota Havvatopia bagian bawah.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua ucapkan selamat sudah sampai sana, tapi sayangnya untuk versi yang lu mainin saat ini cuma bisa main sampai sana wkwk.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Umm... Jadi gini...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Tadi kan gua sempet bilang levelnya belum selesai...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Saat ini gua lagi ga bisa lanjutin pengembangan dari game ini karena sebenernya gua saat ini kekurangan budget buat bikin game ini.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi palingan game ini gua delay sampai entah kapan tau.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Atau mungkin gua cancel aja pengembangannya.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "NYEHEHEHEHEHE.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Hehe...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Saatnya roll the credit!!!", em.genericEvent.voicePack))));
+
+        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(2); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Developed by Ai Nonymous"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Powered by Unity Engine"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Audio & Sound :\nRPG Maker MV\nMechvibes.com - jsfxr"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Animation :\nMixamo"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "3D Tools :\nVROID\nUnity Pro Builder"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "2D Tools :\nAseprite - GIMP\nMedibang - Inkscape"))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
+
+        um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Anyway, gua pengen bilang sesuatu.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "TERIMA KASIH SUDAH MEMAINKAN GAME INI!", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Lu bisa bantu development game ini dengan beberapa cara.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Bisa dengan share game ini ke temen-temen lu.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Dan bisa juga dengan isi survey yang bakalan kebuka setelah lu keluar dari game ini.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua berencana untuk melanjutkan pengembangan game ini kalau ternyata banyak yang support, yang isi survey banyak, dan tiba-tiba gua dapat dana untuk lanjutin game ini...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua harapnya sih masih tetap ngelanjutin pengembangan game ini wkwk.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Tapi sayangnya... ", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua bakal lupa kalau lu pernah mainin game ini...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Sebenernya setiap lu mulai game dari awal gua bakalan lupa lu sih wkwk.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi sebelum gua lupa, gua pengen bilang makasih banget udah mainin & support game ini.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Apa yang mau lu lakukan sekarang, Agent Violet?", em.genericEvent.voicePack),
+        new DialogueChoice[2] {
+                    new DialogueChoice("Mulai dari awal lagi (Ulang dari awal)", () => {
+                        GlobalGameManager.Instance.profileManager.ClearProfile();
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    }),
+                    new DialogueChoice("Dadah! (Keluar)", () => {
+                        um.AddUIAction(() => Application.Quit());
+                    })
+        })));
     }
 }

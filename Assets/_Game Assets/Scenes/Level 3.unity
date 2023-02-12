@@ -4578,6 +4578,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1ad3147df3a63545896ce8f3cc59959, type: 3}
+--- !u!1 &718667144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718667145}
+  - component: {fileID: 718667146}
+  m_Layer: 0
+  m_Name: Level 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &718667145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718667144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1592142281}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718667146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718667144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2a73ca7a48f234fbaffbb107b18fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &722730484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12282,7 +12325,7 @@ PrefabInstance:
     - target: {fileID: 3734907620367366355, guid: 461ac25975a919743a81e862cbd9d663,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3734907620367366355, guid: 461ac25975a919743a81e862cbd9d663,
         type: 3}
@@ -12393,7 +12436,22 @@ PrefabInstance:
     - target: {fileID: 6360971919624404601, guid: 461ac25975a919743a81e862cbd9d663,
         type: 3}
       propertyPath: m_onCheckpointEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360971919624404601, guid: 461ac25975a919743a81e862cbd9d663,
+        type: 3}
+      propertyPath: m_onCheckpointEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1592142282}
+    - target: {fileID: 6360971919624404601, guid: 461ac25975a919743a81e862cbd9d663,
+        type: 3}
+      propertyPath: m_onCheckpointEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeCheckpointToHere
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360971919624404601, guid: 461ac25975a919743a81e862cbd9d663,
+        type: 3}
+      propertyPath: m_onCheckpointEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7311973850012536752, guid: 461ac25975a919743a81e862cbd9d663,
         type: 3}
@@ -12571,6 +12629,24 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 6061759977878750709, guid: 461ac25975a919743a81e862cbd9d663, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 461ac25975a919743a81e862cbd9d663, type: 3}
+--- !u!4 &1592142281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5024685548789080539, guid: 461ac25975a919743a81e862cbd9d663,
+    type: 3}
+  m_PrefabInstance: {fileID: 1592142280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592142282 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6360971919624404601, guid: 461ac25975a919743a81e862cbd9d663,
+    type: 3}
+  m_PrefabInstance: {fileID: 1592142280}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec3aae5298d12c4a8a374650eff9103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1592142283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5801360396475744577, guid: 461ac25975a919743a81e862cbd9d663,

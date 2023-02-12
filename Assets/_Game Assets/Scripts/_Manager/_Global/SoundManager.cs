@@ -29,7 +29,7 @@ public class SoundManager : MonoBehaviour
         m_musicSource.Play();
     }
 
-    public IEnumerator PlayMusicEffect(AudioClip audio)
+    public IEnumerator PlayMusicEffect(AudioClip audio, bool playMusicAgain = true)
     {
         StartCoroutine(FadeOutMusic(0.25f, false));
         yield return new WaitForSeconds(0.25f);
@@ -38,7 +38,8 @@ public class SoundManager : MonoBehaviour
         while (m_meSource.isPlaying)
             yield return null;
 
-        StartCoroutine(FadeInMusic(1.0f));
+        if(playMusicAgain)
+            StartCoroutine(FadeInMusic(1.0f));
     }
 
     public IEnumerator FadeOutMusic(float time, bool stopMusic = true)
