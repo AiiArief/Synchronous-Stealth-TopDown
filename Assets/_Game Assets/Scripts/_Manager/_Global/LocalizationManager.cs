@@ -118,19 +118,24 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Generic Dialogues
-    public static readonly LocalizationString[] PAUSE_CHOICES = new LocalizationString[3]
+    public static readonly LocalizationString[] GENERIC_PAUSE_CHOICES = new LocalizationString[3]
     {
         new LocalizationString("... (Resume)", "... (Lanjutkan main)"),
         new LocalizationString("I want to time leap! (Restart from last checkpoint)", "Mau time leap! (Ulang dari checkpoint terakhir)"),
         new LocalizationString("I don't want to work anymore. (Quit)", "Udahan kerjanya ah. (Keluar dari game)"),
     };
 
-    public static readonly LocalizationString CAPTURED = new LocalizationString(
+    public static readonly LocalizationString GENERIC_CAPTURED = new LocalizationString(
         "HEY! WHO ARE YOU! ALERT! ALERT! ALERT!",
         "WOY! SAPA LU! ALERT! ALERT! ALERT!"
     );
 
-    public static readonly LocalizationString[] CAPTURED_CHOICES = new LocalizationString[2]
+    public static readonly LocalizationString GENERIC_QUIT = new LocalizationString(
+        "-",
+        "EHHH BENTAR BENTAR!"
+    );
+
+    public static readonly LocalizationString[] GENERIC_CAPTURED_CHOICES = new LocalizationString[2]
     {
         new LocalizationString("It's time to time leap! (Restart from last checkpoint)", "Saatnya time leap! (Ulang dari checkpoint terakhir)"),
         new LocalizationString("I'm out. (Quit)", "Au ah. (Keluar)"),
@@ -185,8 +190,69 @@ public class LocalizationManager : MonoBehaviour
     };
 
     public static readonly LocalizationString GENERIC_ELEFATAAEVENT_FAILED = new LocalizationString(
-        "There's no one in this door...",
-        "Pintunya ga ada penghuninya..."
+        "-",
+        "M-Maaf, ada kesalahan teknis jadi tidak bisa kesana..."
+    );
+
+    public static readonly LocalizationString[] GENERIC_ELEFATAAEVENT_PASSWORD_CORRECT = new LocalizationString[2]
+    {
+        new LocalizationString("-", "Passwordnya benar!"),
+        new LocalizationString("-", "Ayo kita ke sana!"),
+    };
+
+    public static readonly LocalizationString GENERIC_ELEFATAAEVENT_PASSWORD_WRONG = new LocalizationString(
+        "-",
+        "M-maaf, tapi passwordnya salah..."
+    );
+
+    public static readonly LocalizationString[] GENERIC_ELEFATAAEVENT_DOWNTOWN = new LocalizationString[2]
+    {
+        new LocalizationString("-", "T-tapi buat kesana kamu butuh password..."),
+        new LocalizationString("-", "M-mungkin Havva mengetahui passwordnya..."),
+    };
+
+    public static readonly LocalizationString[][] GENERIC_ELEFATAAEVENT_DOWNTOWN_PASSWORD_ANSWERS = new LocalizationString[4][]
+    {
+        new LocalizationString[3] { new LocalizationString("E", "E"), new LocalizationString("D", "D"), new LocalizationString("B", "B") },
+        new LocalizationString[3] { new LocalizationString("C", "C"), new LocalizationString("D", "D"), new LocalizationString("E", "E") },
+        new LocalizationString[3] { new LocalizationString("E", "E"), new LocalizationString("F", "F"), new LocalizationString("D", "D")},
+        new LocalizationString[3] { new LocalizationString("C E G", "C E G"), new LocalizationString("E F# G", "E F# G"), new LocalizationString("A G# G", "A G# G")}
+    };
+
+    public static readonly LocalizationString[] GENERIC_ELEFATAAEVENT_OBSERVATORY = new LocalizationString[2]
+    {
+        new LocalizationString("-", "M-maaf, kamu tidak bisa ke Observatory..."),
+        new LocalizationString("-", "A-aslinya aku ga mau melakukan ini, t-tapi aku disuruh meminta password untuk siapapun yang ingin pergi ke Observatory agar tidak ada yang bisa menemui Havva..."),
+    };
+
+    public static readonly LocalizationString GENERIC_ELEFATAAEVENT_OBSERVATORY_PASSWORD_CHOICE = new LocalizationString(
+        "-",
+        "Passwordnya dapat dimana ya?"
+    );
+
+    public static readonly LocalizationString GENERIC_ELEFATAAEVENT_OBSERVATORY_PASSWORD_QUESTION = new LocalizationString(
+        "-",
+        "D-dan terakhir, tolong isi captcha ini :"
+    );
+
+    public static readonly LocalizationString[] GENERIC_ELEFATAAEVENT_OBSERVATORY_PASSWORD_ANSWER = new LocalizationString[3]
+    {
+        new LocalizationString("I'm not a employee.", "Saya bukan karyawan."),
+        new LocalizationString("I'm not a robot.", "Saya bukan robot."),
+        new LocalizationString("I'm not a spy.", "Saya bukan spy."),
+    };
+
+    public static readonly LocalizationString[] GENERIC_ELEFATAAEVENT_OBSERVATORY_PASSWORDLOCATION_UPTOWN = new LocalizationString[4]
+    {
+        new LocalizationString("-", "Y-yang setel passwordnya sih tadi ke arah timur laut..."),
+        new LocalizationString("-", "S-Semoga saja... passwordnya engga dititipin ke " + Translate(CHARACTER_2D1BIT_FIREPLACE) + "..."),
+        new LocalizationString("-", "Soalnya siapapun yang mendatangi " + Translate(CHARACTER_2D1BIT_FIREPLACE) + " akan dibakar!!!"),
+        new LocalizationString("-", "Dan aku ga mau ada yang dibakar huaaaaaaaaaa!!!"),
+    };
+
+    public static readonly LocalizationString GENERIC_ELEFATAAEVENT_OBSERVATORY_PASSWORDLOCATION_NONUPTOWN = new LocalizationString(
+        "-",
+        "Y-yang setel passwordnya terakhir kulihat di Havvatopia bagian Uptown..."
     );
 
     #endregion
