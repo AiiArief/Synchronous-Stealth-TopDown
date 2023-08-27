@@ -183,6 +183,12 @@ public class LocalizationManager : MonoBehaviour
         new LocalizationString("You magically remember all of the dialogues...", "Secara tiba-tiba hapal semua dialog barusan..."),
         new LocalizationString("Maybe those dialogues can be used as a password for a door!", "Mungkin dialog-dialog tersebut bisa dipakai untuk password di pintu tertentu!"),
     };
+
+    public static readonly LocalizationString GENERIC_ELEFATAAEVENT_FAILED = new LocalizationString(
+        "There's no one in this door...",
+        "Pintunya ga ada penghuninya..."
+    );
+
     #endregion
 
     #region Void World Dialogues

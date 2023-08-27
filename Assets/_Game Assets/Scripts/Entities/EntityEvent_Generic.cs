@@ -71,6 +71,7 @@ public class EntityEvent_Generic : EntityEvent
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
+    // GANTI
     public void ElefataaEvent_Generic_Failed(EntityEvent levelEvent, EntityCharacterNPC2D1BitSwitch doorSwitch, CutsceneCamera m_elevatorEvent_Camera)
     {
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Cry); um.NextAction(); });
@@ -89,6 +90,7 @@ public class EntityEvent_Generic : EntityEvent
         um.AddUIAction(() => _TeleportPlayerToScene(GlobalGameManager.Instance.databaseManager.sceneLevels[2], true, 11));
     }
 
+    // GAVTY
     public void ElefataaEvent_Generic_Downtown(EntityEvent levelEvent, EntityCharacterNPC2D1BitSwitch doorSwitch, LocalizationString passwordChoice, bool haveKey, CutsceneCamera m_elevatorEvent_Camera)
     {
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Cry); um.NextAction(); });
@@ -129,6 +131,7 @@ public class EntityEvent_Generic : EntityEvent
         })));
     }
 
+    // GABTU
     public void ElefataaEvent_Generic_Observatory(EntityEvent levelEvent, EntityCharacterNPC2D1BitSwitch doorSwitch, LocalizationString passwordChoice, bool haveKey, CutsceneCamera m_elevatorEvent_Camera, CutsceneCamera m_trappedEvent_Camera = null)
     {
         um.AddUIAction(() => { player.animator.SetTrigger("interact"); um.NextAction(); });
@@ -201,6 +204,7 @@ public class EntityEvent_Generic : EntityEvent
         })));
     }
 
+    // GANTI
     public void QuitButton(bool fromGameplay = true)
     {
         if (fromGameplay) um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
