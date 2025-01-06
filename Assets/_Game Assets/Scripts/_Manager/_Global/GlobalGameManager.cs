@@ -84,6 +84,6 @@ public class GlobalGameManager : MonoBehaviour
 
         // adjust quality here
 
-        Analytics.CustomEvent("hardware_specs", new Dictionary<string, object> { {"CPU", cpu}, {"RAM", ram}, {"GPU", gpu} });
+        //Analytics.CustomEvent("hardware_specs", new Dictionary<string, object> { {"CPU", cpu}, {"RAM", ram}, {"GPU", gpu} });
     }
 }

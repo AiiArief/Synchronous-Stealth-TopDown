@@ -47,7 +47,7 @@ public class EntityEvent_Generic : EntityEvent
 
     public void PlayerIsCapturedEvent(EntityCharacterNPC byWhom)
     {
-        Analytics.CustomEvent("player_iscaptured", player.transform.position);
+        //Analytics.CustomEvent("player_iscaptured", player.transform.position);
 
         um.ClearUIAction();
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
