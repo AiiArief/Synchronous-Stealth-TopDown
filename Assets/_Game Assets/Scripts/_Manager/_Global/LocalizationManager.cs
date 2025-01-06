@@ -21,8 +21,9 @@ public class LocalizationManager : MonoBehaviour
 {
     public static string Translate(LocalizationString localizationString)
     {
-        int languageId = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 1);
-        return localizationString.translatedStrings[languageId];
+        //int languageId = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 1);
+        //return localizationString.translatedStrings[languageId];
+        return localizationString.translatedStrings[1];
     }
 
     // initialize db disini
