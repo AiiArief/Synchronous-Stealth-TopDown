@@ -8,7 +8,10 @@ public class EntityEvent_Level3 : EntityEvent
     {
         base.EventOnLoadLevel();
 
+        um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
+        um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
+
         um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.None, LocalizationManager.TUTORIAL_HAVVATOPIA_DOWNTOWN), 5.0f); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "...", em.genericEvent.voicePack))));
