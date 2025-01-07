@@ -168,6 +168,8 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Umm... Jadi gini...", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Tadi kan gua sempet bilang levelnya belum selesai...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Itu karena...", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "GUA MALES LANJUTIN GAMENYA...", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Saat ini gua lagi ga bisa lanjutin pengembangan dari game ini karena sebenernya gua saat ini kekurangan budget buat bikin game ini.", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi palingan game ini gua delay sampai entah kapan tau.", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Atau mungkin gua cancel aja pengembangannya.", em.genericEvent.voicePack))));
@@ -195,16 +197,21 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
         um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(1.0f)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Anyway, gua pengen bilang sesuatu.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "TERIMA KASIH SUDAH MEMAINKAN GAME INI!", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua sebenernya lagi kembangin game baru.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi lu bisa support gua dengan beberapa cara", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "1) Follow gua atau join discord channel gua", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "2) Taro review, kalo bingung nulis apa bilang aja MAKASIH DEVELOPER NYEHEHEHE", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "...", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Lu bisa bantu development game ini dengan beberapa cara.", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Bisa dengan share game ini ke temen-temen lu.", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Dan bisa juga dengan isi survey yang bakalan kebuka setelah lu keluar dari game ini.", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua berencana untuk melanjutkan pengembangan game ini kalau ternyata banyak yang support, yang isi survey banyak, dan tiba-tiba gua dapat dana untuk lanjutin game ini...", em.genericEvent.voicePack))));
         //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua harapnya sih masih tetap ngelanjutin pengembangan game ini wkwk.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Tapi sayangnya... ", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua bakal lupa kalau lu pernah mainin game ini...", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Sebenernya setiap lu mulai game dari awal gua bakalan lupa lu sih wkwk.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi sebelum gua lupa, gua pengen bilang makasih banget udah mainin & support game ini.", em.genericEvent.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Tapi sayangnya... ", em.genericEvent.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua bakal lupa kalau lu pernah mainin game ini...", em.genericEvent.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Sebenernya setiap lu mulai game dari awal gua bakalan lupa lu sih wkwk.", em.genericEvent.voicePack))));
+        //um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi sebelum gua lupa, gua pengen bilang makasih banget udah mainin & support game ini.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Apa yang mau lu lakukan sekarang, Agent Violet?", em.genericEvent.voicePack),
         new DialogueChoice[2] {
                     new DialogueChoice("Mulai dari awal lagi (Ulang dari awal)", () => {
