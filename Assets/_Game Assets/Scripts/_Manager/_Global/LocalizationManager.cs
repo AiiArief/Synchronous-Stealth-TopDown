@@ -19,11 +19,18 @@ public class LocalizationString
 
 public class LocalizationManager : MonoBehaviour
 {
+    string _Translate(LocalizationString localizationString)
+    {
+        int languageId = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 1);
+        return localizationString.translatedStrings[languageId];
+    }
+
     public static string Translate(LocalizationString localizationString)
     {
-        //int languageId = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 1);
-        //return localizationString.translatedStrings[languageId];
-        return localizationString.translatedStrings[1];
+        if (!GlobalGameManager.Instance || !GlobalGameManager.Instance.localizationManager)
+            return "";
+
+        return GlobalGameManager.Instance.localizationManager._Translate(localizationString);
     }
 
     // initialize db disini
