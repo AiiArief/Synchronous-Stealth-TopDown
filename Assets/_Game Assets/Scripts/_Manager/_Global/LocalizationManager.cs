@@ -33,10 +33,6 @@ public class LocalizationManager : MonoBehaviour
         return GlobalGameManager.Instance.localizationManager._Translate(localizationString);
     }
 
-    // initialize db disini
-    // ganti bahasa juga disini, setiap ganti bahasa set ulang table
-    // ntar aksesnya db apa .get entry("tablename.var[id].dialogue_desc").getserializefield
-
     #region Tutorial
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
     public static readonly LocalizationString TUTORIAL_INTERACT = new LocalizationString("Hit any object to interact", "Tabrak objek apapun untuk berinteraksi");
