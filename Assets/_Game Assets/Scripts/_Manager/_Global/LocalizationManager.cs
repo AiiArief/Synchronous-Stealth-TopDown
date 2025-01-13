@@ -339,16 +339,130 @@ public class LocalizationManager : MonoBehaviour
     );
     #endregion
 
-    #region BD
+    #region HAVVA
+    public static readonly LocalizationString HW_HAVVA_0 = new LocalizationString(
+        "-",
+        "Pesan dari The Developer :"
+    );
 
+    public static readonly LocalizationString HW_HAVVA_1 = new LocalizationString(
+        "-",
+        "Ini adalah Kota Havvatopia."
+    );
+
+    public static readonly LocalizationString HW_HAVVA_2 = new LocalizationString(
+        "-",
+        "Sama seperti Kota lainnya, Kota ini terletak didalam 3D Titan Sphere Robot yang sudah mati."
+    );
+
+    public static readonly LocalizationString HW_HAVVA_3 = new LocalizationString(
+        "-",
+        "Kota ini dipimpin oleh Havva, dia yang memanggil lu kesana."
+    );
+
+    public static readonly LocalizationString HW_HAVVA_4 = new LocalizationString(
+        "-",
+        "Dia memanggil lu karena saat ini Kota Havvatopia sedang dalam keadaan darurat."
+    );
+
+    public static readonly LocalizationString HW_HAVVA_5 = new LocalizationString(
+        "-",
+        "Semua penduduk Havvatopia saat ini terjebak di kota ini."
+    );
+
+    public static readonly LocalizationString HW_HAVVA_6 = new LocalizationString(
+        "-",
+        "Nah, tugas lu yaitu ketemu dengan Havva dan investigasi apa yang terjadi di Havvatopia serta selamatkan penduduk Havvatopia yang saat ini sedang terjebak disana."
+    );
     #endregion
 
     #region 3DH
+    public static readonly LocalizationString HW_3DH_0 = new LocalizationString(
+        "-",
+        "Pesan dari The Developer :"
+    );
 
+    public static readonly LocalizationString HW_3DH_1 = new LocalizationString(
+        "-",
+        "Ini lu, Agent Violet."
+    );
+
+    public static readonly LocalizationString HW_3DH_2 = new LocalizationString(
+        "-",
+        "Lu berasal dari kelas 3D Humanoid."
+    );
+
+    public static readonly LocalizationString HW_3DH_3 = new LocalizationString(
+        "-",
+        "Lu adalah spy terbaik di game ini."
+    );
+
+    public static readonly LocalizationString HW_3DH_4 = new LocalizationString(
+        "-",
+        "Mungkin karena lu satu-satunya spy di game ini."
+    );
+
+    public static readonly LocalizationString HW_3DH_5 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHE."
+    );
+
+    public static readonly LocalizationString HW_3DH_6 = new LocalizationString(
+        "-",
+        "Oh iya, karena banyak tester yang ga nyadar ini, jadi ada yang pengen gua kasih tau nih."
+    );
+
+    public static readonly LocalizationString HW_3DH_7 = new LocalizationString(
+        "-",
+        "Game ini adalah game synchronous, apa itu synchronous?"
+    );
+
+    public static readonly LocalizationString HW_3DH_8 = new LocalizationString(
+        "-",
+        "Ini game waktunya cuma jalan kalau lu jalan."
+    );
+
+    public static readonly LocalizationString HW_3DH_9 = new LocalizationString(
+        "-",
+        "Jadi, lu bisa pikirkan baik-baik sebelum lu jalan."
+    );
     #endregion
 
     #region 2DH
+    public static readonly LocalizationString HW_2DH_0 = new LocalizationString(
+        "-",
+        "Pesan dari The Developer :"
+    );
 
+    public static readonly LocalizationString HW_2DH_1 = new LocalizationString(
+        "-",
+        "Enggak, ini bukan laptop gua."
+    );
+
+    public static readonly LocalizationString HW_2DH_2 = new LocalizationString(
+        "-",
+        "Ini adalah interface berbentuk monitor dari NPC kelas 2D, salah satu penduduk Kota Havvatopia."
+    );
+
+    public static readonly LocalizationString HW_2DH_3 = new LocalizationString(
+        "-",
+        "Ada beberapa sub-class dari kelas 2D, seperti 2D Humanoid dan 2D 1 Bit."
+    );
+
+    public static readonly LocalizationString HW_2DH_4 = new LocalizationString(
+        "-",
+        "Mereka semua butuh interface karena mereka semua hidup di dimensi yang berbeda."
+    );
+
+    public static readonly LocalizationString HW_2DH_5 = new LocalizationString(
+        "-",
+        "Untuk pindah dari interface ke interface lain, mereka menggunakan internet."
+    );
+
+    public static readonly LocalizationString HW_2DH_6 = new LocalizationString(
+        "-",
+        "Jika listrik mati atau wifi mati, mereka akan terperangkap di interface tersebut sampai mereka berubah menjadi objek statis."
+    );
     #endregion
 
     #endregion
