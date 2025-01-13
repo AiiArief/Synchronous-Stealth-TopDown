@@ -28,11 +28,11 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
         #region Mid Game
         if (currentScene != "Void World")
         {
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Agent Violet. Kerja oy, lu masih menjalankan misi infiltrasi Kerajaan Havva kan?", em.genericEvent.voicePack),
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, LocalizationManager.VW_MIDGAME_0, em.genericEvent.voicePack),
                     new DialogueChoice[3] {
-                        new DialogueChoice("Eiya, punten. (Lanjutkan permainan)", () => _LoadGameButton(currentScene)),
-                        new DialogueChoice("Hah? Engga kok, ngablu kali lu! (Ulang dari awal)", () => _ClearSaveGameButton(currentScene)),
-                        new DialogueChoice("Engga ah, males kerja. (Keluar)", () => em.genericEvent.QuitButton(false))
+                        new DialogueChoice(LocalizationManager.VW_MIDGAME_0_1, () => _LoadGameButton(currentScene)),
+                        new DialogueChoice(LocalizationManager.VW_MIDGAME_0_2, () => _ClearSaveGameButton(currentScene)),
+                        new DialogueChoice(LocalizationManager.VW_MIDGAME_0_3, () => em.genericEvent.QuitButton(false))
                     })));
             return;
         }
@@ -135,13 +135,13 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
 
     private void _ClearSaveGameButton(string currentScene)
     {
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Se-seriusan? Berarti selama ini cuma khayalan doang?", em.genericEvent.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, LocalizationManager.VW_MIDGAME_NEW_0, em.genericEvent.voicePack),
             new DialogueChoice[2] {
-                new DialogueChoice("Emang mau dari awal lagi sih, dadah! (Hapus & ulang dari awal)", () => {
+                new DialogueChoice(LocalizationManager.VW_MIDGAME_NEW_0_1, () => {
                     GlobalGameManager.Instance.profileManager.ClearProfile();
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
                 }),
-                new DialogueChoice("Gaddeeeeng! (Lanjutkan permainan)", () => { _LoadGameButton(currentScene); })
+                new DialogueChoice(LocalizationManager.VW_MIDGAME_NEW_0_2, () => { _LoadGameButton(currentScene); })
             })));
     }
 

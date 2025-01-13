@@ -266,8 +266,41 @@ public class LocalizationManager : MonoBehaviour
 
     #endregion
 
-    #region Load Game
+    #region Mid Game
+    public static readonly LocalizationString VW_MIDGAME_0 = new LocalizationString(
+        "-",
+        "Agent Violet. Kerja oy, lu masih menjalankan misi ini kan?"
+    );
 
+    public static readonly LocalizationString VW_MIDGAME_0_1 = new LocalizationString(
+        "-",
+        "Eiya, punten. (Lanjutkan permainan)"
+    );
+
+    public static readonly LocalizationString VW_MIDGAME_0_2 = new LocalizationString(
+        "-",
+        "Hah? Engga kok, ngablu kali lu! (Ulang dari awal)"
+    );
+
+    public static readonly LocalizationString VW_MIDGAME_0_3 = new LocalizationString(
+        "-",
+        "Engga ah, males kerja. (Keluar)"
+    );
+
+    public static readonly LocalizationString VW_MIDGAME_NEW_0 = new LocalizationString(
+        "-",
+        "Se-seriusan? Berarti selama ini cuma khayalan doang?"
+    );
+
+    public static readonly LocalizationString VW_MIDGAME_NEW_0_1 = new LocalizationString(
+        "-",
+        "Emang mau dari awal lagi sih, dadah! (Hapus & ulang dari awal)"
+    );
+
+    public static readonly LocalizationString VW_MIDGAME_NEW_0_2 = new LocalizationString(
+        "-",
+        "Gaddeeeeng! (Lanjutkan permainan)"
+    );
     #endregion
 
     #region Start Game
