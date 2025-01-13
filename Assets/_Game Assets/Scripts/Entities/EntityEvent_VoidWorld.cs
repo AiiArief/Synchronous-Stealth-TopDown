@@ -196,13 +196,13 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "TERIMA KASIH SUDAH MEMAINKAN GAME INI!", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Gua sebenernya lagi kembangin game baru.", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Jadi lu bisa support gua dengan beberapa cara", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "1) Follow gua atau join discord channel gua", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "2) Taro review, kalo bingung nulis apa bilang aja MAKASIH DEVELOPER NYEHEHEHE", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "1) Follow atau join discord channel gua", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "2) Taro review, kalo bingung tulis aja MAKASIH DEVELOPER NYEHEHEHE", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "...", em.genericEvent.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_THEDEVELOPER, "Apa yang mau lu lakukan sekarang, Agent Violet?", em.genericEvent.voicePack),
         new DialogueChoice[2] {
-                    new DialogueChoice("Mulai dari awal lagi (Ulang dari awal)", () => {
+                    new DialogueChoice("Hapus ingatan developer (Ulang dari awal)", () => {
                         GlobalGameManager.Instance.profileManager.ClearProfile();
                         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                     }),
