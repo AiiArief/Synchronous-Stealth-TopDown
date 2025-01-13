@@ -262,7 +262,6 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Void World Dialogues
-
     #region End Game
 
     #endregion
@@ -272,7 +271,213 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Start Game
+    static readonly string vw_onload_0 = "54 65 73 74 20 74 65 73 74 2E 20 48 61 6C 6F 20 41 67 65 6E 74 20 56 69 6F 6C 65 74";
+    public static readonly LocalizationString VW_ONLOAD_0 = new LocalizationString(vw_onload_0, vw_onload_0, vw_onload_0);
 
+    static readonly string vw_onload_0_1 = "Can you speak English? (English)";
+    static readonly string vw_onload_0_2 = "Gabisa basa Enggres... (Bahasa Indonesia)";
+    public static readonly LocalizationString VW_ONLOAD_0_1 = new LocalizationString(vw_onload_0_1, vw_onload_0_1, vw_onload_0_1);
+    public static readonly LocalizationString VW_ONLOAD_0_2 = new LocalizationString(vw_onload_0_2, vw_onload_0_2, vw_onload_0_2);
+
+    public static readonly LocalizationString VW_ONLOAD_1 = new LocalizationString(
+        "Ah, excuse me. I forgot to change the language haha.",
+        "Ah, punten. Gua lupa ganti bahasanya wkwk."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_2 = new LocalizationString(
+        "(Darn, My English grammar sucks. Well who cares anyway~)",
+        "(Gua ga ngerti Bahasa Indonesia KBBI sih, bodo amet lah ya~)"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_3 = new LocalizationString(
+        "Err... Anyway...",
+        "Err... Anyway..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_4 = new LocalizationString(
+        "NYEHEHEHEHE!",
+        "NYEHEHEHEHE!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_5 = new LocalizationString(
+        "WELCOME TO THE WORLD THAT I MADE, PLAYER!",
+        "SELAMAT DATANG DI DUNIA YANG GUA BIKIN, PLAYER!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_6 = new LocalizationString(
+        "I AM \"The Developer\"!",
+        "KENALIN, GUA \"The Developer\"!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_7 = new LocalizationString(
+        "Uhh... maybe you know me from the future or from the past...",
+        "Err... mungkin lu pernah kenal gua dari masa depan atau dari masa lalu..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_8 = new LocalizationString(
+        "But it's okay. Let me introduce myself again.",
+        "Tapi gapapa, kenalan lagi kalau udah kenal."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_9 = new LocalizationString(
+        "Nyehehehe...",
+        "Nyehehehe..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_10 = new LocalizationString(
+        "Hehe.",
+        "Hehe."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_11 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_12 = new LocalizationString(
+        "IN THIS GAME, YOU ARE A SPY!",
+        "DI GAME INI, LU BAKALAN JADI SEORANG SPY!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_13 = new LocalizationString(
+        "-",
+        "TUGAS LU SEKARANG ADALAH INFILTRASI KOTA HAVVATOPIA!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_14 = new LocalizationString(
+        "-",
+        "SAAT INI KOTA HAVVATOPIA SEDANG DIBAJAK UNTUK MEMICU TERJADINYA PERANG DIMENSI!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_15 = new LocalizationString(
+        "-",
+        "SELAMATKAN HAVVA YANG SEDANG DITAWAN DI SANA SERTA CEGAH TERJADINYA PERANG DIMENSI!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_16 = new LocalizationString(
+        "-",
+        "TANPA."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_17 = new LocalizationString(
+        "-",
+        "KETAHUAN."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_18 = new LocalizationString(
+        "-",
+        "SAMA SEKALI!!!!!!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_19 = new LocalizationString(
+        "-",
+        "..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_20 = new LocalizationString(
+        "-",
+        "Udah siap memainkan game ini, Agent Violet?"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_20_1 = new LocalizationString(
+        "-",
+        "Oke, siap. (Mulai game)"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_20_2 = new LocalizationString(
+        "-",
+        "Engga ah, males. (Keluar)"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_21 = new LocalizationString(
+        "-",
+        "Sip!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_22 = new LocalizationString(
+        "-",
+        "Gua lagi siapin teleportase lu ke Hub World."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_23 = new LocalizationString(
+        "-",
+        "Sampai disana, lu interaksi sama laptop gua yang ada di ujung Hub World biar lu teleport lagi ke Kota Havvatopia."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_24 = new LocalizationString(
+        "-",
+        "Dan juga, lu cuma bisa kontak gua disini doang."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_25 = new LocalizationString(
+        "-",
+        "Setelah teleportase dari sini, lu bakalan dipandu dengan catatan-catatan yang gua taruh di berbagai sisi di dunia ini."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_26 = new LocalizationString(
+        "-",
+        "Sebelum mulai gamenya, ada pertanyaan ga?"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_27 = new LocalizationString(
+        "-",
+        "Ga ada?"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_28 = new LocalizationString(
+        "-",
+        "Welp, bukannya ga ada sih, gua emang ga ngasih pilihan buat pertanyaan, NYEHEHEHEHE."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_28_1 = new LocalizationString(
+        "(Annoyed)",
+        "-"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_28_2 = new LocalizationString(
+        "(Smirk)",
+        "-"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_28_3 = new LocalizationString(
+        "(Surprised)",
+        "-"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_28_4 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_29 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_30 = new LocalizationString(
+        "-",
+        "Sip, teleportase udah siap!"
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_31 = new LocalizationString(
+        "-",
+        "Teleportase akan dilakukan dalam waktu ..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_32 = new LocalizationString(
+        "3...",
+        "3..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_33 = new LocalizationString(
+        "2...",
+        "2..."
+    );
+
+    public static readonly LocalizationString VW_ONLOAD_34 = new LocalizationString(
+        "1...",
+        "1..."
+    );
     #endregion
     #endregion
 
