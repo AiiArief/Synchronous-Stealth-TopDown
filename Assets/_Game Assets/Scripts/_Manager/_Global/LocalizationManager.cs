@@ -277,10 +277,66 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Hub World
+    public static readonly LocalizationString HW_ONLOAD_0 = new LocalizationString(
+        "...",
+        "..."
+    );
 
+    public static readonly LocalizationString HW_WIN_0 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString HW_WIN_1 = new LocalizationString(
+        "?",
+        "?"
+    );
+
+    public static readonly LocalizationString HW_WIN_2 = new LocalizationString(
+        "-",
+        "Ga terjadi apa-apa..."
+    );
+
+    public static readonly LocalizationString HW_WIN_3 = new LocalizationString(
+        "-",
+        "!"
+    );
 
     #region 3DSR
+    public static readonly LocalizationString HW_3DSR_0 = new LocalizationString(
+        "-",
+        "Pesan dari The Developer :"
+    );
 
+    public static readonly LocalizationString HW_3DSR_1 = new LocalizationString(
+        "-",
+        "Kenalkan, ini adalah salah satu sub-class NPC dari kelas 3D Sphere Robot, 3D Headphone Sphere Robot."
+    );
+
+    public static readonly LocalizationString HW_3DSR_2 = new LocalizationString(
+        "-",
+        "Mereka adalah salah satu kelas dominan dari penduduk Kota Havvatopia."
+    );
+
+    public static readonly LocalizationString HW_3DSR_3 = new LocalizationString(
+        "-",
+        "Namun saat ini mereka seperti kerasukan gitu, sehingga menempatkan mereka menjadi antagonis dari game ini."
+    );
+
+    public static readonly LocalizationString HW_3DSR_4 = new LocalizationString(
+        "-",
+        "Lu ga boleh dan ga bisa bunuh mereka, serta lu ga boleh ketauan oleh mereka."
+    );
+
+    public static readonly LocalizationString HW_3DSR_5 = new LocalizationString(
+        "-",
+        "Kalo lu ketauan oleh mereka, lu harus time leap."
+    );
+
+    public static readonly LocalizationString HW_3DSR_6 = new LocalizationString(
+        "-",
+        "Ntar lu balik ke checkpoint terakhir."
+    );
     #endregion
 
     #region BD

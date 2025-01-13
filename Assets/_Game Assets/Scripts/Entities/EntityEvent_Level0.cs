@@ -19,7 +19,7 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AnimateTransition("flashbang")));
         um.AddUIAction(() => { player.animator.gameObject.SetActive(true); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(4.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.HW_ONLOAD_0))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(1); um.NextAction(); });
         um.AddUIAction(() => { um.AddTutorial(new Tutorial(TutorialType.Move, LocalizationManager.TUTORIAL_MOVE), 3.0f); um.NextAction(); });
@@ -48,23 +48,23 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => { StartCoroutine(GlobalGameManager.Instance.soundManager.FadeOutMusic(3.0f)); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.HW_WIN_0))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "?"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.HW_WIN_1))));
         um.AddUIAction(() =>
         {
             m_cutsceneCamera1.UseCamera(1);
             player.animator.SetInteger("expression", 1);
             um.NextAction();
         });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "Ga terjadi apa-apa..."))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.HW_WIN_2))));
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
         um.AddUIAction(() =>
         {
             player.animator.SetInteger("expression", 4);
             um.NextAction();
         });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "!"))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.HW_WIN_3))));
         um.AddUIAction(() => { em.triggerCheckpoints[1].teleportArea.gameObject.SetActive(true); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AnimateTransition("flashbang")));
         um.AddUIAction(() =>
@@ -86,14 +86,14 @@ public class EntityEvent_Level0 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Pesan dari The Developer :", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_0, em.genericEvent.voicePack))));
         um.AddUIAction(() => { sphereRobot.animator.SetInteger("expression", 3); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Kenalkan, ini adalah salah satu sub-class NPC dari kelas 3D Sphere Robot, 3D Headphone Sphere Robot.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Mereka adalah salah satu kelas dominan dari penduduk Kota Havvatopia.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Namun saat ini mereka seperti kerasukan gitu, sehingga menempatkan mereka menjadi antagonis dari game ini.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Lu ga boleh dan ga bisa bunuh mereka, serta lu ga boleh ketauan oleh mereka.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Kalo lu ketauan oleh mereka, lu harus time leap.", em.genericEvent.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, "Ntar lu balik ke checkpoint terakhir.", em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_1, em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_2, em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_3, em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_4, em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_5, em.genericEvent.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_DEVELOPERNOTE, LocalizationManager.HW_3DSR_6, em.genericEvent.voicePack))));
         um.AddUIAction(() => { sphereRobot.animator.SetInteger("expression", 0); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_cutsceneCamera_note3DSphereRobot.ReleaseCamera(); um.NextAction(); });
