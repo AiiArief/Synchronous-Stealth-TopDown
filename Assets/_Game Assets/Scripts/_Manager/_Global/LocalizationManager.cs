@@ -878,7 +878,260 @@ public class LocalizationManager : MonoBehaviour
         "Gajadi"
     );
 
+    public static readonly LocalizationString L2_TALK_0 = new LocalizationString(
+        "...",
+        "..."
+    );
 
+    public static readonly LocalizationString L2_TALK_1 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_2 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_3 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_4 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_4_1 = new LocalizationString(
+        "-",
+        "Gajadi"
+    );
+
+    public static readonly LocalizationString L2_TALK_4_2 = new LocalizationString(
+        "-",
+        "Gajadi"
+    );
+
+    public static readonly LocalizationString L2_TALK_4_3 = new LocalizationString(
+        "-",
+        "Gajadi"
+    );
+
+    public static readonly LocalizationString L2_TALK_4_4 = new LocalizationString(
+        "-",
+        "Gajadi"
+    );
+
+    public static readonly LocalizationString L2_TALK_5 = new LocalizationString(
+        "-",
+        "Test test..."
+    );
+
+    public static readonly LocalizationString L2_TALK_6 = new LocalizationString(
+        "-",
+        "Halo halo."
+    );
+
+    public static readonly LocalizationString L2_TALK_7 = new LocalizationString(
+        "-",
+        "Err... Ini ada pesan dari The Developer :"
+    );
+
+    public static readonly LocalizationString L2_TALK_8 = new LocalizationString(
+        "-",
+        "\"Pesan ini muncul jika terjadi error di program interface 2D Humanoid-nya Havva.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_9 = new LocalizationString(
+        "-",
+        "\"Karena Havva berhalangan untuk menjelaskan apa yang terjadi, maka spy akan dipandu oleh pesan ini.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_10 = new LocalizationString(
+        "-",
+        "\"Silahkan buka file bernama \"presentasi untuk spy FINAL FIX TOLONG TOLONG BENERAN DATENG DONG.potx\".\""
+    );
+
+    public static readonly LocalizationString L2_TALK_11 = new LocalizationString(
+        "-",
+        "\"Kalau mau mencoba jalankan ulang program interface 2D Humanoid silahkan saja, tapi palingan error lagi.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_12 = new LocalizationString(
+        "-",
+        "\"Asalkan jangan buka folder homework.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1 = new LocalizationString(
+        "-",
+        "Buka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_0 = new LocalizationString(
+        "-",
+        "Membuka file \"presentasi untuk spy FINAL FIX TOLONG BENERAN DATENG DONG.potx\"..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_1 = new LocalizationString(
+        "-",
+        "\"Perkenalkan, yang barusan kena error adalah Havva, walikota dari Havvatopia.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_2 = new LocalizationString(
+        "-",
+        "\"Havva tidak mengira kalau rumor memainkan lagu yang dia mainkan barusan beneran bisa memanggil Spy.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_3 = new LocalizationString(
+        "-",
+        "\"Baterai laptopnya Havva sudah sekarat dan sebentar lagi Havva berubah jadi objek statis.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_4 = new LocalizationString(
+        "-",
+        "\"Oleh karena itu, Havva sangat berterima kasih kepada Agent Violet karena sudah datang tepat pada waktunya.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_5 = new LocalizationString(
+        "-",
+        "\"Havva awalnya lagi bermain piano dan mengatur Havvatopia di observatory seperti biasa.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_6 = new LocalizationString(
+        "-",
+        "\"Tiba-tiba, 3D Titan Sphere Robot yang ditinggali oleh penduduk Havvatopia sejak lama ini, hidup lagi dan bergerak.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_7 = new LocalizationString(
+        "-",
+        "\"Dan juga, seluruh wifi di Havvatopia mati dan saat ini Havvatopia sedang menggunakan listrik darurat.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_8 = new LocalizationString(
+        "-",
+        "\"Nah, Havva butuh bantuan Agent Violet nih.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_9 = new LocalizationString(
+        "-",
+        "\"Bantuannya yaitu investigasi apa yang terjadi di Havvatopia dan cari tahu Havvatopia sedang bergerak menuju kearah mana.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_10 = new LocalizationString(
+        "-",
+        "\"Lalu juga Havva membutuhkan bantuan Violet untuk menyalakan kembali listrik dan wifi di Havvatopia agar bisa mengontrol kembali 3D Titan Sphere ini.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_11 = new LocalizationString(
+        "-",
+        "\"Ini adalah foto kerangka Havvatopia.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_12 = new LocalizationString(
+        "-",
+        "\"Untuk menyalakan listrik dan wifi di Havvatopia, Agent Violet harus ke engine room.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_13 = new LocalizationString(
+        "-",
+        "\"Namun, saat ini Agent Violet tidak bisa mengakses ke engine room menggunakan Elefataa karena ada kerusakan antara Downtown dan Engine Room.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_14 = new LocalizationString(
+        "-",
+        "\"Sehingga, Agent Violet harus turun ke Downtown menggunakan Elefataa, kemudian pindah menggunakan Elefatwo atau Elefatri ke Underground.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_15 = new LocalizationString(
+        "-",
+        "\"Semoga saja salah satu dari mereka layanannya masih jalan.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_16 = new LocalizationString(
+        "-",
+        "\"Dari Underground, Agent Violet bisa ke engine room menggunakan tangga darurat Elefataa.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_17 = new LocalizationString(
+        "-",
+        "\"Ada 1000 anak tangga di tangga darurat tersebut, Havva berharap semoga Agent Violet tidak capek.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_18 = new LocalizationString(
+        "-",
+        "\"Sekian presentasinya Havva.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_19 = new LocalizationString(
+        "-",
+        "\"Untuk pergi ke Downtown, passwordnya sudah tertera disini.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_20 = new LocalizationString(
+        "-",
+        "\"Sekali lagi, Havva berterima kasih karena Agent Violet sudah datang.\""
+    );
+
+    public static readonly LocalizationString L2_TALK_13_1_21 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_2 = new LocalizationString(
+        "-",
+        "Jalankan ulang program interface 2D Humanoid"
+    );
+
+    public static readonly LocalizationString L2_TALK_13_2_0 = new LocalizationString(
+        "-",
+        "Menjalankan program interface 2D Humanoid..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_2_1 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3 = new LocalizationString(
+        "-",
+        "Buka folder \"Homework\" berukuran 120Gb"
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3_0 = new LocalizationString(
+        "-",
+        "Membuka folder \"Homework\"..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3_1 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3_1_1 = new LocalizationString(
+        "-",
+        "(Annoyed)"
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3_1_2 = new LocalizationString(
+        "-",
+        "(Smirk)"
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3_1_3 = new LocalizationString(
+        "-",
+        "(Surprised)"
+    );
+
+    public static readonly LocalizationString L2_TALK_13_3_1_4 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 3
