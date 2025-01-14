@@ -847,6 +847,29 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 3
+    public static readonly LocalizationString L3_ONLOAD_0 = new LocalizationString(
+        "...",
+        "..."
+    );
 
+    public static readonly LocalizationString L3_ONLOAD_1 = new LocalizationString(
+        "NYEHEHEHEHE.",
+        "NYEHEHEHEHE."
+    );
+
+    public static readonly LocalizationString L3_ONLOAD_2 = new LocalizationString(
+        "-",
+        "LEVELNYA BELUM SELESAI DIBUAT!!!"
+    );
+
+    public static readonly LocalizationString L3_ONLOAD_3 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L3_ONLOAD_4 = new LocalizationString(
+        "-",
+        "Bentar, lu gua culik dulu."
+    );
     #endregion
 }
