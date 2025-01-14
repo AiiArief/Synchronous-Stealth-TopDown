@@ -843,6 +843,41 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 2
+    public static readonly LocalizationString L2_ELEVATOR_0 = new LocalizationString(
+        "-",
+        "Halo! Selamat datang di Havvatopia bagian Observatorium!"
+    );
+
+    public static readonly LocalizationString L2_ELEVATOR_1 = new LocalizationString(
+        "-",
+        "Mau naikki aku ke mana?"
+    );
+
+    public static readonly LocalizationString L2_ELEVATOR_1_1 = new LocalizationString(
+        "-",
+        "Havvatopia - Uptown"
+    );
+
+    public static readonly LocalizationString L2_ELEVATOR_1_2 = new LocalizationString(
+        "-",
+        "Havvatopia - Downtown"
+    );
+
+    public static readonly LocalizationString L2_ELEVATOR_1_3 = new LocalizationString(
+        "-",
+        "Havvatopia - Engine Room"
+    );
+
+    public static readonly LocalizationString L2_ELEVATOR_1_4 = new LocalizationString(
+        "-",
+        "Havvatopia - Underground"
+    );
+
+    public static readonly LocalizationString L2_ELEVATOR_1_5 = new LocalizationString(
+        "-",
+        "Gajadi"
+    );
+
 
     #endregion
 

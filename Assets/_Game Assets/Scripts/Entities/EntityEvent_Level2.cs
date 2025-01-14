@@ -25,22 +25,22 @@ public class EntityEvent_Level2 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.Hello); um.NextAction(); });
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Halo! Selamat datang di Havvatopia bagian Observatorium!", doorSwitch.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, "Mau naikki aku ke mana?", doorSwitch.voicePack),
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, LocalizationManager.L2_ELEVATOR_0, doorSwitch.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, LocalizationManager.L2_ELEVATOR_1, doorSwitch.voicePack),
             new DialogueChoice[5] {
-                new DialogueChoice("Havvatopia - Uptown", () => {
+                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_1, () => {
                     em.genericEvent.ElefataaEvent_Generic_Uptown(this, doorSwitch);
                 }),
-                new DialogueChoice("Havvatopia - Downtown", () => {
+                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_2, () => {
                     em.genericEvent.ElefataaEvent_Generic_Downtown(this, doorSwitch, downTownPasswordChoice, downTownHaveKey, m_elevatorEvent_Camera);
                 }),
-                new DialogueChoice("Havvatopia - Engine Room", () => {
+                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_3, () => {
                     em.genericEvent.ElefataaEvent_Generic_Failed(this, doorSwitch, m_elevatorEvent_Camera);
                 }),
-                new DialogueChoice("Havvatopia - Underground", () => {
+                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_4, () => {
                     em.genericEvent.ElefataaEvent_Generic_Failed(this, doorSwitch, m_elevatorEvent_Camera);
                 }),
-                new DialogueChoice("Gajadi", () => {
+                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_5, () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_elevatorEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),
