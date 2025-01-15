@@ -22,7 +22,7 @@ public class EntityEvent_Level1 : EntityEvent
             um.AddUIAction(() => StartCoroutine(um.AnimateTransition("flashbang")));
             um.AddUIAction(() => { player.animator.gameObject.SetActive(true); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(4.0f)));
-            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."))));
+            um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", LocalizationManager.L1_ONLOAD_0))));
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(1.0f)));
             um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(2); um.NextAction(); });
 
@@ -41,9 +41,9 @@ public class EntityEvent_Level1 : EntityEvent
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
 
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SIGNPOST, "Havvatopia saat ini sedang keadaan darurat.", signPost.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SIGNPOST, "Oleh karena itu, tangga darurat saat ini ditutup sementara.", signPost.voicePack))));
-        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SIGNPOST, "Silahkan gunakan elevator saja...", signPost.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SIGNPOST, LocalizationManager.L1_SIGNPOST_0, signPost.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SIGNPOST, LocalizationManager.L1_SIGNPOST_1, signPost.voicePack))));
+        um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_SIGNPOST, LocalizationManager.L1_SIGNPOST_2, signPost.voicePack))));
 
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }

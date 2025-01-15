@@ -839,7 +839,314 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1
+    public static readonly LocalizationString L1_ONLOAD_0 = new LocalizationString(
+        "...",
+        "..."
+    );
 
+    public static readonly LocalizationString L1_SIGNPOST_0 = new LocalizationString(
+        "-",
+        "Havvatopia saat ini sedang keadaan darurat."
+    );
+
+    public static readonly LocalizationString L1_SIGNPOST_1 = new LocalizationString(
+        "-",
+        "Oleh karena itu, tangga darurat saat ini ditutup sementara."
+    );
+
+    public static readonly LocalizationString L1_SIGNPOST_2 = new LocalizationString(
+        "-",
+        "Silahkan gunakan elevator saja..."
+    );
+
+    #region Level 1_1
+    public static readonly LocalizationString L1_1_NOSWITCH_0 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_1_NOSWITCH_1 = new LocalizationString(
+        "-",
+        "Mungkin bisa ketemu penghuninya kalau ikuti garis ini!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_0 = new LocalizationString(
+        "-",
+        "... zzz..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_1 = new LocalizationString(
+        "-",
+        "... Selamat datang di... Havvatopia..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_2 = new LocalizationString(
+        "-",
+        "... Sekarang jam 2 pagi dan saat ini di Havvatopia sedang tidak ada internet dan mati lampu..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_3 = new LocalizationString(
+        "-",
+        "... Katanya sih Havvatopia lagi keadaan darurat... tapi... aku cuma mau tidur... zzz..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4 = new LocalizationString(
+        "-",
+        "... zzz... Adakah... yang bisa dibantu..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_1 = new LocalizationString(
+        "-",
+        "Havva sedang dimana ya?"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_1_0 = new LocalizationString(
+        "-",
+        "... zzz..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_1_1 = new LocalizationString(
+        "-",
+        "... Sebelum mati lampu Havva berada di Observatory, lantai paling atas..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_1_2 = new LocalizationString(
+        "-",
+        "... Silahkan pergi bersama Elefataa ke sana..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_1_3 = new LocalizationString(
+        "-",
+        "... Elefataa... selalu ada di tengah lantai kok..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_2 = new LocalizationString(
+        "-",
+        "Boleh lewat ga?"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_2_0 = new LocalizationString(
+        "-",
+        "... Oiya ini... silahkan lewat..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOOR_4_3 = new LocalizationString(
+        "-",
+        "Enggak jadi."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_0 = new LocalizationString(
+        "-",
+        "Huaaaaaa, ini kenapa listrik sama wifi nya ga nyala-nyala!!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_1 = new LocalizationString(
+        "-",
+        "Udah dari kemarin siang mati lampu nih!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_2 = new LocalizationString(
+        "-",
+        "Padahal gua mau dengerin Havva main piano!!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_3 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_4 = new LocalizationString(
+        "-",
+        "Hah?"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_5 = new LocalizationString(
+        "-",
+        "Apaaaaa?"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_6 = new LocalizationString(
+        "-",
+        "Lu mau gua buka pintu sebelah sana?"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORTIMING_7 = new LocalizationString(
+        "-",
+        "Tapi lari ya, pintunya bakalan ketutup automatis."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_0 = new LocalizationString(
+        "-",
+        "STOPPPPPP!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_1 = new LocalizationString(
+        "-",
+        "SAYA PENJAGA PINTU INI DAN ANDA TIDAK BOLEH LEWAT SINI!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2 = new LocalizationString(
+        "-",
+        "KECUALI ANDA MEMPUNYAI PASSWORD!!!!!!!!!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_T0 = new LocalizationString(
+        "-",
+        "Passwordnya benar, yeaaay!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_F0 = new LocalizationString(
+        "-",
+        "PASSWORDNYA SALAH!!!!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_F1 = new LocalizationString(
+        "-",
+        "Tapi karena saya baik, saya ga akan laporin kok!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_F2 = new LocalizationString(
+        "-",
+        "Silahkan cari lagi dan ingat ulang passwordnya ya!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_2 = new LocalizationString(
+        "-",
+        "Kenapa butuh password?"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_0 = new LocalizationString(
+        "-",
+        "Hmm... iya yah, kenapa ya..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_1 = new LocalizationString(
+        "-",
+        "Yang setel passwordnya juga bukan Havva..."
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_2 = new LocalizationString(
+        "-",
+        "TAPI PEKERJAAN TETAPLAH PEKERJAAN!"
+    );
+
+    public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_3 = new LocalizationString(
+        "-",
+        "SAYA HARUS LOYAL KE SIAPAPUN YANG MEMBERIKAN PEKERJAAN INI!"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_0 = new LocalizationString(
+        "-",
+        "Kamu secara ga sengaja (apa sengaja ya?) dengerin apa yang mereka bicarakan."
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_1 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_2 = new LocalizationString(
+        "-",
+        "COY! LU UDAH SETEL PASSWORD DI PINTU SANA BELOM?"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_3 = new LocalizationString(
+        "-",
+        "HAH??! APAAN GA KEDENGERAN!!!"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_4 = new LocalizationString(
+        "-",
+        "HAH?? LU NGOMONG APAAN BARUSAN? PASSWORDNYA UDAH DI SETEL APA BELOM??"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_5 = new LocalizationString(
+        "-",
+        "APAAN???!!! PASSWORDNYA 1 2 3!!!"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_6 = new LocalizationString(
+        "-",
+        "LU SETEL 3 PASSWORD DI PINTUNYA?????"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_7 = new LocalizationString(
+        "-",
+        "NGOMONG YANG KERAS!!! GA KEDENGERAN COY!!!"
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_8 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_1_PASSTRIGGER_9 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_1_DIARY_0 = new LocalizationString(
+        "-",
+        "Yohohoo, ini diary gua."
+    );
+
+    public static readonly LocalizationString L1_1_DIARY_1 = new LocalizationString(
+        "-",
+        "Gua saranin lu kumpulin diary gua selama main game."
+    );
+
+    public static readonly LocalizationString L1_1_DIARY_2 = new LocalizationString(
+        "-",
+        "Ntar bakalan gua kasih reward lho kalau kekumpul semuanya."
+    );
+
+    public static readonly LocalizationString L1_1_DIARY_3 = new LocalizationString(
+        "NYEHEHEHEHEHE",
+        "NYEHEHEHEHEHE"
+    );
+
+    public static readonly LocalizationString L1_1_DIARY_4 = new LocalizationString(
+        "Adios!",
+        "Adios!"
+    );
+
+    public static readonly LocalizationString L1_1_DIARY_5 = new LocalizationString(
+        "...",
+        "..."
+    );
+    #endregion
+
+    #region Level 1_2
+
+    #endregion
+
+    #region Level 1_3
+
+    #endregion
+
+    #region Level 1_4
+
+    #endregion
+
+    #region Level 1_5
+
+    #endregion
+
+    #region Level 1_6
+
+    #endregion
+
+    #region Level 1_7
+
+    #endregion
+
+    #region Level 1_8
+
+    #endregion
+
+    #region Level 1_9
+
+    #endregion
     #endregion
 
     #region Level 2
