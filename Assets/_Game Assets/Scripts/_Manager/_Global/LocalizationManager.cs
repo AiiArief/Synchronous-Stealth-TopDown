@@ -1117,7 +1117,45 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1_2
+    public static readonly LocalizationString L1_2_CLOSEDOOR_0 = new LocalizationString(
+        "-",
+        "Lu mau gua tutup pintunya biar mereka ga bisa liat lu?"
+    );
 
+    public static readonly LocalizationString L1_2_CLOSEDOOR_0_1 = new LocalizationString(
+        "-",
+        "Boleh."
+    );
+
+    public static readonly LocalizationString L1_2_CLOSEDOOR_0_1_0 = new LocalizationString(
+        "-",
+        "Untungnya mereka bego, jadi mereka ga bakalan nyadar wkwk."
+    );
+
+    public static readonly LocalizationString L1_2_CLOSEDOOR_0_2 = new LocalizationString(
+        "-",
+        "Gausah deh."
+    );
+
+    public static readonly LocalizationString L1_2_DIARY_0 = new LocalizationString(
+        "-",
+        "Tau ga kenapa lu ga bisa bunuh 3D Sphere Robot manapun?"
+    );
+
+    public static readonly LocalizationString L1_2_DIARY_1 = new LocalizationString(
+        "-",
+        "Karena gua memang belum sempet implementasiin mekanik tersebut."
+    );
+
+    public static readonly LocalizationString L1_2_DIARY_2 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHE"
+    );
+
+    public static readonly LocalizationString L1_2_DIARY_3 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 1_3
