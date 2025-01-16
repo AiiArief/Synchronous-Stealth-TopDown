@@ -1181,11 +1181,47 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1_4
+    public static readonly LocalizationString L1_4_DIARY_0 = new LocalizationString(
+        "-",
+        "Tau ga kenapa semua yang interactable = NPC?"
+    );
 
+    public static readonly LocalizationString L1_4_DIARY_1 = new LocalizationString(
+        "-",
+        "Karena... gua ngodingnya gitu?"
+    ); 
+
+    public static readonly LocalizationString L1_4_DIARY_2 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHE"
+    );
+
+    public static readonly LocalizationString L1_4_DIARY_3 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 1_5
+    public static readonly LocalizationString L1_5_DIARY_0 = new LocalizationString(
+        "-",
+        "Tau ga kenapa lu spy terbaik di dunia ini?"
+    );
 
+    public static readonly LocalizationString L1_5_DIARY_1 = new LocalizationString(
+        "-",
+        "Karena lu satu satunya spy di game ini."
+    );
+
+    public static readonly LocalizationString L1_5_DIARY_2 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHE"
+    );
+
+    public static readonly LocalizationString L1_5_DIARY_3 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 1_6
