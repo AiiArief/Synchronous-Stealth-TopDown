@@ -28,19 +28,19 @@ public class EntityEvent_Level2 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, LocalizationManager.L2_ELEVATOR_0, doorSwitch.voicePack))));
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2D1BIT_ELEFATAA, LocalizationManager.L2_ELEVATOR_1, doorSwitch.voicePack),
             new DialogueChoice[5] {
-                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_1, () => {
+                new DialogueChoice(LocalizationManager.GENERIC_ELEFATAAGOTOCHOICES_UPTOWN, () => {
                     em.genericEvent.ElefataaEvent_Generic_Uptown(this, doorSwitch);
                 }),
-                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_2, () => {
+                new DialogueChoice(LocalizationManager.GENERIC_ELEFATAAGOTOCHOICES_DOWNTOWN, () => {
                     em.genericEvent.ElefataaEvent_Generic_Downtown(this, doorSwitch, downTownPasswordChoice, downTownHaveKey, m_elevatorEvent_Camera);
                 }),
-                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_3, () => {
+                new DialogueChoice(LocalizationManager.GENERIC_ELEFATAAGOTOCHOICES_ENGINE, () => {
                     em.genericEvent.ElefataaEvent_Generic_Failed(this, doorSwitch, m_elevatorEvent_Camera);
                 }),
-                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_4, () => {
+                new DialogueChoice(LocalizationManager.GENERIC_ELEFATAAGOTOCHOICES_UNDERGROUND, () => {
                     em.genericEvent.ElefataaEvent_Generic_Failed(this, doorSwitch, m_elevatorEvent_Camera);
                 }),
-                new DialogueChoice(LocalizationManager.L2_ELEVATOR_1_5, () => {
+                new DialogueChoice(LocalizationManager.GENERIC_ELEFATAAGOTOCHOICES_CANCEL, () => {
                     um.AddUIAction(() => { doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                     um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_elevatorEvent_Camera.ReleaseCamera(); um.NextAction(); });
                 }),

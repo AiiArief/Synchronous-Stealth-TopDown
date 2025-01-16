@@ -259,6 +259,35 @@ public class LocalizationManager : MonoBehaviour
         "Y-yang setel passwordnya terakhir kulihat di Havvatopia bagian Uptown..."
     );
 
+    public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_OBSERVATORY = new LocalizationString(
+        "-",
+        "Havvatopia - Observatorium"
+    );
+
+    public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_UPTOWN = new LocalizationString(
+        "-",
+        "Havvatopia - Uptown"
+    );
+
+    public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_DOWNTOWN = new LocalizationString(
+        "-",
+        "Havvatopia - Downtown"
+    );
+
+    public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_ENGINE = new LocalizationString(
+        "-",
+        "Havvatopia - Engine Room"
+    );
+
+    public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_UNDERGROUND = new LocalizationString(
+        "-",
+        "Havvatopia - Underground"
+    );
+
+    public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_CANCEL = new LocalizationString(
+        "-",
+        "Gajadi"
+    );
     #endregion
 
     #region Void World Dialogues
@@ -1380,6 +1409,56 @@ public class LocalizationManager : MonoBehaviour
         "TIDAK AKAN ADA YANG BISA MELEWATI SAYA!!!!"
     );
 
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_0 = new LocalizationString(
+        "-",
+        "Jangan lewat sini, karena ini jalan hanya untuk Hardcore Gamerzzzz."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_1 = new LocalizationString(
+        "-",
+        "Silahkan cari jalan lain, karena jalan ini hanya shortcut ke Havva."
+    );
+    
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_2 = new LocalizationString(
+        "-",
+        "Dan Anda hanya bisa menemukan passwordnya di internet."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_T0 = new LocalizationString(
+        "-",
+        "GGWP Gamers!"
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_T1 = new LocalizationString(
+        "-",
+        "Namun, ini belum selesai!"
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_T2 = new LocalizationString(
+        "-",
+        "Semoga saja Anda bisa melewati challenge selanjutnya!"
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_F0 = new LocalizationString(
+        "-",
+        "Tuhkan, tidak mungkin lewat sini."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_F1 = new LocalizationString(
+        "-",
+        "Silahkan cari jalan lain."
+    );
+
+    public static readonly LocalizationString L1_6_ELEVATOREVENT_0 = new LocalizationString(
+        "-",
+        "Halo! Selamat datang di Havvatopia bagian Uptown!"
+    );
+
+    public static readonly LocalizationString L1_6_ELEVATOREVENT_1 = new LocalizationString(
+        "-",
+        "Mau naikki aku ke mana?"
+    );
+
     public static readonly LocalizationString L1_6_DIARY_0 = new LocalizationString(
         "-",
         "Lu lagi berada di shortcut khusus untuk gamerz yang hardcore, gua ucapkan selamat bisa sampai disini."
@@ -1403,11 +1482,62 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1_7
+    public static readonly LocalizationString L1_7_DIARY_0 = new LocalizationString(
+        "-",
+        "Gua sempet bilang kalau kelas 3D Humanoid karakternya sedikit."
+    );
 
+    public static readonly LocalizationString L1_7_DIARY_1 = new LocalizationString(
+        "-",
+        "Sebenernya bukan sedikit sih, tapi lu satu-satunya karakter yang dari kelas 3D Humanoid."
+    );
+
+    public static readonly LocalizationString L1_7_DIARY_2 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHE"
+    );
+
+    public static readonly LocalizationString L1_7_DIARY_3 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 1_8
+    public static readonly LocalizationString L1_8_DIARY_0 = new LocalizationString(
+        "-",
+        "Tau ga kenapa kelas 3D Humanoid karakternya sedikit?"
+    );
 
+    public static readonly LocalizationString L1_8_DIARY_1 = new LocalizationString(
+        "-",
+        "Karena budget buat bikinnya mahal."
+    );
+
+    public static readonly LocalizationString L1_8_DIARY_2 = new LocalizationString(
+        "-",
+        "Apalagi animasinya, makanya banyak yang clipping."
+    );
+
+    public static readonly LocalizationString L1_8_DIARY_3 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHHE"
+    );
+
+    public static readonly LocalizationString L1_8_DIARY_4 = new LocalizationString(
+        "-",
+        "Sigh..."
+    );
+
+    public static readonly LocalizationString L1_8_DIARY_5 = new LocalizationString(
+        "-",
+        "Seandainya gua punya duit lebih..."
+    );
+
+    public static readonly LocalizationString L1_8_DIARY_6 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 1_9
@@ -1424,31 +1554,6 @@ public class LocalizationManager : MonoBehaviour
     public static readonly LocalizationString L2_ELEVATOR_1 = new LocalizationString(
         "-",
         "Mau naikki aku ke mana?"
-    );
-
-    public static readonly LocalizationString L2_ELEVATOR_1_1 = new LocalizationString(
-        "-",
-        "Havvatopia - Uptown"
-    );
-
-    public static readonly LocalizationString L2_ELEVATOR_1_2 = new LocalizationString(
-        "-",
-        "Havvatopia - Downtown"
-    );
-
-    public static readonly LocalizationString L2_ELEVATOR_1_3 = new LocalizationString(
-        "-",
-        "Havvatopia - Engine Room"
-    );
-
-    public static readonly LocalizationString L2_ELEVATOR_1_4 = new LocalizationString(
-        "-",
-        "Havvatopia - Underground"
-    );
-
-    public static readonly LocalizationString L2_ELEVATOR_1_5 = new LocalizationString(
-        "-",
-        "Gajadi"
     );
 
     public static readonly LocalizationString L2_TALK_0 = new LocalizationString(
