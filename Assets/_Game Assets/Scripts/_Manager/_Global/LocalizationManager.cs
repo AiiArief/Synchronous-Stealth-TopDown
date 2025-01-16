@@ -1225,6 +1225,180 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1_6
+    public static readonly LocalizationString L1_6_TRAPPED_0 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_1 = new LocalizationString(
+        "-",
+        "HAHAHAHAHAHA!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_2 = new LocalizationString(
+        "-",
+        "SELAMAT DATANG DI PERANGKAP API YANG SAYA BUAT!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_3 = new LocalizationString(
+        "-",
+        "UNTUK KABUR DARI PERANGKAP INI, ANDA HARUS MEMECAHKAN TEKA-TEKI LABIRIN DI RUANGAN INI!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_4 = new LocalizationString(
+        "-",
+        "JIKA ANDA BERHASIL KABUR DARI PERANGKAP INI, ANDA AKAN SAYA BERI HADIAH!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_5 = new LocalizationString(
+        "-",
+        "ENTAH KENAPA HADIAHNYA YAITU BERUPA PASSWORD UNTUK KE OBSERVATORY!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_6 = new LocalizationString(
+        "-",
+        "NAMUN JIKA ANDA GAGAL, ANDA AKAN TERBAKAR DISINI!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_7 = new LocalizationString(
+        "-",
+        "HAHAHAHAHAHA, SELAMAT MENCOBA!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_8 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_9 = new LocalizationString(
+        "-",
+        "Apinya ga ada panas-panasnya..."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPED_10 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_0 = new LocalizationString(
+        "...",
+        "SELAMAT, ANDA BERHASIL MELEWATI RINTANGAN INI!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_1 = new LocalizationString(
+        "-",
+        "SESUAI JANJI, SAYA AKAN MEMBERIKAN PASSWORD UNTUK KE OBSERVATORY!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_2 = new LocalizationString(
+        "-",
+        "PASSWORDNYA ADALAH 3 3 3!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_3 = new LocalizationString(
+        "-",
+        "SERTA, ISI \"SAYA BUKAN SPY\" UNTUK CAPTCHANYA AGAR DIIZINKAN LEWAT OLEH ELEFATAA!"
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_4 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_5 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_6 = new LocalizationString(
+        "-",
+        "Tapi aneh dah."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_7 = new LocalizationString(
+        "-",
+        "Spy kan cuma mitos, kenapa repot-repot pakai captcha ya."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_8 = new LocalizationString(
+        "-",
+        "Yang nitip password disini juga aneh banget, dia kayak kesurupan gitu."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_9 = new LocalizationString(
+        "-",
+        "Tadinya mau Saya tanya kenapa, tapi sayangnya dia 3D Headphone Sphere Robot, ga bisa diajak ngobrol kan tuh kelas."
+    );
+
+    public static readonly LocalizationString L1_6_TRAPPEDWIN_10 = new LocalizationString(
+        "-",
+        "Jadi ya yaudahlah, saya hanya melakukan kerjaan sebaik mungkin."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_0 = new LocalizationString(
+        "-",
+        "SAYA AKAN MELINDUNGI ELEFATAA DENGAN SEGALA HAL!!!"
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1 = new LocalizationString(
+        "-",
+        "ANDA TIDAK AKAN PERNAH MENEMUKAN PASSWORDNYA DAN ANDA TIDAK AKAN PERNAH MELEWATI JALAN INI!!!!"
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T0 = new LocalizationString(
+        "-",
+        "Oh, ternyata tidak apa-apa."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T1 = new LocalizationString(
+        "-",
+        "Anda terbukti bukan bahaya kok."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T2 = new LocalizationString(
+        "-",
+        "Silahkan lewat!"
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T3 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T4 = new LocalizationString(
+        "-",
+        "Oiya, yang setel password ini nitip pesan ke saya untuk siapapun yang berhasil lewat sini."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T5 = new LocalizationString(
+        "-",
+        "Jangan ke lantai Observatory ya, karena itu tempat Havva ditawan."
+    );
+
+    public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_F0 = new LocalizationString(
+        "-",
+        "TIDAK AKAN ADA YANG BISA MELEWATI SAYA!!!!"
+    );
+
+    public static readonly LocalizationString L1_6_DIARY_0 = new LocalizationString(
+        "-",
+        "Lu lagi berada di shortcut khusus untuk gamerz yang hardcore, gua ucapkan selamat bisa sampai disini."
+    );
+
+    public static readonly LocalizationString L1_6_DIARY_1 = new LocalizationString(
+        "-",
+        "Bener jawabannya; robotnya dipancing dulu baru nanti nyelip."
+    );
+
+    public static readonly LocalizationString L1_6_DIARY_2 = new LocalizationString(
+        "-",
+        "Tadinya mau pake mekanik kayak gitu di awal game, tapi pada kesusahan wkwk."
+    );
+
+    public static readonly LocalizationString L1_6_DIARY_3 = new LocalizationString(
+        "...",
+        "..."
+    );
 
     #endregion
 
