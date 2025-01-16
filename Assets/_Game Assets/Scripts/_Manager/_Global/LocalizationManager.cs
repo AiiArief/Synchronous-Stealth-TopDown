@@ -1159,7 +1159,25 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1_3
+    public static readonly LocalizationString L1_3_DIARY_0 = new LocalizationString(
+        "-",
+        "Tau ga kenapa semua 3D Headphone Sphere Robot pakai headphone noise cancelling?"
+    );
 
+    public static readonly LocalizationString L1_3_DIARY_1 = new LocalizationString(
+        "-",
+        "Karena gua males implementasi listening mechanic buat musuh."
+    );
+
+    public static readonly LocalizationString L1_3_DIARY_2 = new LocalizationString(
+        "-",
+        "NYEHEHEHEHE"
+    );
+
+    public static readonly LocalizationString L1_3_DIARY_3 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
 
     #region Level 1_4
