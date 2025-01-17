@@ -1541,7 +1541,140 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Level 1_9
+    public static readonly LocalizationString L1_9_PASSTRIGGER_0 = new LocalizationString(
+        "...",
+        "..."
+    );
 
+    public static readonly LocalizationString L1_9_PASSTRIGGER_1 = new LocalizationString(
+        "-",
+        "\"Apa yang terjadi??!\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_2 = new LocalizationString(
+        "-",
+        "\"Coy, lu ga bakal percaya ini coooy!\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_3 = new LocalizationString(
+        "-",
+        "\"Havvatopia tiba-tiba bergerak!!\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_4 = new LocalizationString(
+        "-",
+        "\"Saatnya masukin berita!!!\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_5 = new LocalizationString(
+        "-",
+        "\"Sayang ~ aku Takut ...\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_6 = new LocalizationString(
+        "-",
+        "\"Halo Takut, namaku Sayang.\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_7 = new LocalizationString(
+        "-",
+        "\"Gua ga bisa pindah, wifi-nya kenapa??\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_8 = new LocalizationString(
+        "-",
+        "\"Wifi-nya mati coy! Hadeh gimana sih providernya.\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_9 = new LocalizationString(
+        "-",
+        "\"BZZZZT... BZZZZT...\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_10 = new LocalizationString(
+        "-",
+        "\"BZZZZT... BZZZZT...\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_11 = new LocalizationString(
+        "-",
+        "\"Dih, itu 3D Sphere Robot kenapa dah, aneh banget.\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_12 = new LocalizationString(
+        "-",
+        "\"Dia kayak... kerasukan?\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_13 = new LocalizationString(
+        "-",
+        "\"BZZZZT... BZZZZT...\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_14 = new LocalizationString(
+        "-",
+        "\"HARUS SETEL PASSWORD DI DEKAT ELEFATAA.\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_15 = new LocalizationString(
+        "-",
+        "\"PASSWORDNYA 1 0 2...\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_16 = new LocalizationString(
+        "-",
+        "\"BZZZZT... BZZZZT...\""
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_17 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_9_PASSTRIGGER_18 = new LocalizationString(
+        "...",
+        "..."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_0 = new LocalizationString(
+        "-",
+        "Lu lagi di balkon."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_1 = new LocalizationString(
+        "-",
+        "Dan lu ga bisa buka jendela."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_2 = new LocalizationString(
+        "-",
+        "Karena emang gua males implementasiin mekanik kayak gitu."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_3 = new LocalizationString(
+        "-",
+        "NYEHEHEHE."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_4 = new LocalizationString(
+        "-",
+        "Welp, ceritanya sih jendela tersebut udah jadi objek statis."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_5 = new LocalizationString(
+        "-",
+        "Ini berarti tadinya jendela itu NPC, terus karena jarang di interact akhirnya mereka jadi objek statis."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_6 = new LocalizationString(
+        "-",
+        "Beuh, NPC Lore."
+    );
+
+    public static readonly LocalizationString L1_9_DIARY_7 = new LocalizationString(
+        "...",
+        "..."
+    );
     #endregion
     #endregion
 
