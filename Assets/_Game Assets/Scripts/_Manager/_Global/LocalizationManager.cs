@@ -626,17 +626,17 @@ public class LocalizationManager : MonoBehaviour
 
     public static readonly LocalizationString VW_ONLOAD_28_1 = new LocalizationString(
         "(Annoyed)",
-        "-"
+        "(Annoyed)"
     );
 
     public static readonly LocalizationString VW_ONLOAD_28_2 = new LocalizationString(
         "(Smirk)",
-        "-"
+        "(Smirk)"
     );
 
     public static readonly LocalizationString VW_ONLOAD_28_3 = new LocalizationString(
         "(Surprised)",
-        "-"
+        "(Surprised)"
     );
 
     public static readonly LocalizationString VW_ONLOAD_28_4 = new LocalizationString(
@@ -1715,23 +1715,23 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L2_TALK_4_1 = new LocalizationString(
-        "-",
-        "Gajadi"
+        "(Annoyed)",
+        "(Annoyed)"
     );
 
     public static readonly LocalizationString L2_TALK_4_2 = new LocalizationString(
-        "-",
-        "Gajadi"
+        "(Smirk)",
+        "(Smirk)"
     );
 
     public static readonly LocalizationString L2_TALK_4_3 = new LocalizationString(
-        "-",
-        "Gajadi"
+        "(Surprised)",
+        "(Surprised)"
     );
 
     public static readonly LocalizationString L2_TALK_4_4 = new LocalizationString(
-        "-",
-        "Gajadi"
+        "...",
+        "..."
     );
 
     public static readonly LocalizationString L2_TALK_5 = new LocalizationString(

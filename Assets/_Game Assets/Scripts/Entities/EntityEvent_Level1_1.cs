@@ -60,6 +60,7 @@ public class EntityEvent_Level1_1 : EntityEvent
                         um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
                         um.AddUIAction(() => { m_openDoorEvent_1_Camera.UseCamera(0); um.NextAction(); });
                         um.AddUIAction(() => StartCoroutine(um.AnimateTransition()));
+                        um.AddUIAction(() => { door.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); m_openDoorEvent_1_Camera.ReleaseCamera(); um.NextAction(); });
                     }),
                     new DialogueChoice(LocalizationManager.L1_1_OPENDOOR_4_2, () => {

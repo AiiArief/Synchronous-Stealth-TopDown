@@ -44,7 +44,7 @@ public class EntityEvent_VoidWorld : EntityEvent_Generic
                     new DialogueChoice(LocalizationManager.VW_ONLOAD_0_1, () => { 
                         PlayerPrefs.SetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, (int)LocalizationLanguage.English); 
                     }),
-                    new DialogueChoice(LocalizationManager.VW_ONLOAD_2, () => { 
+                    new DialogueChoice(LocalizationManager.VW_ONLOAD_0_2, () => { 
                         PlayerPrefs.SetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, (int)LocalizationLanguage.Indonesia); 
                     })
                 })));
