@@ -11,6 +11,7 @@ public class GlobalGameManager : MonoBehaviour
     public SoundManager soundManager;
     public DatabaseManager databaseManager;
     public LocalizationManager localizationManager;
+    public SystemUIManager systemUIManager;
 
     private void Awake()
     {
@@ -29,51 +30,44 @@ public class GlobalGameManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.BackQuote))
+        if(Input.GetKeyDown(KeyCode.F1))
         {
-            Transform graphy = transform.Find("[Graphy]");
-            if (graphy)
-                graphy.gameObject.SetActive(!graphy.gameObject.activeSelf);
+            systemUIManager.ToggleSystemUI();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            soundManager.musicSource.mute = !soundManager.musicSource.mute;
-            Debug.Log("Mute!");
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    soundManager.musicSource.mute = !soundManager.musicSource.mute;
+        //    Debug.Log("Mute!");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            QualitySettings.SetQualityLevel(0, true);
-            Screen.SetResolution(960, 540, FullScreenMode.FullScreenWindow, 30);
-            Debug.Log("Quality level 0");
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha2))
+        //{
+        //    QualitySettings.SetQualityLevel(0, true);
+        //    Screen.SetResolution(960, 540, FullScreenMode.FullScreenWindow, 30);
+        //    Debug.Log("Quality level 0");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            QualitySettings.SetQualityLevel(1, true);
-            Screen.SetResolution(1280, 720, FullScreenMode.FullScreenWindow, 60);
-            Debug.Log("Quality level 1");
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha3))
+        //{
+        //    QualitySettings.SetQualityLevel(1, true);
+        //    Screen.SetResolution(1280, 720, FullScreenMode.FullScreenWindow, 60);
+        //    Debug.Log("Quality level 1");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            QualitySettings.SetQualityLevel(2, true);
-            Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow, 60);
-            Debug.Log("Quality level 2");
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha4))
+        //{
+        //    QualitySettings.SetQualityLevel(2, true);
+        //    Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow, 60);
+        //    Debug.Log("Quality level 2");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            QualitySettings.SetQualityLevel(3, true);
-            Screen.SetResolution(3840, 2160, FullScreenMode.FullScreenWindow, 60);
-            Debug.Log("Quality level 3");
-        }
-    }
-
-    private void OnApplicationQuit()
-    {
-        //Application.OpenURL("https://forms.gle/TaZ6Vkf4QSFH9WS2A");
+        //if (Input.GetKeyDown(KeyCode.Alpha5))
+        //{
+        //    QualitySettings.SetQualityLevel(3, true);
+        //    Screen.SetResolution(3840, 2160, FullScreenMode.FullScreenWindow, 60);
+        //    Debug.Log("Quality level 3");
+        //}
     }
 
     private void HandleSpecs()

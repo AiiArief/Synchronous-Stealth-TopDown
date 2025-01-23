@@ -33,6 +33,15 @@ public class LocalizationManager : MonoBehaviour
         return GlobalGameManager.Instance.localizationManager._Translate(localizationString);
     }
 
+    #region GLOBAL GAME MANAGER
+    public static string SYSTEM_SCREENRESOLUTIONS => Translate(new LocalizationString("Screen Resolutions", "Resolusi Layar", "Screen Resolutions"));
+    public static string SYSTEM_SCREENMODE => Translate(new LocalizationString("Screen Mode", "Mode Layar", "Screen Mode"));
+    public static string SYSTEM_GRAPHICPRESET => Translate(new LocalizationString("Graphic Preset", "Preset Grafis", "Graphic Preset"));
+    public static string SYSTEM_MUSICVOLUME => Translate(new LocalizationString("Music Volume", "Volume Musik", "Music Volume"));
+    public static string SYSTEM_SFXVOLUME => Translate(new LocalizationString("SFX Volume", "Volume SFX", "SFX Volume"));
+
+    #endregion
+
     #region Tutorial
     public static readonly LocalizationString TUTORIAL_MOVE = new LocalizationString("Press to move", "Tekan untuk bergerak");
     public static readonly LocalizationString TUTORIAL_INTERACT = new LocalizationString("Hit any object to interact", "Tabrak objek apapun untuk berinteraksi");
