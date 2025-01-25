@@ -1376,6 +1376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3933299868674474223, guid: 01b299484520a4146b134455757fb8d1,
+        type: 3}
+      propertyPath: m_SubmitButton
+      value: Submit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01b299484520a4146b134455757fb8d1, type: 3}
 --- !u!114 &7663956641869013965 stripped
