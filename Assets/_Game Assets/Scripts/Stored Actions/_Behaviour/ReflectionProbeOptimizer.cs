@@ -19,7 +19,9 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
     private IEnumerator _ReflectionAPIHandler()
     {
+        m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
         m_probe.RenderProbe();
+        m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
 
         while (true)
         {
@@ -35,8 +37,8 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
                 int playerCloseEnough = _CheckPlayerIsCloseEnough();
 
-                //bool isClose = qualityLevel == 3 && playerCloseEnough == 2;
-                //m_probe.timeSlicingMode = (isClose) ? ReflectionProbeTimeSlicingMode.NoTimeSlicing : ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
+                bool isClose = playerCloseEnough == 2;
+                m_probe.timeSlicingMode = (isClose) ? ReflectionProbeTimeSlicingMode.NoTimeSlicing : ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
 
                 bool renderNow = (qualityLevel >= 2) ? playerCloseEnough > 0 : playerCloseEnough == 2;
 
@@ -46,8 +48,9 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
                     if (m_debug) Debug.Log("Rendered : " + gameObject.name);
 
-                    //if (qualityLevel < 3)
-                      //  yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
+                    if (qualityLevel < 3)
+                        //yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
+                        yield return new WaitForSeconds((1.0f / 60) * 5 * 8);
                 }
             }
         }
