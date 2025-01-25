@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale <= 0)
+            return;
+
         if (m_phaseManager.currentPhase != PhaseEnum.None)
             m_phaseManager.UpdateCurrentPhase();
     }
