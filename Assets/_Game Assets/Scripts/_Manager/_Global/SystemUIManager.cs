@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,6 +7,8 @@ using UnityEngine.UI;
 
 public class SystemUIManager : MonoBehaviour
 {
+    public static Action<int> OnQualityLevelChanged;
+
     [SerializeField] Text m_musicVolumeText;
     [SerializeField] Slider m_musicVolumeSlider;
 
@@ -64,6 +67,7 @@ public class SystemUIManager : MonoBehaviour
             return;
 
         var nextResolution = availableScreenResolution[(int)Mathf.Repeat((isNext) ? currentResolutionInt + 1 : currentResolutionInt - 1, availableScreenResolution.Count)];
+        //Debug.Log($"{currentResolutionInt} / {availableScreenResolution.Count} - {nextResolution}");
         Screen.SetResolution(nextResolution.width, nextResolution.height, currentFullscreenMode);
 
         _SetupScreenResolutions();
@@ -93,6 +97,8 @@ public class SystemUIManager : MonoBehaviour
         int nextQuality = (int)Mathf.Repeat((isNext) ? currentQuality + 1 : currentQuality - 1, QualitySettings.names.Length);
         QualitySettings.SetQualityLevel(nextQuality, true);
 
+        OnQualityLevelChanged?.Invoke(nextQuality);
+
         // jangan lupa saving
 
         _SetupScreenResolutions();
@@ -118,6 +124,7 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenResolution == null || availableScreenResolution.Count <= 0)
         {
             availableScreenResolution = Screen.resolutions.ToList();
+            //Debug.Log(string.Join(". ", availableScreenResolution));
             // filter list screen resolution dsiini 
         }
 

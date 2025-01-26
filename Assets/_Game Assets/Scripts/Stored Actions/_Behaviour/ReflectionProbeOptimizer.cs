@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -15,13 +16,32 @@ public class ReflectionProbeOptimizer : MonoBehaviour
         m_probe = GetComponent<ReflectionProbe>();
 
         StartCoroutine(_ReflectionAPIHandler());
+        OnQualityLevelChanged(QualitySettings.GetQualityLevel());
+    }
+
+    private void OnEnable()
+    {
+        SystemUIManager.OnQualityLevelChanged += OnQualityLevelChanged;
+    }
+
+    private void OnDisable()
+    {
+        SystemUIManager.OnQualityLevelChanged -= OnQualityLevelChanged;
+    }
+
+    private void OnQualityLevelChanged(int qualityLevel)
+    {
+        m_probe.enabled = qualityLevel > 0;
+
+        //m_probe.Reset();
+
+        //if (qualityLevel > 0)
+        //    _InitRenderProbe();
     }
 
     private IEnumerator _ReflectionAPIHandler()
     {
-        m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
-        m_probe.RenderProbe();
-        m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
+        _InitRenderProbe();
 
         while (true)
         {
@@ -30,7 +50,7 @@ public class ReflectionProbeOptimizer : MonoBehaviour
             if (!m_mainPlayer)
                 m_mainPlayer = GameManager.Instance.playerManager.GetMainPlayer();
 
-            if (m_mainPlayer)
+            if (m_mainPlayer && QualitySettings.realtimeReflectionProbes)
             {
                 int qualityLevel = QualitySettings.GetQualityLevel();
                 m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
@@ -54,6 +74,13 @@ public class ReflectionProbeOptimizer : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void _InitRenderProbe()
+    {
+        m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
+        m_probe.RenderProbe();
+        m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
     }
 
     /**
