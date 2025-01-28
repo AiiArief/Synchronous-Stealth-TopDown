@@ -6,7 +6,6 @@ using UnityEngine;
 public class ProfileManager : MonoBehaviour
 {
     public const string PLAYERPREFS_ISFIRSTTIMESAVE = "isFirstTimeSave";
-    //public const string PLAYERPREFS_ISMUTE = "isMute";
     public const string PLAYERPREFS_MUSICVOLUME = "musicVolume";
     public const string PLAYERPREFS_SFXVOLUME = "sfxVolume";
     public const string PLAYERPREFS_LANGUAGEID = "languageId";
@@ -15,18 +14,13 @@ public class ProfileManager : MonoBehaviour
     public const string PLAYERPREFS_HAVEPASSWORD = "havePassword";
     public const string PLAYERPREFS_HAVEDIARY = "haveDiary";
 
-    private void Awake()
-    {
-        _SetupFirstTimeSave();
-    }
-
     public void ClearProfile()
     {
         PlayerPrefs.DeleteAll();
-        _SetupFirstTimeSave();
+        SetupFirstTimeSave();
     }
 
-    private void _SetupFirstTimeSave()
+    public void SetupFirstTimeSave()
     {
         if (PlayerPrefs.GetString(PLAYERPREFS_ISFIRSTTIMESAVE, true.ToString()) == true.ToString())
         {

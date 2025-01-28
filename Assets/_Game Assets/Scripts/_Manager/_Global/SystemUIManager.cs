@@ -28,6 +28,15 @@ public class SystemUIManager : MonoBehaviour
     List<Resolution> availableScreenResolution = new List<Resolution>();
     List<FullScreenMode> availableScreenMode = new List<FullScreenMode>();
 
+    public void LoadAndApplyFromProfileManager()
+    {
+        var profileMusicVolumeInDB = _ConvertVolume(PlayerPrefs.GetFloat(ProfileManager.PLAYERPREFS_MUSICVOLUME, 100.0f), false);
+        GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("musicVolume", profileMusicVolumeInDB);
+
+        var profileSFXVolumeInDB = _ConvertVolume(PlayerPrefs.GetFloat(ProfileManager.PLAYERPREFS_SFXVOLUME, 100.0f), false);
+        GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("sfxVolume", profileSFXVolumeInDB);
+    }
+
     public void ToggleSystemUI()
     {
         onOpenTimeScale = (onOpenTimeScale < 0.0f) ? Time.timeScale : onOpenTimeScale;
@@ -55,6 +64,8 @@ public class SystemUIManager : MonoBehaviour
         var nextVolumeInDB = _ConvertVolume(Mathf.Clamp(nextVolume, 0, 100.0f), false);
         GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("musicVolume", nextVolumeInDB);
 
+        PlayerPrefs.SetFloat(ProfileManager.PLAYERPREFS_MUSICVOLUME, Mathf.Clamp(nextVolume, 0, 100.0f));
+
         _SetupAudio();
     }
 
@@ -67,6 +78,8 @@ public class SystemUIManager : MonoBehaviour
         var nextVolume = (isNext) ? currentVolume + 10.0f : currentVolume - 10.0f;
         var nextVolumeInDB = _ConvertVolume(Mathf.Clamp(nextVolume, 0, 100.0f), false);
         GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("sfxVolume", nextVolumeInDB);
+
+        PlayerPrefs.SetFloat(ProfileManager.PLAYERPREFS_SFXVOLUME, Mathf.Clamp(nextVolume, 0, 100.0f));
 
         _SetupAudio();
     }
@@ -116,7 +129,7 @@ public class SystemUIManager : MonoBehaviour
 
         OnQualityLevelChanged?.Invoke(nextQuality);
 
-        // jangan lupa saving
+        // jangan lupa saving ==> butuh di save ga sih fullscreen resolusi sama quality?
 
         _SetupScreenResolutions();
     }
