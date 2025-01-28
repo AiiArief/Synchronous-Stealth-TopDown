@@ -78,6 +78,9 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
     private void _InitRenderProbe()
     {
+        if (!m_probe.enabled)
+            return;
+
         m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
         m_probe.RenderProbe();
         m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.AllFacesAtOnce;
