@@ -6,7 +6,9 @@ using UnityEngine;
 public class ProfileManager : MonoBehaviour
 {
     public const string PLAYERPREFS_ISFIRSTTIMESAVE = "isFirstTimeSave";
-    public const string PLAYERPREFS_ISMUTE = "isMute";
+    //public const string PLAYERPREFS_ISMUTE = "isMute";
+    public const string PLAYERPREFS_MUSICVOLUME = "musicVolume";
+    public const string PLAYERPREFS_SFXVOLUME = "sfxVolume";
     public const string PLAYERPREFS_LANGUAGEID = "languageId";
     public const string PLAYERPREFS_CURRENTSCENE = "currentScene";
     public const string PLAYERPREFS_CURRENTSCENECHECKPOINT = "currentSceneCheckpoint";
@@ -29,7 +31,8 @@ public class ProfileManager : MonoBehaviour
         if (PlayerPrefs.GetString(PLAYERPREFS_ISFIRSTTIMESAVE, true.ToString()) == true.ToString())
         {
             PlayerPrefs.SetString(PLAYERPREFS_ISFIRSTTIMESAVE, false.ToString());
-            PlayerPrefs.SetString(PLAYERPREFS_ISMUTE, false.ToString());
+            PlayerPrefs.SetFloat(PLAYERPREFS_MUSICVOLUME, 100.0f);
+            PlayerPrefs.SetFloat(PLAYERPREFS_SFXVOLUME, 100.0f);
             PlayerPrefs.SetInt(PLAYERPREFS_LANGUAGEID, 0);
             PlayerPrefs.SetString(PLAYERPREFS_CURRENTSCENE, "Void World");
             PlayerPrefs.SetInt(PLAYERPREFS_CURRENTSCENECHECKPOINT, 0);

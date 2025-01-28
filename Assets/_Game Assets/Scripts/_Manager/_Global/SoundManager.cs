@@ -6,11 +6,19 @@ using UnityEngine.Audio;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] AudioSource m_musicSource;
-    public AudioSource musicSource { get { return m_musicSource; } }
-    [SerializeField] AudioSource m_meSource;
-    public AudioSource meSource { get { return m_meSource; } }
+    public AudioSource musicSource => m_musicSource;
 
-    public AudioMixer audioMixer;
+    [SerializeField] AudioSource m_meSource;
+    public AudioSource meSource => m_meSource;
+
+    [SerializeField] AudioMixerGroup m_masterAudioMixer;
+    public AudioMixerGroup MasterAudioMixer => m_masterAudioMixer;
+
+    [SerializeField] AudioMixerGroup m_musicAudioMixer;
+    public AudioMixerGroup musicAudioMixer => m_musicAudioMixer;
+
+    [SerializeField] AudioMixerGroup m_sfxAudioMixer;
+    public AudioMixerGroup SFXAudioMixer => m_sfxAudioMixer;
 
     public void PlayMusic(int music, bool stopSamePlayedMusic = true)
     {

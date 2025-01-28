@@ -42,16 +42,33 @@ public class SystemUIManager : MonoBehaviour
 
         _Localize();
         _SetupScreenResolutions();
+        _SetupAudio();
     }
 
-    public void ChangeMusicVolume (bool isNext)
+    public void ChangeMusicVolume(bool isNext)
     {
+        if (!GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.GetFloat("musicVolume", out float musicVolume))
+            return;
 
+        var currentVolume = _ConvertVolume(musicVolume);
+        var nextVolume = (isNext) ? currentVolume + 10.0f : currentVolume - 10.0f;
+        var nextVolumeInDB = _ConvertVolume(Mathf.Clamp(nextVolume, 0, 100.0f), false);
+        GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("musicVolume", nextVolumeInDB);
+
+        _SetupAudio();
     }
 
     public void ChangeSFXVolume(bool isNext)
     {
+        if (!GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.GetFloat("sfxVolume", out float sfxVolume))
+            return;
 
+        var currentVolume = _ConvertVolume(sfxVolume);
+        var nextVolume = (isNext) ? currentVolume + 10.0f : currentVolume - 10.0f;
+        var nextVolumeInDB = _ConvertVolume(Mathf.Clamp(nextVolume, 0, 100.0f), false);
+        GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("sfxVolume", nextVolumeInDB);
+
+        _SetupAudio();
     }
 
     public void ChangeResolutionSettings(bool isNext)
@@ -148,5 +165,25 @@ public class SystemUIManager : MonoBehaviour
         m_screenResolutionListText.text = $"{currentScreenResolution.width}x{currentScreenResolution.height}";
         m_screenModeText.text = $"{currentFullscreenMode}";
         m_graphicPresetListText.text = $"{currentQualityName}";
+    }
+
+    private void _SetupAudio()
+    {
+        if (!GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.GetFloat("musicVolume", out float musicVolume))
+            return;
+
+        if (!GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.GetFloat("sfxVolume", out float sfxVolume))
+            return;
+
+        m_musicVolumeSlider.value = _ConvertVolume(musicVolume);
+        m_sfxVolumeSlider.value = _ConvertVolume(sfxVolume);
+    }
+
+    private float _ConvertVolume(float val, bool isDbToPercentage = true) 
+    {
+        if (!isDbToPercentage)
+            return (val / 100.0f * 80.0f) - 80.0f;
+
+        return (val + 80.0f) / 80.0f * 100.0f; 
     }
 }
