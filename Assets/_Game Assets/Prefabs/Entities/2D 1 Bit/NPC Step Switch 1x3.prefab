@@ -42,6 +42,12 @@ MonoBehaviour:
   m_switchForDoors: []
   m_currentIsOn: 0
   m_isOnExpression: 4
+  m_onChangeToIsOn:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onChangeToIsOff:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5535975513061327169
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +103,7 @@ AudioSource:
   m_GameObject: {fileID: 5535975513061327169}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: beeb01c4ad9d58845a23ec6473793491,
+  OutputAudioMixerGroup: {fileID: -1048196545380152294, guid: beeb01c4ad9d58845a23ec6473793491,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
@@ -266,6 +272,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[20].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[20].z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[21].x
+      value: 0.000000019868214
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[21].z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[22].x
+      value: 0.000000019868214
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[22].z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[23].x
+      value: 0.000000039736427
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Tangents.Array.data[23].z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7534852517683026608, guid: 80c2e0aa79783d746a632fc740d7a664,
         type: 3}
