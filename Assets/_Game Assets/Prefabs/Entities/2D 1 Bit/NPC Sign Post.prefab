@@ -184,7 +184,7 @@ AudioSource:
   m_GameObject: {fileID: 6038730667185261670}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: beeb01c4ad9d58845a23ec6473793491,
+  OutputAudioMixerGroup: {fileID: -1048196545380152294, guid: beeb01c4ad9d58845a23ec6473793491,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
@@ -272,6 +272,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &981814215620102118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6038730667185261670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad7e12a147fd5b478c7da4994388775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_animator: {fileID: 7315966736798811955}
+  m_detectCollisionOnStart: 1
+  gravityPerTurn: 3
+  m_voicePack: {fileID: 4551529522654541954}
+  m_idleWaitInputs: []
 --- !u!114 &3830602794451444936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,23 +310,6 @@ MonoBehaviour:
   m_interactEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &981814215620102118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6038730667185261670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad7e12a147fd5b478c7da4994388775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_animator: {fileID: 7315966736798811955}
-  m_detectCollisionOnStart: 1
-  gravityPerTurn: 3
-  m_voicePack: {fileID: 4551529522654541954}
-  m_idleWaitInputs: []
 --- !u!114 &8794852074927450877
 MonoBehaviour:
   m_ObjectHideFlags: 0
