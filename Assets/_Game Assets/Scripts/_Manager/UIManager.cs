@@ -163,13 +163,13 @@ public class UIManager : MonoBehaviour
     public IEnumerator AnimateTransition(string animation = "fade", float waitTime = 1.0f)
     {
         m_transition.SetTrigger(animation);
-        yield return new WaitForSecondsRealtime(waitTime);
+        yield return new WaitForSeconds(waitTime);
         NextAction();
     }
 
     public IEnumerator DelayNextAction(float time)
     {
-        yield return new WaitForSecondsRealtime(time);
+        yield return new WaitForSeconds(time);
         NextAction();
     }
 
@@ -217,7 +217,7 @@ public class UIManager : MonoBehaviour
                 strIndex = strComplete.Length;
             }
 
-            yield return new WaitForSecondsRealtime(m_textSpeed * Time.deltaTime);
+            yield return new WaitForSeconds(m_textSpeed * Time.deltaTime);
         }
 
         isSkipFlag = true;
@@ -229,7 +229,7 @@ public class UIManager : MonoBehaviour
 
             while (true)
             {
-                if (Input.GetButtonDown("Shoot #0"))
+                if (Input.GetButtonDown("Shoot #0") && Time.timeScale > 0)
                     break;
 
                 yield return null;
@@ -271,11 +271,11 @@ public class UIManager : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetButtonDown("Shoot #0") && !isSkipFlag)
+            if (Input.GetButtonDown("Shoot #0") && !isSkipFlag && Time.timeScale > 0)
             {
                 isSkipFlag = true;
 
-                yield return new WaitForSecondsRealtime(m_textSpeed / 5 * Time.deltaTime);
+                yield return new WaitForSeconds(m_textSpeed / 5 * Time.deltaTime);
             }
 
             yield return null;
