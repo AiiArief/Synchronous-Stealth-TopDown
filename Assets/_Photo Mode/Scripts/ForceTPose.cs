@@ -7,6 +7,7 @@ using UniHumanoid;
 
 public class ForceTPose
 {
+#if UNITY_EDITOR
     [MenuItem("Tools/Character/ForceT-Pose")]
     static void TPose()
     {
@@ -38,4 +39,5 @@ public class ForceTPose
             bone.localScale = skeleton.scale;
         }
     }
+#endif
 }
