@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SystemUIManager : MonoBehaviour
@@ -56,6 +57,9 @@ public class SystemUIManager : MonoBehaviour
 
         appliedResolution = Screen.currentResolution;
         appliedFullscreenMode = Screen.fullScreenMode;
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(m_applyText.transform.parent.gameObject);
 
         _Localize();
         _SetupScreenResolutions();
