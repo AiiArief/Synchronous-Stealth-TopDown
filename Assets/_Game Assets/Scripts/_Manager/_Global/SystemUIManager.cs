@@ -24,9 +24,14 @@ public class SystemUIManager : MonoBehaviour
     [SerializeField] Text m_graphicPresetText;
     [SerializeField] Text m_graphicPresetListText;
 
+    [SerializeField] Text m_applyText;
+
     float onOpenTimeScale = -1.0f;
     List<Resolution> availableScreenResolution = new List<Resolution>();
-    List<FullScreenMode> availableScreenMode = new List<FullScreenMode>();
+    Dictionary<FullScreenMode, string> availableScreenMode = new Dictionary<FullScreenMode, string>();
+
+    Resolution appliedResolution = new Resolution();
+    FullScreenMode appliedFullscreenMode = new FullScreenMode();
 
     public void LoadAndApplyFromProfileManager()
     {
@@ -49,9 +54,18 @@ public class SystemUIManager : MonoBehaviour
         onOpenTimeScale = Time.timeScale;
         Time.timeScale = 0;
 
+        appliedResolution = Screen.currentResolution;
+        appliedFullscreenMode = Screen.fullScreenMode;
+
         _Localize();
         _SetupScreenResolutions();
         _SetupAudio();
+    }
+
+    public void ApplyChange()
+    {
+        Screen.SetResolution(appliedResolution.width, appliedResolution.height, appliedFullscreenMode, appliedResolution.refreshRate);
+        ToggleSystemUI();
     }
 
     public void ChangeMusicVolume(bool isNext)
@@ -89,18 +103,20 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenResolution.Count <= 0)
             return;
 
-        var currentResolution = Screen.currentResolution;
-        var currentFullscreenMode = Screen.fullScreenMode;
+        //var currentResolution = Screen.currentResolution;
+        //var currentFullscreenMode = Screen.fullScreenMode;
 
-        int currentResolutionInt = availableScreenResolution.FindIndex((x) => x.Equals(currentResolution));
+        int currentResolutionInt = availableScreenResolution.FindIndex((x) => x.Equals(appliedResolution));
         if (currentResolutionInt == -1)
             return;
 
         var nextResolution = availableScreenResolution[(int)Mathf.Repeat((isNext) ? currentResolutionInt + 1 : currentResolutionInt - 1, availableScreenResolution.Count)];
-        //Debug.Log($"{currentResolutionInt} / {availableScreenResolution.Count} - {nextResolution}");
-        Screen.SetResolution(nextResolution.width, nextResolution.height, currentFullscreenMode);
+        Debug.LogError($"{currentResolutionInt} / {availableScreenResolution.Count} - {appliedResolution} --> {nextResolution}");
+        appliedResolution = nextResolution;
+        m_screenResolutionListText.text = $"{nextResolution.width}x{nextResolution.height}@{nextResolution.refreshRate}Hz";
+        //Screen.SetResolution(nextResolution.width, nextResolution.height, currentFullscreenMode, nextResolution.refreshRate);
 
-        _SetupScreenResolutions();
+        //_SetupScreenResolutions();
     }
 
     public void ChangeScreenModeSettings(bool isNext)
@@ -108,17 +124,22 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenMode.Count <= 0)
             return;
 
-        var currentResolution = Screen.currentResolution;
-        var currentFullscreenMode = Screen.fullScreenMode;
+        //var currentResolution = Screen.currentResolution;
+        //var currentFullscreenMode = Screen.fullScreenMode;
 
-        int currentModeInt = availableScreenMode.FindIndex((x) => x.Equals(currentFullscreenMode));
+        var availableScreenModeList = availableScreenMode.ToList();
+        int currentModeInt = availableScreenModeList.FindIndex((x) => x.Key.Equals(appliedFullscreenMode));
         if (currentModeInt == -1)
             return;
 
-        var nextMode = availableScreenMode[(int)Mathf.Repeat((isNext) ? currentModeInt + 1 : currentModeInt - 1, availableScreenMode.Count)];
-        Screen.SetResolution(currentResolution.width, currentResolution.height, nextMode);
+        var nextMode = availableScreenModeList[(int)Mathf.Repeat((isNext) ? currentModeInt + 1 : currentModeInt - 1, availableScreenModeList.Count)].Key;
+        appliedFullscreenMode = nextMode;
 
-        _SetupScreenResolutions();
+        string nextModeStr = availableScreenMode[nextMode];
+        m_screenModeListText.text = $"{nextModeStr}";
+        //Screen.SetResolution(currentResolution.width, currentResolution.height, nextMode, currentResolution.refreshRate);
+
+        //_SetupScreenResolutions();
     }
 
     public void ChangeQualitySettings(bool isNext)
@@ -128,8 +149,6 @@ public class SystemUIManager : MonoBehaviour
         QualitySettings.SetQualityLevel(nextQuality, true);
 
         OnQualityLevelChanged?.Invoke(nextQuality);
-
-        // jangan lupa saving ==> butuh di save ga sih fullscreen resolusi sama quality?
 
         _SetupScreenResolutions();
     }
@@ -141,6 +160,7 @@ public class SystemUIManager : MonoBehaviour
         m_screenResolutionText.text = LocalizationManager.SYSTEM_SCREENRESOLUTIONS;
         m_screenModeText.text = LocalizationManager.SYSTEM_SCREENMODE;
         m_graphicPresetText.text = LocalizationManager.SYSTEM_GRAPHICPRESET;
+        m_applyText.text = LocalizationManager.SYSTEM_APPLY;
     }
 
     private void _SetupScreenResolutions()
@@ -154,8 +174,8 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenResolution == null || availableScreenResolution.Count <= 0)
         {
             availableScreenResolution = Screen.resolutions.ToList();
-            //Debug.Log(string.Join(". ", availableScreenResolution));
-            // filter list screen resolution dsiini 
+            availableScreenResolution.RemoveAll((x) => x.refreshRate > 60.0f);
+            Debug.LogError(string.Join(". ", availableScreenResolution));
         }
 
         if (availableScreenResolution.Count <= 0)
@@ -163,20 +183,21 @@ public class SystemUIManager : MonoBehaviour
 
         if (availableScreenMode == null || availableScreenMode.Count <= 0)
         {
-            availableScreenMode.Add(FullScreenMode.ExclusiveFullScreen);
-            availableScreenMode.Add(FullScreenMode.FullScreenWindow);
-            availableScreenMode.Add(FullScreenMode.Windowed);
+            availableScreenMode.Add(FullScreenMode.ExclusiveFullScreen, "Exclusive Fullscreen");
+            availableScreenMode.Add(FullScreenMode.FullScreenWindow, "Fullscreen Window");
+            availableScreenMode.Add(FullScreenMode.MaximizedWindow, "Maximized Window");
+            availableScreenMode.Add(FullScreenMode.Windowed, "Windowed");
         }
 
         if (availableScreenMode.Count <= 0)
             return;
 
         var currentScreenResolution = Screen.currentResolution;
-        string currentFullscreenMode = Screen.fullScreenMode.ToString();
+        string currentFullscreenMode = availableScreenMode[Screen.fullScreenMode];
         string currentQualityName = QualitySettings.names[QualitySettings.GetQualityLevel()];
 
-        m_screenResolutionListText.text = $"{currentScreenResolution.width}x{currentScreenResolution.height}";
-        m_screenModeText.text = $"{currentFullscreenMode}";
+        m_screenResolutionListText.text = $"{currentScreenResolution.width}x{currentScreenResolution.height}@{currentScreenResolution.refreshRate}Hz";
+        m_screenModeListText.text = $"{currentFullscreenMode}";
         m_graphicPresetListText.text = $"{currentQualityName}";
     }
 

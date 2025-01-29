@@ -39,6 +39,7 @@ public class LocalizationManager : MonoBehaviour
     public static string SYSTEM_GRAPHICPRESET => Translate(new LocalizationString("Graphic Preset", "Preset Grafis", "Graphic Preset"));
     public static string SYSTEM_MUSICVOLUME => Translate(new LocalizationString("Music Volume", "Volume Musik", "Music Volume"));
     public static string SYSTEM_SFXVOLUME => Translate(new LocalizationString("SFX Volume", "Volume SFX", "SFX Volume"));
+    public static string SYSTEM_APPLY => Translate(new LocalizationString("Apply", "Terapkan", "Apply"));
 
     #endregion
 
