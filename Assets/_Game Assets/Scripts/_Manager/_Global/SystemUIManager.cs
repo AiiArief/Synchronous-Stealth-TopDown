@@ -103,29 +103,19 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenResolution.Count <= 0)
             return;
 
-        //var currentResolution = Screen.currentResolution;
-        //var currentFullscreenMode = Screen.fullScreenMode;
-
         int currentResolutionInt = availableScreenResolution.FindIndex((x) => x.Equals(appliedResolution));
         if (currentResolutionInt == -1)
             return;
 
         var nextResolution = availableScreenResolution[(int)Mathf.Repeat((isNext) ? currentResolutionInt + 1 : currentResolutionInt - 1, availableScreenResolution.Count)];
-        Debug.LogError($"{currentResolutionInt} / {availableScreenResolution.Count} - {appliedResolution} --> {nextResolution}");
         appliedResolution = nextResolution;
         m_screenResolutionListText.text = $"{nextResolution.width}x{nextResolution.height}@{nextResolution.refreshRate}Hz";
-        //Screen.SetResolution(nextResolution.width, nextResolution.height, currentFullscreenMode, nextResolution.refreshRate);
-
-        //_SetupScreenResolutions();
     }
 
     public void ChangeScreenModeSettings(bool isNext)
     {
         if (availableScreenMode.Count <= 0)
             return;
-
-        //var currentResolution = Screen.currentResolution;
-        //var currentFullscreenMode = Screen.fullScreenMode;
 
         var availableScreenModeList = availableScreenMode.ToList();
         int currentModeInt = availableScreenModeList.FindIndex((x) => x.Key.Equals(appliedFullscreenMode));
@@ -137,9 +127,6 @@ public class SystemUIManager : MonoBehaviour
 
         string nextModeStr = availableScreenMode[nextMode];
         m_screenModeListText.text = $"{nextModeStr}";
-        //Screen.SetResolution(currentResolution.width, currentResolution.height, nextMode, currentResolution.refreshRate);
-
-        //_SetupScreenResolutions();
     }
 
     public void ChangeQualitySettings(bool isNext)
@@ -175,7 +162,6 @@ public class SystemUIManager : MonoBehaviour
         {
             availableScreenResolution = Screen.resolutions.ToList();
             availableScreenResolution.RemoveAll((x) => x.refreshRate > 60.0f);
-            Debug.LogError(string.Join(". ", availableScreenResolution));
         }
 
         if (availableScreenResolution.Count <= 0)
