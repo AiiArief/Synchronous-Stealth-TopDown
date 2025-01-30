@@ -34,6 +34,8 @@ public class SystemUIManager : MonoBehaviour
     Resolution appliedResolution = new Resolution();
     FullScreenMode appliedFullscreenMode = new FullScreenMode();
 
+    GameObject tempSelectedGameObject;
+
     public void LoadAndApplyFromProfileManager()
     {
         var profileMusicVolumeInDB = _ConvertVolume(PlayerPrefs.GetFloat(ProfileManager.PLAYERPREFS_MUSICVOLUME, 100.0f), false);
@@ -50,7 +52,15 @@ public class SystemUIManager : MonoBehaviour
 
         gameObject.SetActive(!gameObject.activeSelf);
         if (!gameObject.activeSelf)
+        {
+            if(tempSelectedGameObject != null)
+            {
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(tempSelectedGameObject);
+            }
+
             return;
+        }
 
         onOpenTimeScale = Time.timeScale;
         Time.timeScale = 0;
@@ -58,6 +68,7 @@ public class SystemUIManager : MonoBehaviour
         appliedResolution = Screen.currentResolution;
         appliedFullscreenMode = Screen.fullScreenMode;
 
+        tempSelectedGameObject = EventSystem.current.currentSelectedGameObject;
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(m_applyText.transform.parent.gameObject);
 
