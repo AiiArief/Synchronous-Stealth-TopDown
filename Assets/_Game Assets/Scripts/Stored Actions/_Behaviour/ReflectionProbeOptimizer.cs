@@ -31,29 +31,37 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
     private void OnQualityLevelChanged(int qualityLevel)
     {
-        m_probe.enabled = qualityLevel > 0;
+        //m_probe.enabled = qualityLevel > 0;
 
         //m_probe.Reset();
 
         //if (qualityLevel > 0)
         //    _InitRenderProbe();
+
+        m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
     }
 
     private IEnumerator _ReflectionAPIHandler()
     {
+        if (m_probe.refreshMode != ReflectionProbeRefreshMode.ViaScripting)
+            yield break;
+
         _InitRenderProbe();
 
         while (true)
         {
             yield return new WaitForEndOfFrame();
 
+            int qualityLevel = QualitySettings.GetQualityLevel();
+            if(qualityLevel < 1)
+                continue;
+
             if (!m_mainPlayer)
                 m_mainPlayer = GameManager.Instance.playerManager.GetMainPlayer();
 
-            if (m_mainPlayer && QualitySettings.realtimeReflectionProbes)
+            if (m_mainPlayer)
             {
-                int qualityLevel = QualitySettings.GetQualityLevel();
-                m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
+                //m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
 
                 int playerCloseEnough = _CheckPlayerIsCloseEnough();
 
@@ -68,9 +76,9 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
                     if (m_debug) Debug.Log("Rendered : " + gameObject.name);
 
-                    if (qualityLevel < 3)
-                        //yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
-                        yield return new WaitForSeconds((1.0f / 60) * 5 * 8);
+                    yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
+                    //if (qualityLevel < 3)
+                        //yield return new WaitForSeconds((1.0f / 60) * 5 * 8);
                 }
             }
         }
@@ -78,8 +86,8 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
     private void _InitRenderProbe()
     {
-        if (!m_probe.enabled)
-            return;
+        //if (!m_probe.enabled)
+        //    return;
 
         m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
         m_probe.RenderProbe();
