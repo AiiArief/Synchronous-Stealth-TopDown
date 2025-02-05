@@ -82,7 +82,7 @@ public class EntityEvent_Level1_6 : EntityEvent
         um.AddUIAction(() => { m_trap_doorSwitch.SetExpression(Expression_2D1Bit.None); um.NextAction(); });
 
         um.AddUIAction(() => StartCoroutine(um.DelayNextAction(0.5f)));
-        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(2); um.NextAction(); });
+        um.AddUIAction(() => { GlobalGameManager.Instance.soundManager.PlayMusic(2); GlobalGameManager.Instance.soundManager.FadeInMusic(1.0f); um.NextAction(); });
         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
     }
 
