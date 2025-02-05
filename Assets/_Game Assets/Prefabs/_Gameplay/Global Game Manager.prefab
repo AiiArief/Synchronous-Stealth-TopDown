@@ -2294,7 +2294,8 @@ MonoBehaviour:
     - Level 1-Static 1
     - Havvatopia
     - Level 3-Static 1
-    m_physicsModes: ffffffff000000000000000000000000
+    - Level 1-Static 2
+    m_physicsModes: ffffffff00000000000000000000000000000000
   - m_sceneName: Havvatopia - Observatory
     m_scenes:
     - Level 2
@@ -2302,7 +2303,8 @@ MonoBehaviour:
     - Havvatopia
     - Level 1-Static 1
     - Level 3-Static 1
-    m_physicsModes: ffffffff00000000000000000000000000000000
+    - Level 1-Static 2
+    m_physicsModes: ffffffff0000000000000000000000000000000000000000
   - m_sceneName: Havvatopia - Downtown
     m_scenes:
     - Level 3
