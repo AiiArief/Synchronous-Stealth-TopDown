@@ -29,7 +29,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1168523486853145612}
   - component: {fileID: 283618281741599755}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 5399807151031943543}
   - component: {fileID: 3814835542351948344}
   - component: {fileID: 8613527414816212531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Voice Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256183573779601561}
   - component: {fileID: 3081407083486662422}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Line (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6083470324541000846}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,10 +676,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 1291427460900398336, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311780410957412565, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1389048413982839101, guid: 80c2e0aa79783d746a632fc740d7a664,
         type: 3}
       propertyPath: m_Name
       value: Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389048413982839101, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3729751560150003016, guid: 80c2e0aa79783d746a632fc740d7a664,
         type: 3}
@@ -741,6 +756,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7578641362520917284, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c2e0aa79783d746a632fc740d7a664, type: 3}
 --- !u!1 &2220861077263242812 stripped
@@ -768,6 +788,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5424427083841236356, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7677541826883560135, guid: 9601aaf989e5e4341899f693d545e219,
         type: 3}
       propertyPath: m_Height
@@ -847,6 +872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NPC Wall Switch 1x3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731039037329624238, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8473761542155695570, guid: 9601aaf989e5e4341899f693d545e219, type: 3}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6012154169044654463}
   - component: {fileID: 8339963090608529}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_animator: {fileID: 2565160030160507019}
   m_detectCollisionOnStart: 1
   gravityPerTurn: 3
+  m_voicePack: {fileID: 0}
   m_idleWaitInputs: []
 --- !u!114 &3830602794451444936
 MonoBehaviour:
@@ -138,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1555511995282073569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,6 +168,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5424427083841236356, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7677541826883560135, guid: 9601aaf989e5e4341899f693d545e219,
         type: 3}
       propertyPath: m_Height
@@ -236,6 +242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NPC Developer Laptop
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731039037329624238, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8473761542155695570, guid: 9601aaf989e5e4341899f693d545e219, type: 3}
@@ -329,10 +340,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6148725129791471103, guid: 0fe4683e8259d13489723c8e8c5932b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340609431664822722, guid: 0fe4683e8259d13489723c8e8c5932b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6646608944845518099, guid: 0fe4683e8259d13489723c8e8c5932b2,
         type: 3}
       propertyPath: m_Name
       value: Laptop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6646608944845518099, guid: 0fe4683e8259d13489723c8e8c5932b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7469035460574671399, guid: 0fe4683e8259d13489723c8e8c5932b2,
         type: 3}

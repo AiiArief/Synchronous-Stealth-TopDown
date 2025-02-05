@@ -80,8 +80,7 @@ public class ReflectionProbeOptimizer : MonoBehaviour
                     m_probe.RenderProbe();
 
                     //if (m_debug) Debug.Log("Rendered : " + gameObject.name);
-                    Debug.Log("Rendered : " + gameObject.name);
-
+                    
                     yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
                 }
             }

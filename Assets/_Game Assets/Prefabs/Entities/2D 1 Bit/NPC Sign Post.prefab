@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 174546578986453664}
   - component: {fileID: 4551529522654541954}
   - component: {fileID: 4351018197942848665}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Voice Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,6 +344,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5f7f605dbb636eb408cd236c940d7a66, type: 2}
+    - target: {fileID: 3271090921128776161, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3315982223280947751, guid: f2c4e153253fd17469bb2d372d90a147,
         type: 3}
       propertyPath: m_RootOrder
@@ -399,10 +404,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3367932651425713204, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445193920982656476, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5169180477616705294, guid: f2c4e153253fd17469bb2d372d90a147,
         type: 3}
       propertyPath: m_Name
       value: Sign Post
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169180477616705294, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5171845917364614076, guid: f2c4e153253fd17469bb2d372d90a147,
         type: 3}
@@ -414,6 +434,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5828169806272396163, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6059595239661874769, guid: f2c4e153253fd17469bb2d372d90a147,
         type: 3}
       propertyPath: m_Mesh
@@ -421,8 +446,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171501145909998021, guid: f2c4e153253fd17469bb2d372d90a147,
         type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171501145909998021, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678356369016012339, guid: f2c4e153253fd17469bb2d372d90a147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8003454279355621934, guid: f2c4e153253fd17469bb2d372d90a147,
         type: 3}
@@ -454,6 +489,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5424427083841236356, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7677541826883560135, guid: 9601aaf989e5e4341899f693d545e219,
         type: 3}
       propertyPath: m_Height
@@ -533,6 +573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NPC Sign Post
+      objectReference: {fileID: 0}
+    - target: {fileID: 7731039037329624238, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8473761542155695570, guid: 9601aaf989e5e4341899f693d545e219, type: 3}

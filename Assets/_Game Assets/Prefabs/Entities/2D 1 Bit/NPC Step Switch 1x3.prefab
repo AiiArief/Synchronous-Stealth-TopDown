@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 3756453491951550223}
   - component: {fileID: 3669755980651612810}
   - component: {fileID: 4564333487479415229}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Voice Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,10 +263,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1291427460900398336, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311780410957412565, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1389048413982839101, guid: 80c2e0aa79783d746a632fc740d7a664,
         type: 3}
       propertyPath: m_Name
       value: Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389048413982839101, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5460268793532624449, guid: 80c2e0aa79783d746a632fc740d7a664,
         type: 3}
@@ -318,6 +333,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7578641362520917284, guid: 80c2e0aa79783d746a632fc740d7a664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c2e0aa79783d746a632fc740d7a664, type: 3}
 --- !u!1 &2220861077263242812 stripped
@@ -339,6 +359,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5424427083841236356, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7677541826883560135, guid: 9601aaf989e5e4341899f693d545e219,
         type: 3}
       propertyPath: m_Height
@@ -419,6 +444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Step Switch 1x3
       objectReference: {fileID: 0}
+    - target: {fileID: 7731039037329624238, guid: 9601aaf989e5e4341899f693d545e219,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8473761542155695570, guid: 9601aaf989e5e4341899f693d545e219, type: 3}
     - {fileID: 8036168540114806956, guid: 9601aaf989e5e4341899f693d545e219, type: 3}
@@ -452,6 +482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Event Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058919567936581797, guid: 7bbb936a2bbbc784d937477213dd332e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6289736230895280781, guid: 7bbb936a2bbbc784d937477213dd332e,
         type: 3}

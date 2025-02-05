@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 8413299339586033095}
   - component: {fileID: 1245086042240424144}
   - component: {fileID: 8860404859242166834}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,6 +177,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Event Trigger_Devlog Diary
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058919567936581797, guid: 7bbb936a2bbbc784d937477213dd332e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6289736230895280781, guid: 7bbb936a2bbbc784d937477213dd332e,
         type: 3}
