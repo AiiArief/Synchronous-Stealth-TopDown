@@ -2113,8 +2113,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 4}
@@ -2750,6 +2750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6561273399171356629}
   - component: {fileID: 6561273399171356630}
+  - component: {fileID: 4262584881426398762}
   m_Layer: 0
   m_Name: Reflection Probe (54)
   m_TagString: Untagged
@@ -2783,7 +2784,7 @@ ReflectionProbe:
   m_Type: 0
   m_Mode: 1
   m_RefreshMode: 0
-  m_TimeSlicingMode: 1
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 35, z: 13}
@@ -2804,6 +2805,19 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 2
   m_CustomBakedTexture: {fileID: 0}
+--- !u!114 &4262584881426398762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6561273399171356628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1912f136e0306de4f8ea0b76842211f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_debug: 0
 --- !u!1 &6561273399221092923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,8 +3753,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 5}
@@ -4114,8 +4128,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 5, z: 10}
@@ -4192,8 +4206,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 9}
@@ -4863,8 +4877,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 9}
@@ -5662,8 +5676,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
@@ -5740,8 +5754,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 5}
@@ -5818,8 +5832,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 9}
@@ -6289,8 +6303,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
@@ -6664,8 +6678,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 5}

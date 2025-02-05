@@ -29,16 +29,23 @@ public class ReflectionProbeOptimizer : MonoBehaviour
         SystemUIManager.OnQualityLevelChanged -= OnQualityLevelChanged;
     }
 
+    /// <summary>
+    /// 0 = potato
+    /// 1 = recommended
+    /// 2 = brute force
+    /// </summary>
+    /// <param name="qualityLevel"></param>
     private void OnQualityLevelChanged(int qualityLevel)
     {
-        //m_probe.enabled = qualityLevel > 0;
-
-        //m_probe.Reset();
-
-        //if (qualityLevel > 0)
-        //    _InitRenderProbe();
-
+        m_probe.enabled = false;
         m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
+        if (qualityLevel < 1)
+            return;
+
+        var refreshModeBefore = m_probe.refreshMode;
+        m_probe.refreshMode = ReflectionProbeRefreshMode.EveryFrame;
+        m_probe.enabled = true;
+        m_probe.refreshMode = refreshModeBefore;
     }
 
     private IEnumerator _ReflectionAPIHandler()
@@ -61,8 +68,6 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
             if (m_mainPlayer)
             {
-                //m_probe.resolution = 32 * (int)Mathf.Pow(2, qualityLevel);
-
                 int playerCloseEnough = _CheckPlayerIsCloseEnough();
 
                 bool isClose = playerCloseEnough == 2;
@@ -74,11 +79,10 @@ public class ReflectionProbeOptimizer : MonoBehaviour
                 {
                     m_probe.RenderProbe();
 
-                    if (m_debug) Debug.Log("Rendered : " + gameObject.name);
+                    //if (m_debug) Debug.Log("Rendered : " + gameObject.name);
+                    Debug.Log("Rendered : " + gameObject.name);
 
                     yield return new WaitForSeconds((1.0f / 60) * 5 * ((qualityLevel == 2) ? 2 : 8));
-                    //if (qualityLevel < 3)
-                        //yield return new WaitForSeconds((1.0f / 60) * 5 * 8);
                 }
             }
         }
@@ -86,8 +90,8 @@ public class ReflectionProbeOptimizer : MonoBehaviour
 
     private void _InitRenderProbe()
     {
-        //if (!m_probe.enabled)
-        //    return;
+        if (!m_probe.enabled)
+            return;
 
         m_probe.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
         m_probe.RenderProbe();

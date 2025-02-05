@@ -691,8 +691,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 10}
@@ -1139,8 +1139,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 10}
@@ -1555,8 +1555,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
@@ -1633,8 +1633,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 10}
@@ -1711,8 +1711,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 8, y: 5, z: 4}
@@ -2086,8 +2086,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 2
-  m_TimeSlicingMode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 2
   m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9, y: 5, z: 4}
@@ -4248,6 +4248,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 945923696464541003, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1326746967819611077, guid: f9d66526795cd37498dce36051eea8bb,
         type: 3}
       propertyPath: m_Mesh
@@ -4267,6 +4272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 3DBot Chair 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848808693466240608, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3272285190553521511, guid: f9d66526795cd37498dce36051eea8bb,
         type: 3}
@@ -4288,6 +4298,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4506740859916322944, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4651974367532944831, guid: f9d66526795cd37498dce36051eea8bb,
         type: 3}
       propertyPath: m_Mesh
@@ -4298,7 +4313,17 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4987991081354207292, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5075984745069832594, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078012700372910712, guid: f9d66526795cd37498dce36051eea8bb,
         type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4329,6 +4354,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5519880999239946558, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924100788880825311, guid: f9d66526795cd37498dce36051eea8bb,
         type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4368,7 +4398,17 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8820929503494652102, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8897662749075225986, guid: f9d66526795cd37498dce36051eea8bb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089573952664550539, guid: f9d66526795cd37498dce36051eea8bb,
         type: 3}
       propertyPath: m_Mesh
       value: 
