@@ -20,6 +20,8 @@ public class RefllectionProbeTools
                 GameObject.DestroyImmediate(rpo);
             }
 
+            EditorUtility.SetDirty(Selection.activeObject); // Mark the scene as dirty to save changes
+            AssetDatabase.SaveAssets(); // Save the scene file
             AssetDatabase.Refresh();
         }
         catch (Exception ex)
