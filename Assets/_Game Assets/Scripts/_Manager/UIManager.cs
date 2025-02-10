@@ -102,9 +102,19 @@ public class UITutorialObject
         if (tutorialAnimator.runtimeAnimatorController && tutorialAnimator.gameObject.activeInHierarchy)
         {
             tutorialAnimator.SetInteger("type", (int)tutorial.tutorialType);
-            //tutorialAnimator.SetInteger("platform", 0); // ngurus platform gmana ya
+            tutorialAnimator.SetInteger("platform",(int) GetCurrentPlatform());
         }
         tutorialText.text = LocalizationManager.Translate(tutorial.locString);
+    }
+
+    public TutorialPlatform GetCurrentPlatform()
+    {
+        string[] joystickNames = Input.GetJoystickNames();
+
+        if (Array.Exists(joystickNames, name => name.ToLower().Contains("xbox")))
+            return TutorialPlatform.XBOX;
+
+        return TutorialPlatform.PC;
     }
 }
 #endregion
@@ -310,7 +320,7 @@ public class UIManager : MonoBehaviour
         while (true)
         {
             m_uiTutorial.gameObject.SetActive(m_tutorialQueue.Count > 0);
-            if(m_tutorialQueue.Count > 0)
+            if (m_tutorialQueue.Count > 0)
             {
                 for (int i = 0; i < m_notificationTutorialObjects.Length; i++)
                 {
