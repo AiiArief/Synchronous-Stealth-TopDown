@@ -114,7 +114,8 @@ public class StoredActionMove : StoredAction
 
     private float _CalcGravitySpeed(float gravityPerTurn)
     {
-        return gravityPerTurn / GameManager.Instance.phaseManager.processInput.minimumTimeBeforeNextPhase;
+        return 0.0f;
+        //return gravityPerTurn / GameManager.Instance.phaseManager.processInput.minimumTimeBeforeNextPhase;
     }
 
     bool m_hasInteracted = false;
