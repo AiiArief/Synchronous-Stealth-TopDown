@@ -1628,7 +1628,7 @@ public class LocalizationManager : MonoBehaviour
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_15 = new LocalizationString(
         "-",
-        "\"PASSWORDNYA 1 0 2...\""
+        "\"PASSWORDNYA 2 1 3...\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_16 = new LocalizationString(
