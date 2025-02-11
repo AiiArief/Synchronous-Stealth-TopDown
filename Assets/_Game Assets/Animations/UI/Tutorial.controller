@@ -146,7 +146,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 6
     m_ConditionEvent: type
-    m_EventTreshold: 0
+    m_EventTreshold: 2
   - m_ConditionMode: 3
     m_ConditionEvent: platform
     m_EventTreshold: 0
