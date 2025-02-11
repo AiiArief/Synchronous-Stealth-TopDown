@@ -31,7 +31,7 @@ public class EntityCharacterPlayer : EntityCharacter
         bool isMoving = Mathf.Abs(moveH) > 0.0f || Mathf.Abs(moveV) > 0.0f;
         bool moveMod = Input.GetButton("Move Modifier" + " #" + playerId);
         bool skipTurn = _CheckHoldInput("Shoot" + " #" + playerId, 0.125f);
-        bool pause = Input.GetKey(KeyCode.Escape);
+        bool pause = Input.GetButtonDown("Pause");
 
         if (skipTurn)
         {

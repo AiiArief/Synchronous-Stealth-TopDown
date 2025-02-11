@@ -90,6 +90,9 @@ public class UITutorialObject
     [SerializeField] Text tutorialText;
     public GameObject GetParent() { return tutorialAnimator.transform.parent.gameObject; }
 
+    Tutorial m_currentTutorial;
+    public Tutorial CurrentTutorial => m_currentTutorial;
+
     public void DisableTutorial()
     {
         tutorialAnimator.gameObject.SetActive(false);
@@ -97,12 +100,16 @@ public class UITutorialObject
 
     public void ActivateTutorial(Tutorial tutorial, bool instantActive = true)
     {
+        if (tutorial == null)
+            return;
+        m_currentTutorial = tutorial;
+
         if (instantActive) tutorialAnimator.gameObject.SetActive(true);
 
         if (tutorialAnimator.runtimeAnimatorController && tutorialAnimator.gameObject.activeInHierarchy)
         {
             tutorialAnimator.SetInteger("type", (int)tutorial.tutorialType);
-            tutorialAnimator.SetInteger("platform",(int) GetCurrentPlatform());
+            tutorialAnimator.SetInteger("platform",(int)GetCurrentPlatform());
         }
         tutorialText.text = LocalizationManager.Translate(tutorial.locString);
     }
@@ -168,6 +175,13 @@ public class UIManager : MonoBehaviour
         m_choiceButtonActions[choiceId].choiceButtonAction.Invoke();
         m_uiDialogue.gameObject.SetActive(false);
         NextAction();
+    }
+    public void ChoiceButton_OnSelected(int choiceId)
+    {
+        if (choiceId >= m_choiceTutorialObjects.Length || choiceId < 0)
+            return;
+
+        m_choiceTutorialObjects[choiceId].ActivateTutorial(m_choiceTutorialObjects[choiceId].CurrentTutorial);
     }
 
     public IEnumerator AnimateTransition(string animation = "fade", float waitTime = 1.0f)

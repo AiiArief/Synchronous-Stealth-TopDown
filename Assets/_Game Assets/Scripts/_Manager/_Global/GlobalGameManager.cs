@@ -30,7 +30,7 @@ public class GlobalGameManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F1))
+        if(Input.GetButtonDown("Pause 2"))
         {
             systemUIManager.ToggleSystemUI();
         }
