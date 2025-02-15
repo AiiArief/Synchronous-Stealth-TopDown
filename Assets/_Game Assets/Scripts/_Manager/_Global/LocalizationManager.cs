@@ -884,17 +884,17 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_SIGNPOST_0 = new LocalizationString(
-        "-",
+        "Right now Havvatopia is in emergency mode.",
         "Havvatopia saat ini sedang keadaan darurat."
     );
 
     public static readonly LocalizationString L1_SIGNPOST_1 = new LocalizationString(
-        "-",
+        "Because of that, the emergency stair will be closed for a while.",
         "Oleh karena itu, tangga darurat saat ini ditutup sementara."
     );
 
     public static readonly LocalizationString L1_SIGNPOST_2 = new LocalizationString(
-        "-",
+        "Please use elevator instead...",
         "Silahkan gunakan elevator saja..."
     );
 
@@ -905,87 +905,87 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_1_NOSWITCH_1 = new LocalizationString(
-        "-",
+        "Maybe you can find the resident if you follow this line!",
         "Mungkin bisa ketemu penghuninya kalau ikuti garis ini!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_0 = new LocalizationString(
-        "-",
+        "... zzz...",
         "... zzz..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_1 = new LocalizationString(
-        "-",
+        "... Welcome to... Havvatopia...",
         "... Selamat datang di... Havvatopia..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_2 = new LocalizationString(
-        "-",
+        "... It's 2AM now and Havvatopia is having power outage and no internet...",
         "... Sekarang jam 2 pagi dan saat ini di Havvatopia sedang tidak ada internet dan mati lampu..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_3 = new LocalizationString(
-        "-",
+        "... They said Havvatopia is in emergency mode... but... I just want to sleep... zzz...",
         "... Katanya sih Havvatopia lagi keadaan darurat... tapi... aku cuma mau tidur... zzz..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4 = new LocalizationString(
-        "-",
+        "... zzz... Is there... anything that I can help...",
         "... zzz... Adakah... yang bisa dibantu..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_1 = new LocalizationString(
-        "-",
+        "Where is Havva right now?",
         "Havva sedang dimana ya?"
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_1_0 = new LocalizationString(
-        "-",
+        "... zzz...",
         "... zzz..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_1_1 = new LocalizationString(
-        "-",
+        "... Before power outage, Havva is at The Observatory, it's located in top floor...",
         "... Sebelum mati lampu Havva berada di Observatory, lantai paling atas..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_1_2 = new LocalizationString(
-        "-",
+        "... Please use Elefataa to go to there...",
         "... Silahkan pergi bersama Elefataa ke sana..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_1_3 = new LocalizationString(
-        "-",
+        "... Elefataa... is always in the center of any floor...",
         "... Elefataa... selalu ada di tengah lantai kok..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_2 = new LocalizationString(
-        "-",
+        "Can I pass?",
         "Boleh lewat ga?"
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_2_0 = new LocalizationString(
-        "-",
+        "... Oh sure... go ahead...",
         "... Oiya ini... silahkan lewat..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOOR_4_3 = new LocalizationString(
-        "-",
+        "Nevermind.",
         "Enggak jadi."
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_0 = new LocalizationString(
-        "-",
-        "Huaaaaaa, ini kenapa listrik sama wifi nya ga nyala-nyala!!!"
+        "Aaaaaaa, why the electricity and the internet is still not working!!!!",
+        "Huaaaaaa, ini kenapa listrik sama internet-nya masih ga nyala-nyala!!!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_1 = new LocalizationString(
-        "-",
+        "It's been like this since yesterday!!!",
         "Udah dari kemarin siang mati lampu nih!!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_2 = new LocalizationString(
-        "-",
+        "I just want to Havva playing piano!!!",
         "Padahal gua mau dengerin Havva main piano!!!"
     );
 
@@ -995,87 +995,87 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_4 = new LocalizationString(
-        "-",
+        "Huh?",
         "Hah?"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_5 = new LocalizationString(
-        "-",
+        "Whaaaaat?",
         "Apaaaaa?"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_6 = new LocalizationString(
-        "-",
+        "You want ME to open the door over there?",
         "Lu mau gua buka pintu sebelah sana?"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORTIMING_7 = new LocalizationString(
-        "-",
+        "Okay, but please run to it, because the door will be closed automatically.",
         "Tapi lari ya, pintunya bakalan ketutup automatis."
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_0 = new LocalizationString(
-        "-",
+        "STOPPPPPP!!",
         "STOPPPPPP!!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_1 = new LocalizationString(
-        "-",
+        "I'M GUARDING THIS DOOR AND YOU CAN'T PASS HERE!!",
         "SAYA PENJAGA PINTU INI DAN ANDA TIDAK BOLEH LEWAT SINI!!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2 = new LocalizationString(
-        "-",
+        "UNLESS YOU HAVE THE PASSWORD!!!!!!!!!",
         "KECUALI ANDA MEMPUNYAI PASSWORD!!!!!!!!!!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_T0 = new LocalizationString(
-        "-",
+        "The password is correct, yeaaay!",
         "Passwordnya benar, yeaaay!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_F0 = new LocalizationString(
-        "-",
+        "WRONG PASSWORD!!!!",
         "PASSWORDNYA SALAH!!!!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_F1 = new LocalizationString(
-        "-",
+        "But I'm feeling kind today, I will not report this attempt!",
         "Tapi karena saya baik, saya ga akan laporin kok!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_1_F2 = new LocalizationString(
-        "-",
+        "Please try again and remember the password!",
         "Silahkan cari lagi dan ingat ulang passwordnya ya!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_2 = new LocalizationString(
-        "-",
+        "Why do you need a password?",
         "Kenapa butuh password?"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_0 = new LocalizationString(
-        "-",
+        "Hmm... yeah, I wonder why...",
         "Hmm... iya yah, kenapa ya..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_1 = new LocalizationString(
-        "-",
+        "The one who set the password is not even Havva...",
         "Yang setel passwordnya juga bukan Havva..."
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_2 = new LocalizationString(
-        "-",
+        "BUT JOB IS JOB!",
         "TAPI PEKERJAAN TETAPLAH PEKERJAAN!"
     );
 
     public static readonly LocalizationString L1_1_OPENDOORPASS_2_2_3 = new LocalizationString(
-        "-",
+        "I HAVE TO LOYAL TO WHOEVER GAVE ME THIS JOB!",
         "SAYA HARUS LOYAL KE SIAPAPUN YANG MEMBERIKAN PEKERJAAN INI!"
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_0 = new LocalizationString(
-        "-",
+        "You accidentally overheard (or maybe in purpose?) listened to what they're talking about.",
         "Kamu secara ga sengaja (apa sengaja ya?) dengerin apa yang mereka bicarakan."
     );
 
@@ -1085,32 +1085,32 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_2 = new LocalizationString(
-        "-",
+        "HEY! HAVE YOU SET THE PASSWORD FOR DOOR OVER THERE?",
         "COY! LU UDAH SETEL PASSWORD DI PINTU SANA BELOM?"
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_3 = new LocalizationString(
-        "-",
+        "HUH??! I CAN'T HEAR YOU!!!!",
         "HAH??! APAAN GA KEDENGERAN!!!"
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_4 = new LocalizationString(
-        "-",
+        "HUH??? WHAT DID YOU SAID?? HAVE YOU SET THE PASSWORD???",
         "HAH?? LU NGOMONG APAAN BARUSAN? PASSWORDNYA UDAH DI SETEL APA BELOM??"
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_5 = new LocalizationString(
-        "-",
+        "WHAAAAT????! THE PASSWORD IS 1 2 3!!!",
         "APAAN???!!! PASSWORDNYA 1 2 3!!!"
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_6 = new LocalizationString(
-        "-",
+        "YOU SET 3 PASSWORD ON THE DOOR????",
         "LU SETEL 3 PASSWORD DI PINTUNYA?????"
     );
 
     public static readonly LocalizationString L1_1_PASSTRIGGER_7 = new LocalizationString(
-        "-",
+        "SAY LOUDER!!! I CAN'T HEAR YOU!!!!",
         "NGOMONG YANG KERAS!!! GA KEDENGERAN COY!!!"
     );
 
@@ -1125,17 +1125,17 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_1_DIARY_0 = new LocalizationString(
-        "-",
+        "Yohohoo, this is my diary.",
         "Yohohoo, ini diary gua."
     );
 
     public static readonly LocalizationString L1_1_DIARY_1 = new LocalizationString(
-        "-",
+        "I suggest you to collect all the diaries while you playing this game.",
         "Gua saranin lu kumpulin diary gua selama main game."
     );
 
     public static readonly LocalizationString L1_1_DIARY_2 = new LocalizationString(
-        "-",
+        "I'll give you a reward if you collect everything.",
         "Ntar bakalan gua kasih reward lho kalau kekumpul semuanya."
     );
 
@@ -1157,37 +1157,37 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 1_2
     public static readonly LocalizationString L1_2_CLOSEDOOR_0 = new LocalizationString(
-        "-",
+        "Do you want me to close the door so they can't see you?",
         "Lu mau gua tutup pintunya biar mereka ga bisa liat lu?"
     );
 
     public static readonly LocalizationString L1_2_CLOSEDOOR_0_1 = new LocalizationString(
-        "-",
+        "Sure.",
         "Boleh."
     );
 
     public static readonly LocalizationString L1_2_CLOSEDOOR_0_1_0 = new LocalizationString(
-        "-",
+        "Welp, thank goodness they're all stoopid, they will not realize it lol.",
         "Untungnya mereka bego, jadi mereka ga bakalan nyadar wkwk."
     );
 
     public static readonly LocalizationString L1_2_CLOSEDOOR_0_2 = new LocalizationString(
-        "-",
+        "Nah.",
         "Gausah deh."
     );
 
     public static readonly LocalizationString L1_2_DIARY_0 = new LocalizationString(
-        "-",
+        "Do you know why you can't subdue any 3D Sphere Robot?",
         "Tau ga kenapa lu ga bisa bunuh 3D Sphere Robot manapun?"
     );
 
     public static readonly LocalizationString L1_2_DIARY_1 = new LocalizationString(
-        "-",
+        "Because I haven't implemented that mechanic.",
         "Karena gua memang belum sempet implementasiin mekanik tersebut."
     );
 
     public static readonly LocalizationString L1_2_DIARY_2 = new LocalizationString(
-        "-",
+        "NYEHEHEHEHE",
         "NYEHEHEHEHE"
     );
 
@@ -1199,17 +1199,17 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 1_3
     public static readonly LocalizationString L1_3_DIARY_0 = new LocalizationString(
-        "-",
+        "Do you know why all 3D Headphone Sphere Robot use noise cancelling headphone?",
         "Tau ga kenapa semua 3D Headphone Sphere Robot pakai headphone noise cancelling?"
     );
 
     public static readonly LocalizationString L1_3_DIARY_1 = new LocalizationString(
-        "-",
-        "Karena gua males implementasi listening mechanic buat musuh."
+        "Because I'm too lazy to implemented listening mechanic for NPC.",
+        "Karena gua males implementasi listening mechanic buat NPC."
     );
 
     public static readonly LocalizationString L1_3_DIARY_2 = new LocalizationString(
-        "-",
+        "NYEHEHEHEHE",
         "NYEHEHEHEHE"
     );
 
@@ -1221,17 +1221,17 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 1_4
     public static readonly LocalizationString L1_4_DIARY_0 = new LocalizationString(
-        "-",
+        "Do you know why at start I said I suck at grammar?",
         "Tau ga kenapa gua bilang bahasanya ga sesuai KBBI"
     );
 
     public static readonly LocalizationString L1_4_DIARY_1 = new LocalizationString(
-        "-",
+        "Because... I don't have money to hire localisator",
         "Karena... gua ga ada duit nyewa penerjemah"
     ); 
 
     public static readonly LocalizationString L1_4_DIARY_2 = new LocalizationString(
-        "-",
+        "NYEHEHEHEHE",
         "NYEHEHEHEHE"
     );
 
@@ -1243,17 +1243,17 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 1_5
     public static readonly LocalizationString L1_5_DIARY_0 = new LocalizationString(
-        "-",
+        "Do you know why you're the best spy in this world?",
         "Tau ga kenapa lu spy terbaik di dunia ini?"
     );
 
     public static readonly LocalizationString L1_5_DIARY_1 = new LocalizationString(
-        "-",
+        "Because you're the only spy in this game.",
         "Karena lu satu satunya spy di game ini."
     );
 
     public static readonly LocalizationString L1_5_DIARY_2 = new LocalizationString(
-        "-",
+        "NYEHEHEHEHE",
         "NYEHEHEHEHE"
     );
 
@@ -1270,37 +1270,37 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_1 = new LocalizationString(
-        "-",
+        "HAHAHAHAHAHA!",
         "HAHAHAHAHAHA!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_2 = new LocalizationString(
-        "-",
+        "WELCOME TO FIRE TRAP THAT I MADE!",
         "SELAMAT DATANG DI PERANGKAP API YANG SAYA BUAT!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_3 = new LocalizationString(
-        "-",
+        "TO ESCAPE FROM THIS TRAP, YOU HAVE TO SOLVE PUZZLE LABYRINTH IN THIS ROOM!",
         "UNTUK KABUR DARI PERANGKAP INI, ANDA HARUS MEMECAHKAN TEKA-TEKI LABIRIN DI RUANGAN INI!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_4 = new LocalizationString(
-        "-",
+        "IF YOU MANAGED TO ESCAPE FROM THIS TRAP, I WILL GIVE YOU A REWARD!",
         "JIKA ANDA BERHASIL KABUR DARI PERANGKAP INI, ANDA AKAN SAYA BERI HADIAH!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_5 = new LocalizationString(
-        "-",
+        "FOR SOME REASON THE REWARD IS PASSWORD TO THE OBSERVATORY!",
         "ENTAH KENAPA HADIAHNYA YAITU BERUPA PASSWORD UNTUK KE OBSERVATORY!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_6 = new LocalizationString(
-        "-",
+        "BUT IF YOU FAILED, YOU WILL BURN ALIVE HERE!",
         "NAMUN JIKA ANDA GAGAL, ANDA AKAN TERBAKAR DISINI!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_7 = new LocalizationString(
-        "-",
+        "HAHAHAHAHAHA, GOOD LUCK!",
         "HAHAHAHAHAHA, SELAMAT MENCOBA!"
     );
 
@@ -1310,7 +1310,7 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_6_TRAPPED_9 = new LocalizationString(
-        "-",
+        "Tbh the fire has no heat... ",
         "Apinya ga ada panas-panasnya..."
     );
 
@@ -1320,22 +1320,22 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_0 = new LocalizationString(
-        "...",
+        "CONGRATULATIONS, YOU FINALLY DEFEAT THIS CHALLENGE!",
         "SELAMAT, ANDA BERHASIL MELEWATI RINTANGAN INI!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_1 = new LocalizationString(
-        "-",
+        "AS PROMISED, I WILL GIVE YOU PASSWORD TO THE OBSERVATORY!",
         "SESUAI JANJI, SAYA AKAN MEMBERIKAN PASSWORD UNTUK KE OBSERVATORY!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_2 = new LocalizationString(
-        "-",
+        "THE PASSWORD IS 3 3 3!",
         "PASSWORDNYA ADALAH 3 3 3!"
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_3 = new LocalizationString(
-        "-",
+        "AND ALSO, WRITE \"I'M NOT A SPY\" FOR THE CAPTCHA SO YOU WILL BE ALLOWED TO PASS BY ELEFATAA!",
         "SERTA, ISI \"SAYA BUKAN SPY\" UNTUK CAPTCHANYA AGAR DIIZINKAN LEWAT OLEH ELEFATAA!"
     );
 
@@ -1350,52 +1350,52 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_6 = new LocalizationString(
-        "-",
+        "But, it's weird.",
         "Tapi aneh dah."
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_7 = new LocalizationString(
-        "-",
+        "Spy is only a myth, why do you bother to use captcha.",
         "Spy kan cuma mitos, kenapa repot-repot pakai captcha ya."
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_8 = new LocalizationString(
-        "-",
+        "The one who set the password is also weird, they like possesed.",
         "Yang nitip password disini juga aneh banget, dia kayak kesurupan gitu."
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_9 = new LocalizationString(
-        "-",
+        "I want to ask why, but unfortunately the one who set it was 3D Headphone Sphere Robot, it's hard to talk anyone from that class",
         "Tadinya mau Saya tanya kenapa, tapi sayangnya dia 3D Headphone Sphere Robot, ga bisa diajak ngobrol kan tuh kelas."
     );
 
     public static readonly LocalizationString L1_6_TRAPPEDWIN_10 = new LocalizationString(
-        "-",
-        "Jadi ya yaudahlah, saya hanya melakukan kerjaan sebaik mungkin."
+        "So yeah, I just do my job as best I can.",
+        "Jadi ya yaudahlah, saya hanya melakukan kerjaan saya sebaik mungkin."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_0 = new LocalizationString(
-        "-",
+        "I WILL PROTECT ELEFATAA AT ALL COST!",
         "SAYA AKAN MELINDUNGI ELEFATAA DENGAN SEGALA HAL!!!"
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1 = new LocalizationString(
-        "-",
+        "YOU WILL NEVER FIND THE PASSWORD AND YOU WILL NEVER PASS ME!",
         "ANDA TIDAK AKAN PERNAH MENEMUKAN PASSWORDNYA DAN ANDA TIDAK AKAN PERNAH MELEWATI JALAN INI!!!!"
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T0 = new LocalizationString(
-        "-",
+        "Oh, it's actually fine.",
         "Oh, ternyata tidak apa-apa."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T1 = new LocalizationString(
-        "-",
+        "You have proven you're not dangerous",
         "Anda terbukti bukan bahaya kok."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T2 = new LocalizationString(
-        "-",
+        "Go ahead!",
         "Silahkan lewat!"
     );
 
@@ -1405,82 +1405,82 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T4 = new LocalizationString(
-        "-",
+        "Oh and also, the one who set this password relay me a message to anyone who know the password.",
         "Oiya, yang setel password ini nitip pesan ke saya untuk siapapun yang berhasil lewat sini."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_T5 = new LocalizationString(
-        "-",
+        "Do not go to the Observatory, because that's the place where Havva is being held.",
         "Jangan ke lantai Observatory ya, karena itu tempat Havva ditawan."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS2_1_1_F0 = new LocalizationString(
-        "-",
+        "NO ONE CAN PASS HERE!!!",
         "TIDAK AKAN ADA YANG BISA MELEWATI SAYA!!!!"
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_0 = new LocalizationString(
-        "-",
+        "Do not go here, this way is only for Hardcore Gammerzzzzzz.",
         "Jangan lewat sini, karena ini jalan hanya untuk Hardcore Gamerzzzz."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_1 = new LocalizationString(
-        "-",
+        "Please look other way, because this is shortcut to Havva.",
         "Silahkan cari jalan lain, karena jalan ini hanya shortcut ke Havva."
     );
     
     public static readonly LocalizationString L1_6_OPENDOORPASS3_2 = new LocalizationString(
-        "-",
+        "And you only can find the password on the internet.",
         "Dan Anda hanya bisa menemukan passwordnya di internet."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_T0 = new LocalizationString(
-        "-",
+        "GGWP Gamers!",
         "GGWP Gamers!"
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_T1 = new LocalizationString(
-        "-",
+        "But, this is not over yet!",
         "Namun, ini belum selesai!"
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_T2 = new LocalizationString(
-        "-",
+        "I hope you can get through next challenge!",
         "Semoga saja Anda bisa melewati challenge selanjutnya!"
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_F0 = new LocalizationString(
-        "-",
+        "See, no way you can pass here.",
         "Tuhkan, tidak mungkin lewat sini."
     );
 
     public static readonly LocalizationString L1_6_OPENDOORPASS3_2_1_F1 = new LocalizationString(
-        "-",
+        "Please use other way",
         "Silahkan cari jalan lain."
     );
 
     public static readonly LocalizationString L1_6_ELEVATOREVENT_0 = new LocalizationString(
-        "-",
+        "Hello! Welcome to Uptown Havvatopia!",
         "Halo! Selamat datang di Havvatopia bagian Uptown!"
     );
 
     public static readonly LocalizationString L1_6_ELEVATOREVENT_1 = new LocalizationString(
-        "-",
+        "Where do you want to ride me?",
         "Mau naikki aku ke mana?"
     );
 
     public static readonly LocalizationString L1_6_DIARY_0 = new LocalizationString(
-        "-",
+        "You're in a shortcut just for hardcore gamerzzz, I congratulate you for getting here.",
         "Lu lagi berada di shortcut khusus untuk gamerz yang hardcore, gua ucapkan selamat bisa sampai disini."
     );
 
     public static readonly LocalizationString L1_6_DIARY_1 = new LocalizationString(
-        "-",
+        "You're correct; the robot need to be lured and then you slip away.",
         "Bener jawabannya; robotnya dipancing dulu baru nanti nyelip."
     );
 
     public static readonly LocalizationString L1_6_DIARY_2 = new LocalizationString(
-        "-",
+        "I was considering using this mechanic at the start of the game, but it's actually too difficult lol",
         "Tadinya mau pake mekanik kayak gitu di awal game, tapi pada kesusahan wkwk."
     );
 
@@ -1493,17 +1493,17 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 1_7
     public static readonly LocalizationString L1_7_DIARY_0 = new LocalizationString(
-        "-",
+        "I told you that 3D Humanoid is rare",
         "Gua sempet bilang kalau kelas 3D Humanoid karakternya sedikit."
     );
 
     public static readonly LocalizationString L1_7_DIARY_1 = new LocalizationString(
-        "-",
+        "It's actually not rare, but you're the only one who from 3d Humanoid",
         "Sebenernya bukan sedikit sih, tapi lu satu-satunya karakter yang dari kelas 3D Humanoid."
     );
 
     public static readonly LocalizationString L1_7_DIARY_2 = new LocalizationString(
-        "-",
+        "NYEHEHEHEHE",
         "NYEHEHEHEHE"
     );
 
@@ -1515,32 +1515,32 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 1_8
     public static readonly LocalizationString L1_8_DIARY_0 = new LocalizationString(
-        "-",
+        "Do you know why 3D Humanoid is rare?",
         "Tau ga kenapa kelas 3D Humanoid karakternya sedikit?"
     );
 
     public static readonly LocalizationString L1_8_DIARY_1 = new LocalizationString(
-        "-",
+        "Because it's expensive to make",
         "Karena budget buat bikinnya mahal."
     );
 
     public static readonly LocalizationString L1_8_DIARY_2 = new LocalizationString(
-        "-",
+        "Especially the animation, that's why there's lot of clipping.",
         "Apalagi animasinya, makanya banyak yang clipping."
     );
 
     public static readonly LocalizationString L1_8_DIARY_3 = new LocalizationString(
-        "-",
-        "NYEHEHEHEHHE"
+        "NYEHEHEHEHEHE",
+        "NYEHEHEHEHEHE"
     );
 
     public static readonly LocalizationString L1_8_DIARY_4 = new LocalizationString(
-        "-",
+        "Sigh...",
         "Sigh..."
     );
 
     public static readonly LocalizationString L1_8_DIARY_5 = new LocalizationString(
-        "-",
+        "I wish I have more money...",
         "Seandainya gua punya duit lebih..."
     );
 
@@ -1557,82 +1557,82 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_1 = new LocalizationString(
-        "-",
+        "\"What happened??!\"",
         "\"Apa yang terjadi??!\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_2 = new LocalizationString(
-        "-",
+        "\"Duddee, You won't believe this!!\"",
         "\"Coy, lu ga bakal percaya ini coooy!\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_3 = new LocalizationString(
-        "-",
+        "\"Havvatopia suddenly moving!!\"",
         "\"Havvatopia tiba-tiba bergerak!!\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_4 = new LocalizationString(
-        "-",
+        "\"It's time to include this in the news.\"",
         "\"Saatnya masukin berita!!!\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_5 = new LocalizationString(
-        "-",
-        "\"Sayang ~ aku Takut ...\""
+        "\"Honey ~ I'm scared ...\"",
+        "\"Sayang ~ aku takut ...\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_6 = new LocalizationString(
-        "-",
+        "\"Helo scared, my name is Honey.\"",
         "\"Halo Takut, namaku Sayang.\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_7 = new LocalizationString(
-        "-",
-        "\"Gua ga bisa pindah, wifi-nya kenapa??\""
+        "\"I can't move, what's wrong with the internet?\"",
+        "\"Gua ga bisa pindah, internet-nya kenapa??\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_8 = new LocalizationString(
-        "-",
-        "\"Wifi-nya mati coy! Hadeh gimana sih providernya.\""
+        "\"The internet is down! Someone please call the provider!\"",
+        "\"Internet-nya mati coy! Hadeh gimana sih providernya.\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_9 = new LocalizationString(
-        "-",
+        "\"BZZZZT... BZZZZT...\"",
         "\"BZZZZT... BZZZZT...\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_10 = new LocalizationString(
-        "-",
+        "\"BZZZZT... BZZZZT...\"",
         "\"BZZZZT... BZZZZT...\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_11 = new LocalizationString(
-        "-",
-        "\"Dih, itu 3D Sphere Robot kenapa dah, aneh banget.\""
+        "\"What's wrong with those 3D Sphere Robot, so suspicious.\"",
+        "\"Dih, itu 3D Sphere Robot pada kenapa dah, aneh banget.\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_12 = new LocalizationString(
-        "-",
+        "\"They just like... possesed?\"",
         "\"Dia kayak... kerasukan?\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_13 = new LocalizationString(
-        "-",
+        "\"BZZZZT... BZZZZT...\"",
         "\"BZZZZT... BZZZZT...\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_14 = new LocalizationString(
-        "-",
-        "\"HARUS SETEL PASSWORD DI DEKAT ELEFATAA.\""
+        "\"MUST. SET. PASSWORD. NEAR ELEFATAA.\"",
+        "\"HARUS. SETEL. PASSWORD. DI DEKAT ELEFATAA.\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_15 = new LocalizationString(
-        "-",
+        "\"THE PASSWORD IS 2 1 3...\"",
         "\"PASSWORDNYA 2 1 3...\""
     );
 
     public static readonly LocalizationString L1_9_PASSTRIGGER_16 = new LocalizationString(
-        "-",
+        "\"BZZZZT... BZZZZT...\"",
         "\"BZZZZT... BZZZZT...\""
     );
 
@@ -1647,37 +1647,37 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L1_9_DIARY_0 = new LocalizationString(
-        "-",
+        "You're in balcony.",
         "Lu lagi di balkon."
     );
 
     public static readonly LocalizationString L1_9_DIARY_1 = new LocalizationString(
-        "-",
+        "And you can't open any windows.",
         "Dan lu ga bisa buka jendela."
     );
 
     public static readonly LocalizationString L1_9_DIARY_2 = new LocalizationString(
-        "-",
+        "Because I'm too lazy to implement that mechanic.",
         "Karena emang gua males implementasiin mekanik kayak gitu."
     );
 
     public static readonly LocalizationString L1_9_DIARY_3 = new LocalizationString(
-        "-",
+        "NYEHEHEHE.",
         "NYEHEHEHE."
     );
 
     public static readonly LocalizationString L1_9_DIARY_4 = new LocalizationString(
-        "-",
+        "Welp, the story is those windows already turning into static object.",
         "Welp, ceritanya sih jendela tersebut udah jadi objek statis."
     );
 
     public static readonly LocalizationString L1_9_DIARY_5 = new LocalizationString(
-        "-",
+        "This means that those windows were NPC before, but because they rarely got interacted they turned into static object now.",
         "Ini berarti tadinya jendela itu NPC, terus karena jarang di interact akhirnya mereka jadi objek statis."
     );
 
     public static readonly LocalizationString L1_9_DIARY_6 = new LocalizationString(
-        "-",
+        "Booom, NPC lore drop.",
         "Beuh, NPC Lore."
     );
 
@@ -1967,7 +1967,7 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString L3_ONLOAD_2 = new LocalizationString(
-        "THIS LEVEL IS NOT FINISHED YET!!!",
+        "THIS LEVEL HAS NOT FINISHED YET!!!",
         "LEVELNYA BELUM SELESAI DIBUAT!!!"
     );
 
