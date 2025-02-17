@@ -303,137 +303,137 @@ public class LocalizationManager : MonoBehaviour
     #region Void World Dialogues
     #region End Game
     public static readonly LocalizationString VW_END_0 = new LocalizationString(
-        "-",
+        "Hello again, Agent Violet.",
         "Halo lagi, Agent Violet."
     );
 
     public static readonly LocalizationString VW_END_1 = new LocalizationString(
-        "-",
-        "Gua liat lu udah sampai di Pusat Kota Havvatopia bagian bawah."
+        "I see that you already reached Downtown Havvatopia.",
+        "Gua liat lu udah sampai di Havvatopia bagian bawah."
     );
 
     public static readonly LocalizationString VW_END_2 = new LocalizationString(
-        "-",
+        "I congrats you for reaching there, but unfortunately you met the limit what you can play in this version",
         "Gua ucapkan selamat sudah sampai sana, tapi sayangnya untuk versi yang lu mainin saat ini cuma bisa main sampai sana wkwk."
     );
 
     public static readonly LocalizationString VW_END_3 = new LocalizationString(
-        "-",
+        "...",
         "..."
     );
 
     public static readonly LocalizationString VW_END_4 = new LocalizationString(
-        "-",
+        "Umm... Hear me out...",
         "Umm... Jadi gini..."
     );
 
     public static readonly LocalizationString VW_END_5 = new LocalizationString(
-        "-",
+        "I said that the level is unfinished right...",
         "Tadi kan gua sempet bilang levelnya belum selesai..."
     );
 
     public static readonly LocalizationString VW_END_6 = new LocalizationString(
-        "-",
+        "It because...",
         "Itu karena..."
     );
 
     public static readonly LocalizationString VW_END_7 = new LocalizationString(
-        "-",
-        "GUA MALES LANJUTIN GAMENYA..."
+        "I'M TOO LAZY TO CONTINUE THE DEVELOPMENT OF THE GAME!",
+        "GUA MALES LANJUTIN PENGEMBANGAN GAMENYA!"
     );
 
     public static readonly LocalizationString VW_END_8 = new LocalizationString(
-        "-",
+        "NYEHEHEHEHEHE.",
         "NYEHEHEHEHEHE."
     );
 
     public static readonly LocalizationString VW_END_9 = new LocalizationString(
-        "-",
+        "Hehe...",
         "Hehe..."
     );
 
     public static readonly LocalizationString VW_END_10 = new LocalizationString(
-        "-",
+        "Welp...",
         "Welp..."
     );
 
     public static readonly LocalizationString VW_END_11 = new LocalizationString(
-        "-",
+        "Time to roll the credit!!!",
         "Saatnya roll the credit!!!"
     );
 
     public static readonly LocalizationString VW_END_12 = new LocalizationString(
-        "-",
+        "Developed by Ai Nonymous",
         "Developed by Ai Nonymous"
     );
 
     public static readonly LocalizationString VW_END_13 = new LocalizationString(
-        "-",
+        "Powered by Unity Engine",
         "Powered by Unity Engine"
     );
 
     public static readonly LocalizationString VW_END_14 = new LocalizationString(
-        "-",
+        "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass",
         "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass"
     );
 
     public static readonly LocalizationString VW_END_15 = new LocalizationString(
-        "-",
+        "Audio & Sound :\nRPG Maker MV\nMechvibes.com - jsfxr",
         "Audio & Sound :\nRPG Maker MV\nMechvibes.com - jsfxr"
     );
 
     public static readonly LocalizationString VW_END_16 = new LocalizationString(
-        "-",
+        "Animation :\nMixamo",
         "Animation :\nMixamo"
     );
 
     public static readonly LocalizationString VW_END_17 = new LocalizationString(
-        "-",
+        "Anyway, I want to say something.",
         "Anyway, gua pengen bilang sesuatu."
     );
 
     public static readonly LocalizationString VW_END_18 = new LocalizationString(
-        "-",
+        "THANK YOU FOR PLAYING THIS GAME!",
         "TERIMA KASIH SUDAH MEMAINKAN GAME INI!"
     );
 
     public static readonly LocalizationString VW_END_19 = new LocalizationString(
-        "-",
+        "I actually trying to develop a new game.",
         "Gua sebenernya lagi kembangin game baru."
     );
 
     public static readonly LocalizationString VW_END_20 = new LocalizationString(
-        "-",
-        "Jadi lu bisa support gua dengan beberapa cara"
+        "So if you like this game, you can support me with some way",
+        "Jadi kalau lu senang game ini, lu bisa support gua dengan beberapa cara"
     );
 
     public static readonly LocalizationString VW_END_21 = new LocalizationString(
-        "-",
+        "1) Follow or join my discord channel",
         "1) Follow atau join discord channel gua"
     );
 
     public static readonly LocalizationString VW_END_22 = new LocalizationString(
-        "-",
-        "2) Taro review, kalo bingung tulis aja MAKASIH DEVELOPER NYEHEHEHE"
+        "2) Write some review & feedback for this game",
+        "2) Taro review & feedback untuk game ini"
     );
 
     public static readonly LocalizationString VW_END_23 = new LocalizationString(
-        "-",
+        "...",
         "..."
     );
 
     public static readonly LocalizationString VW_END_24 = new LocalizationString(
-        "-",
+        "So, what do you want to do now, Agent Violet?",
         "Apa yang mau lu lakukan sekarang, Agent Violet?"
     );
 
     public static readonly LocalizationString VW_END_24_1 = new LocalizationString(
-        "-",
+        "Erase the developer's memory (Start over)",
         "Hapus ingatan developer (Ulang dari awal)"
     );
 
     public static readonly LocalizationString VW_END_24_2 = new LocalizationString(
-        "-",
+        "Bye! (Quit)",
         "Dadah! (Keluar)"
     );
     #endregion
