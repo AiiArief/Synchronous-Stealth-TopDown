@@ -186,7 +186,7 @@ public class SystemUIManager : MonoBehaviour
         {
             availableScreenMode.Add(FullScreenMode.ExclusiveFullScreen, "Exclusive Fullscreen");
             availableScreenMode.Add(FullScreenMode.FullScreenWindow, "Fullscreen Window");
-            availableScreenMode.Add(FullScreenMode.MaximizedWindow, "Maximized Window");
+            //availableScreenMode.Add(FullScreenMode.MaximizedWindow, "Maximized Window");
             availableScreenMode.Add(FullScreenMode.Windowed, "Windowed");
         }
 
