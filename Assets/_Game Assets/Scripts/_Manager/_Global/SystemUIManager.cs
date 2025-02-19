@@ -176,7 +176,8 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenResolution == null || availableScreenResolution.Count <= 0)
         {
             availableScreenResolution = Screen.resolutions.ToList();
-            availableScreenResolution.RemoveAll((x) => x.refreshRate > 60.0f);
+            Debug.LogError(string.Join(", ", availableScreenResolution));
+            availableScreenResolution.RemoveAll((x) => x.refreshRate > 60.0f || x.refreshRate < 60.0f);
         }
 
         if (availableScreenResolution.Count <= 0)
