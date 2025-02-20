@@ -2,12 +2,32 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SystemUIManager : MonoBehaviour
 {
+    static Resolution[] commonResolutions = new Resolution[]
+    {
+        new Resolution { width = 640, height = 360, refreshRate = 60 },
+        new Resolution { width = 854, height = 480, refreshRate = 60 },
+        new Resolution { width = 960, height = 540, refreshRate = 60 },
+        new Resolution { width = 1024, height = 576, refreshRate = 60 },
+        new Resolution { width = 1280, height = 720, refreshRate = 60 },
+        new Resolution { width = 1366, height = 768, refreshRate = 60 },
+        new Resolution { width = 1600, height = 900, refreshRate = 60 },
+        new Resolution { width = 1920, height = 1080, refreshRate = 60 },
+        new Resolution { width = 2560, height = 1440, refreshRate = 60 },
+        new Resolution { width = 3200, height = 1800, refreshRate = 60 },
+        new Resolution { width = 3840, height = 2160, refreshRate = 60 },
+        new Resolution { width = 1280, height = 800, refreshRate = 60 },
+        new Resolution { width = 1440, height = 900, refreshRate = 60 },
+        new Resolution { width = 1680, height = 1050, refreshRate = 60 },
+        new Resolution { width = 1920, height = 1200, refreshRate = 60 },
+        new Resolution { width = 2560, height = 1600, refreshRate = 60 },
+        new Resolution { width = 3840, height = 2400, refreshRate = 60 }
+    };
+
     public static Action<int> OnQualityLevelChanged;
 
     [SerializeField] Text m_musicVolumeText;
@@ -36,6 +56,17 @@ public class SystemUIManager : MonoBehaviour
 
     GameObject tempSelectedGameObject;
 
+    public int GenerateDefaultResolution()
+    {
+        var currentMonitorResolution = Screen.currentResolution;
+        var commonResolutionsList = commonResolutions.ToList();
+        var currentMonitorResolutionIndex = commonResolutionsList.FindIndex(x => x.width == currentMonitorResolution.width && x.height == currentMonitorResolution.height);
+        if (currentMonitorResolutionIndex >= 0)
+            return currentMonitorResolutionIndex;
+
+        return commonResolutionsList.FindIndex(x => x.width == 1280 && x.height == 720);
+    }
+
     public void LoadAndApplyFromProfileManager()
     {
         var profileMusicVolumeInDB = _ConvertVolume(PlayerPrefs.GetFloat(ProfileManager.PLAYERPREFS_MUSICVOLUME, 100.0f), false);
@@ -43,6 +74,10 @@ public class SystemUIManager : MonoBehaviour
 
         var profileSFXVolumeInDB = _ConvertVolume(PlayerPrefs.GetFloat(ProfileManager.PLAYERPREFS_SFXVOLUME, 100.0f), false);
         GlobalGameManager.Instance.soundManager.musicAudioMixer.audioMixer.SetFloat("sfxVolume", profileSFXVolumeInDB);
+
+        var res = _GetCurrentResolution();
+        Screen.SetResolution(res.width, res.height, Screen.fullScreenMode, res.refreshRate);
+        Application.targetFrameRate = 60;
     }
 
     public void ToggleSystemUI()
@@ -53,7 +88,7 @@ public class SystemUIManager : MonoBehaviour
         gameObject.SetActive(!gameObject.activeSelf);
         if (!gameObject.activeSelf)
         {
-            if(tempSelectedGameObject != null)
+            if (tempSelectedGameObject != null)
             {
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(tempSelectedGameObject);
@@ -65,7 +100,7 @@ public class SystemUIManager : MonoBehaviour
         onOpenTimeScale = Time.timeScale;
         Time.timeScale = 0;
 
-        appliedResolution = Screen.currentResolution;
+        appliedResolution = _GetCurrentResolution();
         appliedFullscreenMode = Screen.fullScreenMode;
 
         tempSelectedGameObject = EventSystem.current.currentSelectedGameObject;
@@ -79,6 +114,9 @@ public class SystemUIManager : MonoBehaviour
 
     public void ApplyChange()
     {
+        int appliedResolutionIndex = commonResolutions.ToList().IndexOf(appliedResolution);
+        PlayerPrefs.SetInt(ProfileManager.PLAYERPREFS_RESOLUTION, appliedResolutionIndex);
+
         Screen.SetResolution(appliedResolution.width, appliedResolution.height, appliedFullscreenMode, appliedResolution.refreshRate);
         ToggleSystemUI();
     }
@@ -175,9 +213,12 @@ public class SystemUIManager : MonoBehaviour
 
         if (availableScreenResolution == null || availableScreenResolution.Count <= 0)
         {
-            availableScreenResolution = Screen.resolutions.ToList();
-            Debug.LogError(string.Join(", ", availableScreenResolution));
-            //availableScreenResolution.RemoveAll((x) => x.refreshRate > 60.0f || x.refreshRate < 60.0f);
+            availableScreenResolution.AddRange(commonResolutions.Select(resolution => new Resolution
+            {
+                width = resolution.width,
+                height = resolution.height,
+                refreshRate = resolution.refreshRate
+            }));
         }
 
         if (availableScreenResolution.Count <= 0)
@@ -194,7 +235,7 @@ public class SystemUIManager : MonoBehaviour
         if (availableScreenMode.Count <= 0)
             return;
 
-        var currentScreenResolution = Screen.currentResolution;
+        var currentScreenResolution = _GetCurrentResolution();
         string currentFullscreenMode = availableScreenMode[Screen.fullScreenMode];
         string currentQualityName = QualitySettings.names[QualitySettings.GetQualityLevel()];
 
@@ -215,11 +256,21 @@ public class SystemUIManager : MonoBehaviour
         m_sfxVolumeSlider.value = _ConvertVolume(sfxVolume);
     }
 
-    private float _ConvertVolume(float val, bool isDbToPercentage = true) 
+    private float _ConvertVolume(float val, bool isDbToPercentage = true)
     {
         if (!isDbToPercentage)
             return (val / 100.0f * 80.0f) - 80.0f;
 
-        return (val + 80.0f) / 80.0f * 100.0f; 
+        return (val + 80.0f) / 80.0f * 100.0f;
+    }
+
+    private Resolution _GetCurrentResolution()
+    {
+        var currentResolutionIndex = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_RESOLUTION, GenerateDefaultResolution());
+        if (currentResolutionIndex < 0)
+            currentResolutionIndex = GenerateDefaultResolution();
+
+        var res = commonResolutions[currentResolutionIndex];
+        return res;
     }
 }

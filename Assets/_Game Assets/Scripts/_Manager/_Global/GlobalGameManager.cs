@@ -26,9 +26,6 @@ public class GlobalGameManager : MonoBehaviour
 
         profileManager.SetupFirstTimeSave();
         systemUIManager.LoadAndApplyFromProfileManager();
-
-        Debug.LogError($"vsync count : {QualitySettings.vSyncCount}");
-        Application.targetFrameRate = 60;
     }
 
     private void Update()
