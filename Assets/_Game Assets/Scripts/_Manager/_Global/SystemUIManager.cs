@@ -77,7 +77,7 @@ public class SystemUIManager : MonoBehaviour
 
         var res = _GetCurrentResolution();
         Screen.SetResolution(res.width, res.height, Screen.fullScreenMode, res.refreshRate);
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 60;
     }
 
     public void ToggleSystemUI()
