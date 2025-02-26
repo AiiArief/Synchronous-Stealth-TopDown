@@ -33,6 +33,11 @@ public class LocalizationManager : MonoBehaviour
         return GlobalGameManager.Instance.localizationManager._Translate(localizationString);
     }
 
+    public int GetCurrentLanguageId()
+    {
+        return PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 1);
+    }
+
     #region GLOBAL GAME MANAGER
     public static string SYSTEM_SCREENRESOLUTIONS => Translate(new LocalizationString("Screen Resolutions", "Resolusi Layar", "Screen Resolutions"));
     public static string SYSTEM_SCREENMODE => Translate(new LocalizationString("Screen Mode", "Mode Layar", "Screen Mode"));
@@ -545,7 +550,7 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString VW_ONLOAD_13 = new LocalizationString(
-        "YOUR MISSION RIGHT NOW IS TO INFILTRATE HAVVATOPIA CITY!",
+        "YOUR MISSION IS TO INFILTRATE HAVVATOPIA CITY!",
         "TUGAS LU SEKARANG ADALAH INFILTRASI KOTA HAVVATOPIA!"
     );
 

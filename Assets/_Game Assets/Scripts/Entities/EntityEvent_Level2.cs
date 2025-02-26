@@ -54,10 +54,13 @@ public class EntityEvent_Level2 : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.AfterInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
-        
-        if(m_firstTime)
+
+        havva.animator.SetInteger("language", GlobalGameManager.Instance.localizationManager.GetCurrentLanguageId());
+
+        if (m_firstTime)
         {
-            m_firstTime = false;
+            m_firstTime = false; 
+
             um.AddUIAction(() => { m_talkEvent_Camera.UseCamera(0); um.NextAction(); });
             um.AddUIAction(() => StartCoroutine(um.DelayNextAction(3.0f)));
             um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue(LocalizationManager.CHARACTER_2DHUMANOID_HAVVA, LocalizationManager.L2_TALK_0))));
