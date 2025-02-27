@@ -79,6 +79,16 @@ public class LocalizationManager : MonoBehaviour
         "(3D Headphone Sphere Robot) Satpam"
     );
 
+    public static readonly LocalizationString CHARACTER_3DHEADPHONESPHEREROBOT_GUARD_1 = new LocalizationString(
+        "(3D Headphone Sphere Robot) Guard #1",
+        "(3D Headphone Sphere Robot) Satpam #1"
+    );
+
+    public static readonly LocalizationString CHARACTER_3DHEADPHONESPHEREROBOT_GUARD_2 = new LocalizationString(
+        "(3D Headphone Sphere Robot) Guard #2",
+        "(3D Headphone Sphere Robot) Satpam #2"
+    );
+
     public static readonly LocalizationString CHARACTER_DEVELOPERNOTE = new LocalizationString(
         "Developer Note",
         "Pesan Developer"
@@ -264,8 +274,8 @@ public class LocalizationManager : MonoBehaviour
     public static readonly LocalizationString[] GENERIC_ELEFATAAEVENT_OBSERVATORY_PASSWORDLOCATION_UPTOWN = new LocalizationString[4]
     {
         new LocalizationString("T-the one who set the password goes to northeast...", "Y-yang setel passwordnya sih tadi ke arah timur laut..."),
-        new LocalizationString("I-I hope... the password is not given to " + Translate(CHARACTER_2D1BIT_FIREPLACE) + "...", "S-Semoga saja... passwordnya engga dititipin ke " + Translate(CHARACTER_2D1BIT_FIREPLACE) + "..."),
-        new LocalizationString("Because anyone who comes to " + Translate(CHARACTER_2D1BIT_FIREPLACE) + " will be burned!!!", "Soalnya siapapun yang mendatangi " + Translate(CHARACTER_2D1BIT_FIREPLACE) + " akan dibakar!!!"),
+        new LocalizationString("I-I hope... the password is not given to that thing...", "S-Semoga saja... passwordnya engga dititipin ke hal tersebut..."),
+        new LocalizationString("Because anyone who comes to that thing, they will be burned!!!", "Soalnya siapapun yang mendatangi hal tersebut, mereka akan dibakar!!!"),
         new LocalizationString("And I don't want anyone to get burned huaaaaaaaa", "Dan aku ga mau siapapun dibakar huaaaaaaaaaa!!!"),
     };
 
