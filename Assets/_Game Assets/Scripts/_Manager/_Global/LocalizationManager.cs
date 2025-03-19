@@ -57,9 +57,9 @@ public class LocalizationManager : MonoBehaviour
     public static readonly LocalizationString TUTORIAL_SELECT = new LocalizationString("Select", "Pilih");
     public static readonly LocalizationString TUTORIAL_CHECKPOINT = new LocalizationString("Checkpoint!", "Checkpoint!");
     public static readonly LocalizationString TUTORIAL_HUBWORLD = new LocalizationString("Hub World", "Hub World");
-    public static readonly LocalizationString TUTORIAL_HAVVATOPIA_UPTOWN = new LocalizationString("Havvatopia - Uptown", "Havvatopia - Pusat Kota Bagian Atas");
-    public static readonly LocalizationString TUTORIAL_HAVVATOPIA_OBSERVATORY = new LocalizationString("Havvatopia - Observatory", "Havvatopia - Observatorium");
-    public static readonly LocalizationString TUTORIAL_HAVVATOPIA_DOWNTOWN = new LocalizationString("Havvatopia - Downtown...?", "Havvatopia - Pusat Kota Bagian Bawah...?");
+    public static readonly LocalizationString TUTORIAL_HAVVATOPIA_UPTOWN = new LocalizationString("Havvatopia - Uptown", "Havvatopia - Uptown");
+    public static readonly LocalizationString TUTORIAL_HAVVATOPIA_OBSERVATORY = new LocalizationString("Havvatopia - Observatory", "Havvatopia - Observatory");
+    public static readonly LocalizationString TUTORIAL_HAVVATOPIA_DOWNTOWN = new LocalizationString("Havvatopia - Downtown... ?", "Havvatopia - Downtown... ?");
     #endregion
 
     #region Character
@@ -285,8 +285,8 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_OBSERVATORY = new LocalizationString(
-        "Havvatopia - Observatorium",
-        "Havvatopia - Observatorium"
+        "Havvatopia - Observatory",
+        "Havvatopia - Observatory"
     );
 
     public static readonly LocalizationString GENERIC_ELEFATAAGOTOCHOICES_UPTOWN = new LocalizationString(
@@ -348,7 +348,7 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString VW_END_6 = new LocalizationString(
-        "It because...",
+        "Because...",
         "Itu karena..."
     );
 
@@ -378,18 +378,18 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString VW_END_12 = new LocalizationString(
-        "Developed by Ai Nonymous",
-        "Developed by Ai Nonymous"
+        "Solo Developed by Ai Nonymous",
+        "Solo Developed by Ai Nonymous"
     );
 
     public static readonly LocalizationString VW_END_13 = new LocalizationString(
-        "Powered by Unity Engine",
-        "Powered by Unity Engine"
+        "Powered by Unity Game Engine",
+        "Powered by Unity Game Engine"
     );
 
     public static readonly LocalizationString VW_END_14 = new LocalizationString(
-        "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass",
-        "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass"
+        "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass, Waltz No.9 Op.40 (Tchaikovsky)",
+        "Music :\nKevin Macleod - Frost Waltz, Teddy Bear Waltz, Spy Glass, Waltz No.9 Op.40 (Tchaikovsky)"
     );
 
     public static readonly LocalizationString VW_END_15 = new LocalizationString(
@@ -412,9 +412,14 @@ public class LocalizationManager : MonoBehaviour
         "TERIMA KASIH SUDAH MEMAINKAN GAME INI!"
     );
 
+    public static readonly LocalizationString VW_END_18A = new LocalizationString(
+        "IN THE FUTURE, I WILL UPDATE THIS GAME AND USE IT AS MY EXPERIMENT PROJECT!",
+        "DIMASA DEPAN, GUA BAKALAN UPDATE GAME INI & PAKAI SEBAGAI EXPERIMENT!"
+    );
+
     public static readonly LocalizationString VW_END_19 = new LocalizationString(
-        "I actually trying to develop a new game.",
-        "Gua sebenernya lagi kembangin game baru."
+        "Anyway, I actually developing a new game right now.",
+        "Anyway, Gua sebenernya lagi kembangin game baru."
     );
 
     public static readonly LocalizationString VW_END_20 = new LocalizationString(
@@ -645,7 +650,7 @@ public class LocalizationManager : MonoBehaviour
     );
 
     public static readonly LocalizationString VW_ONLOAD_28 = new LocalizationString(
-        "Welp, I actually don't give you any choice to ask a question, NYEHEHEHEHE",
+        "Welp, I actually don't give you any choice to ask a question, NYEHEHEHEHE.",
         "Welp, bukannya ga ada sih, gua emang ga ngasih pilihan buat pertanyaan, NYEHEHEHEHE."
     );
 
@@ -1705,8 +1710,8 @@ public class LocalizationManager : MonoBehaviour
 
     #region Level 2
     public static readonly LocalizationString L2_ELEVATOR_0 = new LocalizationString(
-        "Hello! Welcome to Observatorium Havvatopia!",
-        "Halo! Selamat datang di Havvatopia bagian Observatorium!"
+        "Hello! Welcome to Havvatopia Observatory!",
+        "Halo! Selamat datang di Havvatopia Observatory!"
     );
 
     public static readonly LocalizationString L2_ELEVATOR_1 = new LocalizationString(
