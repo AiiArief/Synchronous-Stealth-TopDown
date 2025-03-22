@@ -147,10 +147,11 @@ public class LocalizationManager : MonoBehaviour
     #endregion
 
     #region Generic Dialogues
-    public static readonly LocalizationString[] GENERIC_PAUSE_CHOICES = new LocalizationString[3]
+    public static readonly LocalizationString[] GENERIC_PAUSE_CHOICES = new LocalizationString[4]
     {
         new LocalizationString("... (Resume)", "... (Lanjutkan main)"),
         new LocalizationString("I want to time leap! (Restart from last checkpoint)", "Mau time leap! (Ulang dari checkpoint terakhir)"),
+        new LocalizationString("Let me setup myself (Open settings menu)", "Mau atur diri sendiri (Buka pengaturan)"),
         new LocalizationString("I don't want to work anymore. (Quit)", "Udahan kerjanya ah. (Keluar dari game)"),
     };
 

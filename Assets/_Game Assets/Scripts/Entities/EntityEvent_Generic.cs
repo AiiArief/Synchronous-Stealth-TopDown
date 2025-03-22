@@ -29,7 +29,7 @@ public class EntityEvent_Generic : EntityEvent
         um.AddUIAction(() => StartCoroutine(um.DelayUntilPhaseInput(PhaseEnum.WaitInput)));
         um.AddUIAction(() => { AddBasicStatusEffectOnStartingEvent(); um.NextAction(); });
         um.AddUIAction(() => StartCoroutine(um.AddDialogue(new Dialogue("", "..."),
-                new DialogueChoice[3] {
+                new DialogueChoice[4] {
                     new DialogueChoice(LocalizationManager.GENERIC_PAUSE_CHOICES[0], () => {
                         um.AddUIAction(() => { RemoveBasicStatusEffectOnFinishEvent(); um.NextAction(); });
                     }),
@@ -38,6 +38,13 @@ public class EntityEvent_Generic : EntityEvent
                         _RetryLastCheckpointButton();
                     }),
                     new DialogueChoice(LocalizationManager.GENERIC_PAUSE_CHOICES[2], () => {
+                        um.AddUIAction(() => { 
+                            RemoveBasicStatusEffectOnFinishEvent(); 
+                            um.NextAction();
+                            GlobalGameManager.Instance.systemUIManager.ToggleSystemUI(); 
+                        });
+                    }),
+                    new DialogueChoice(LocalizationManager.GENERIC_PAUSE_CHOICES[3], () => {
                         QuitButton();
                     })
                 })));
