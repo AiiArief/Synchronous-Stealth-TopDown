@@ -45,6 +45,9 @@ public class SystemUIManager : MonoBehaviour
     [SerializeField] Text m_graphicPresetText;
     [SerializeField] Text m_graphicPresetListText;
 
+    [SerializeField] Text m_languageText;
+    [SerializeField] Text m_languageListText;
+
     [SerializeField] Text m_applyText;
 
     float onOpenTimeScale = -1.0f;
@@ -193,6 +196,15 @@ public class SystemUIManager : MonoBehaviour
         _SetupScreenResolutions();
     }
 
+    public void ChangeLanguageSettings(bool isNext)
+    {
+        int currentLanguageId = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 0);
+        int nextLanguageId = Mathf.Clamp((isNext) ? currentLanguageId + 1 : currentLanguageId - 1, 1, Enum.GetValues(typeof(LocalizationLanguage)).Length - 1);
+        PlayerPrefs.SetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, nextLanguageId);
+
+        _Localize();
+    }
+
     private void _Localize()
     {
         m_musicVolumeText.text = LocalizationManager.SYSTEM_MUSICVOLUME;
@@ -200,7 +212,10 @@ public class SystemUIManager : MonoBehaviour
         m_screenResolutionText.text = LocalizationManager.SYSTEM_SCREENRESOLUTIONS;
         m_screenModeText.text = LocalizationManager.SYSTEM_SCREENMODE;
         m_graphicPresetText.text = LocalizationManager.SYSTEM_GRAPHICPRESET;
+        m_languageText.text = LocalizationManager.SYSTEM_LANGUAGE;
         m_applyText.text = LocalizationManager.SYSTEM_APPLY;
+
+        m_languageListText.text = _GetCurrentLanguageString();
     }
 
     private void _SetupScreenResolutions()
@@ -272,5 +287,12 @@ public class SystemUIManager : MonoBehaviour
 
         var res = commonResolutions[currentResolutionIndex];
         return res;
+    }
+
+    private string _GetCurrentLanguageString()
+    {
+        int currentLanguageId = PlayerPrefs.GetInt(ProfileManager.PLAYERPREFS_LANGUAGEID, 0);
+        string str = Enum.IsDefined(typeof(LocalizationLanguage), currentLanguageId) ? Enum.ToObject(typeof(LocalizationLanguage), currentLanguageId).ToString() : default;
+        return str;
     }
 }
